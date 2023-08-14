@@ -1,0 +1,106 @@
+:root {
+  --primary: #2BFFEA;
+  --secondary1: #591FCE;
+  --secondary2: #0C9CEE;
+  --accent: #A1F480;
+  --neutral: #EAEAEA;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  /* font-family: "SatoshiBold"; */
+  color: var(--accent1b);
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+p,
+input {
+  font-weight: 400;
+  /* font-family: "SatoshiRegular"; */
+  hyphens: auto;
+  font-size: 1.8rem;
+  /* color: var(--accent1b); */
+  /* line-height: 26px; */
+}
+
+input:focus {
+  outline: none;
+}
+
+/* ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--accent4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent1);
+}
+
+::selection {
+  background: var(--accent7);
+}
+::-moz-selection {
+  background: var(--accent7);
+} */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  p {
+    font-size: 113.7%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  html {
+    font-size: 50%;
+  }
+
+  p {
+    font-size: 125%;
+    /* line-height: 24px; */
+  }
+}
