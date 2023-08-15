@@ -4,6 +4,7 @@
   --accent1: #a1f480;
   --accent2: #0c9cee;
   --neutral: #f9fafb;
+  
 }
 
 * {
@@ -33,6 +34,12 @@ a {
 
 h1 {
   font-size: 6rem;
+  line-height: 130%;
+}
+
+h1 {
+  font-family: var(--staatliches);
+  color: var(--primary)
 }
 
 h2 {
@@ -68,7 +75,7 @@ button {
 p,
 input {
   font-weight: 400;
-  /* font-family: "SatoshiRegular"; */
+  font-family: var(--roboto);
   hyphens: auto;
   font-size: 1.8rem;
   /* color: var(--accent1b); */

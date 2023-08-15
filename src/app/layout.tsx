@@ -1,9 +1,22 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto, Staatliches } from "next/font/google";
 import styles from "./layout.module.css";
+import Nav from "./components/Nav/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--roboto",
+});
+
+const staatliches = Staatliches({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--staatliches",
+});
 
 export const metadata: Metadata = {
   title: "Chris Ware Agency",
@@ -17,7 +30,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} ${styles.layout}`}>{children}</body>
+      <body
+        className={`${roboto.variable} ${staatliches.variable} ${styles.layout}`}
+      >
+        {/* <Nav /> */}
+        {children}
+      </body>
     </html>
   );
 }

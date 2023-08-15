@@ -1,7 +1,15 @@
+import styles from './Hero.module.css'
+
 const Hero = () => {
   return (
     <section>
-      <h1>Hero Section Here</h1>
+      <h1 className={styles.title}>Grow Your Business With Our Help</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        cupiditate numquam eum possimus eligendi non exercitationem quam.
+        Corrupti accusamus eaque facilis praesentium repudiandae, omnis
+        consectetur. Sed, illum autem. A, aliquid.
+      </p>
     </section>
   );
 };
