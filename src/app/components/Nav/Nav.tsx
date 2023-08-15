@@ -53,6 +53,11 @@ const Nav = () => {
             }
           >
             <li className={styles.navItem}>
+              <Link href='/' className={styles.logo2}>
+                Chris Ware Agency
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/'
                 className={pathname === "/" ? styles.activeLink : ""}
@@ -60,7 +65,7 @@ const Nav = () => {
                 Home
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/about'
                 className={pathname.includes("/about") ? styles.activeLink : ""}
@@ -68,7 +73,7 @@ const Nav = () => {
                 About
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/services'
                 className={
@@ -78,7 +83,7 @@ const Nav = () => {
                 Services
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/pricing'
                 className={
@@ -88,7 +93,7 @@ const Nav = () => {
                 Pricing
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/faq'
                 className={pathname.includes("/faq") ? styles.activeLink : ""}
@@ -96,7 +101,7 @@ const Nav = () => {
                 FAQ
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/blog'
                 className={pathname.includes("/blog") ? styles.activeLink : ""}
@@ -104,7 +109,7 @@ const Nav = () => {
                 Blog
               </Link>
             </li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem} onClick={openMenu}>
               <Link
                 href='/contact'
                 className={
@@ -114,6 +119,13 @@ const Nav = () => {
                 Contact
               </Link>
             </li>
+            <div className={styles.bottom}>
+              <div className={styles.bottomLeft}>
+                <p className={styles.copy}>
+                  Copyright &copy; 2023 Chris Ware Agency || All Rights Reserved
+                </p>
+              </div>
+            </div>
           </ul>
           <span
             className={
