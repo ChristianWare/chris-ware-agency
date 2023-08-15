@@ -5,7 +5,7 @@ import styles from "./layout.module.css";
 import Nav from "./components/Nav/Nav";
 
 const roboto = Roboto({
-  weight: ["400"],
+  weight: ["400", "500"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--roboto",

@@ -41,7 +41,7 @@ const Nav = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            Chris Ware Agency
+            Chris Ware
           </Link>
         </div>
         <div className={styles.menuItemsGroup}>
@@ -52,9 +52,9 @@ const Nav = () => {
                 : styles.navMenu + " " + styles.active
             }
           >
-            <li className={styles.navItem}>
+            <li>
               <Link href='/' className={styles.logo2}>
-                Chris Ware Agency
+                Chris Ware . Agency
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
