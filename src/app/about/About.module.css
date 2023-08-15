@@ -2,13 +2,6 @@
   animation: fadeIn 1s;
 }
 
-.title {
-  width: 40%;
-  text-transform: uppercase;
-  margin-top: 10rem;
-}
-
-
 @keyframes fadeIn {
   from {
     opacity: 0;

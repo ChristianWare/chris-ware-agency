@@ -4,6 +4,7 @@
   --accent1: #a1f480;
   --accent2: #0c9cee;
   --neutral: #f9fafb;
+  --text: #2d1069;
 }
 
 * {
@@ -78,6 +79,7 @@ input {
   font-family: var(--roboto);
   hyphens: auto;
   font-size: 1.8rem;
+  color: var(--text);
   /* line-height: 26px; */
 }
 

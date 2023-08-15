@@ -2,7 +2,7 @@ import styles from './Hero.module.css'
 
 const Hero = () => {
   return (
-    <section>
+    <section className={styles.container}>
       <h1 className={styles.title}>Grow Your Business With Our Help</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,

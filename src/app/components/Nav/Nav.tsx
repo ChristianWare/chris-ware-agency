@@ -2,11 +2,14 @@
 
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -31,13 +34,15 @@ const Nav = () => {
     };
   }, [isOpen]);
 
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <Link href='/'>Chris Ware Agency</Link>
+          <Link href='/' className={styles.logo}>
+            Chris Ware Agency
+          </Link>
         </div>
         <div className={styles.menuItemsGroup}>
           <ul
@@ -47,17 +52,67 @@ const Nav = () => {
                 : styles.navMenu + " " + styles.active
             }
           >
-            <li className={styles.parent}>
-              <Link href='/'>Home</Link>
+            <li className={styles.navItem}>
+              <Link
+                href='/'
+                className={pathname === "/" ? styles.activeLink : ""}
+              >
+                Home
+              </Link>
             </li>
-            <li className={styles.parent}>
-              <Link href='/'>About</Link>
+            <li className={styles.navItem}>
+              <Link
+                href='/about'
+                className={pathname.includes("/about") ? styles.activeLink : ""}
+              >
+                About
+              </Link>
             </li>
-            <li className={styles.parent}>
-              <Link href='/'>Services</Link>
+            <li className={styles.navItem}>
+              <Link
+                href='/services'
+                className={
+                  pathname.includes("/services") ? styles.activeLink : ""
+                }
+              >
+                Services
+              </Link>
             </li>
-            <li className={styles.parent}>
-              <Link href='/'>Contact</Link>
+            <li className={styles.navItem}>
+              <Link
+                href='/pricing'
+                className={
+                  pathname.includes("/pricing") ? styles.activeLink : ""
+                }
+              >
+                Pricing
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link
+                href='/faq'
+                className={pathname.includes("/faq") ? styles.activeLink : ""}
+              >
+                FAQ
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link
+                href='/blog'
+                className={pathname.includes("/blog") ? styles.activeLink : ""}
+              >
+                Blog
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link
+                href='/contact'
+                className={
+                  pathname.includes("/contact") ? styles.activeLink : ""
+                }
+              >
+                Contact
+              </Link>
             </li>
           </ul>
           <span
@@ -66,6 +121,7 @@ const Nav = () => {
                 ? styles.hamburger
                 : styles.hamburger + " " + styles.active
             }
+            onClick={openMenu}
           >
             <span className={styles.whiteBar}></span>
             <span className={styles.whiteBar}></span>
