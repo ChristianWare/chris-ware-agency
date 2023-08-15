@@ -1,9 +1,20 @@
 :root {
-  --primary: #2BFFEA;
-  --secondary1: #591FCE;
-  --secondary2: #0C9CEE;
-  --accent: #A1F480;
-  --neutral: #EAEAEA;
+  --primary: #591fce;
+  --secondary: #2bffea;
+  --accent1: #a1f480;
+  --accent2: #0c9cee;
+  --neutral: #f9fafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 150%;
+  overscroll-behavior: none;
+  scroll-margin-top: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
