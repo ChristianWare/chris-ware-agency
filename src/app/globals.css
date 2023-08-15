@@ -4,7 +4,6 @@
   --accent1: #a1f480;
   --accent2: #0c9cee;
   --neutral: #f9fafb;
-  
 }
 
 * {
@@ -37,17 +36,18 @@ h1 {
   line-height: 130%;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--staatliches);
-  color: var(--primary)
+  color: var(--primary);
 }
 
 h2 {
   font-size: 3rem;
-  /* font-family: "SatoshiBold"; */
-  color: var(--accent1b);
-  margin-top: 36px;
-  margin-bottom: 24px;
 }
 
 h3 {
@@ -78,7 +78,6 @@ input {
   font-family: var(--roboto);
   hyphens: auto;
   font-size: 1.8rem;
-  /* color: var(--accent1b); */
   /* line-height: 26px; */
 }
 
@@ -86,21 +85,21 @@ input:focus {
   outline: none;
 }
 
-/* ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--accent4);
+  background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent1);
+  background: var(--secondary);
 }
 
 ::selection {
-  background: var(--accent7);
+  background: var(--secondary);
 }
 ::-moz-selection {
-  background: var(--accent7);
-} */
+  background: var(--secondary);
+}
 
 @media screen and (max-width: 768px) {
   html {

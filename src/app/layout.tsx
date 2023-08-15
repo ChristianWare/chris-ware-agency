@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${staatliches.variable} ${styles.layout}`}
       >
-        {/* <Nav /> */}
+        <Nav />
         {children}
       </body>
     </html>
