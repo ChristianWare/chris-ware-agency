@@ -18,6 +18,7 @@
   color: var(--neutral);
   background-color: var(--primary);
   border: 2px solid var(--primary);
+  padding: 12px 35px;
 }
 
 .primary:hover {
@@ -40,5 +41,12 @@
 @media screen and (max-width: 820px) {
   .btn {
     width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+  .primary {
+    padding: 14px 35px;
   }
 }

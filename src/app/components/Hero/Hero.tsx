@@ -20,13 +20,24 @@ const Hero = () => {
           </p>
           <div className={styles.btnContainer}>
             <Button href='/contact' btnType='primary' text='Get in touch' />
-            <Button href='/contact' btnType='secondary' text='Book a meeting' icon={<Calendar className={styles.icon} width={20} height={20} />} />
+            <Button
+              href='/contact'
+              btnType='secondary'
+              text='Book a meeting'
+              icon={<Calendar className={styles.icon} width={20} height={20} />}
+            />
           </div>
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
-            <Image src={HeroImage} alt='hero' className={styles.img} fill={true} sizes="100vw" priority
-             />
+            <Image
+              src={HeroImage}
+              alt='hero'
+              className={styles.img}
+              fill={true}
+              sizes='100vw'
+              priority
+            />
           </div>
         </div>
       </div>
