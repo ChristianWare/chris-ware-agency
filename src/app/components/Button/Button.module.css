@@ -17,7 +17,7 @@
 .primary {
   color: var(--neutral);
   background-color: var(--primary);
-  border: 2px solid transparent;
+  border: 2px solid var(--primary);
 }
 
 .primary:hover {

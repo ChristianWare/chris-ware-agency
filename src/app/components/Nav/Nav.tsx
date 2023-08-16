@@ -41,7 +41,7 @@ const Nav = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            Chris Ware
+            CW . Agency
           </Link>
         </div>
         <div className={styles.menuItemsGroup}>

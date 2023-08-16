@@ -35,3 +35,58 @@
   border-radius: 10px;
   border: 5px solid rgba(89, 31, 206, 0.2);
 }
+
+.overview {
+  font-family: var(--roboto);
+  font-weight: 700;
+  color: var(--text);
+  margin: 2rem 0rem;
+}
+
+.right {
+  position: relative;
+}
+
+.right::before {
+  content: "";
+  top: 90%;
+  right: 10%;
+  position: absolute;
+  filter: blur(15rem);
+  transform: translateZ(0);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--secondary);
+  z-index: -1;
+}
+
+.btnContainer {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 820px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .top {
+    padding-bottom: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .imgContainer {
+    width: 90vw;
+    height: 675px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .imgContainer {
+    height: 450px;
+  }
+}
