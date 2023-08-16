@@ -24,7 +24,7 @@ const Services = () => {
               <div className={styles.serviceCardContainer}>
                 {x.services.map((y) => (
                   <div key={y.id} className={styles.serviceCard}>
-                    <Image src={y.icon} alt='hello' width={50} height={50} className={styles.icon} />
+                    <Image src={y.icon} alt='hello' title="hello" width={50} height={50} className={styles.icon} />
                     <h4 className={styles.serviceTitle}>{y.service}</h4>
                     <p className={styles.description}>{y.description}</p>
                   </div>

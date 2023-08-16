@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
-import Hosting from '../../../../public/icons/hosting.svg'
+import Calendar from "../../../../public/icons/calendar.svg";
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
           <div className={styles.btnContainer}>
             <Button href='/contact' btnType='primary' text='Get in touch' />
-            <Button href='/contact' btnType='secondary' text='Book a meeting' />
+            <Button href='/contact' btnType='secondary' text='Book a meeting' icon={<Calendar className={styles.icon} width={20} height={20} />} />
           </div>
         </div>
         <div className={styles.right}>
@@ -30,7 +30,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <Hosting className={styles.icon} /> */}
     </section>
   );
 };
