@@ -120,11 +120,9 @@ const Nav = () => {
               </Link>
             </li>
             <div className={styles.bottom}>
-              <div className={styles.bottomLeft}>
                 <p className={styles.copy}>
                   Copyright &copy; 2023 Chris Ware Agency || All Rights Reserved
                 </p>
-              </div>
             </div>
           </ul>
           <span

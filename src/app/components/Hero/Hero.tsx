@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
+import HeroImage from "../../../../public/images/hero5.png";
 
 const Hero = () => {
   return (
@@ -21,7 +22,11 @@ const Hero = () => {
             <Button href='/contact' btnType='secondary' text='Book a meeting' />
           </div>
         </div>
-        <div className={styles.right}>Image Here</div>
+        <div className={styles.right}>
+          <div className={styles.imgContainer}>
+            <Image src={HeroImage} alt='hero' className={styles.img} fill sizes="100vw" />
+          </div>
+        </div>
       </div>
     </section>
   );
