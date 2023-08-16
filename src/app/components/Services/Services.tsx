@@ -10,7 +10,7 @@ const Services = () => {
         <div className={styles.top}>
           <Label text='Services' />
           <h2 className={styles.heading}>
-            Web Solutions Beyond Boundaries: Our Range of Web Development
+            Our Range of Web Development
             Services
           </h2>
           <p className={styles.copy}>
@@ -18,16 +18,15 @@ const Services = () => {
           </p>
         </div>
         <div className={styles.bottom}>
-          {/* <h3 className={styles.heading2}>What We Build</h3> */}
           {servicesSection.map((x) => (
             <div key={x.id}>
-              {x.sectionTitle}
-              <div>
+              <h3 className={styles.heading2}>{x.sectionTitle}</h3>
+              <div className={styles.serviceCardContainer}>
                 {x.services.map((y) => (
-                  <div key={y.id}>
-                    <h4>{y.service}</h4>
-                    <p>{y.description}</p>
-                    <Image src={y.icon} alt='hello' width={50} height={50} />
+                  <div key={y.id} className={styles.serviceCard}>
+                    <Image src={y.icon} alt='hello' width={50} height={50} className={styles.icon} />
+                    <h4 className={styles.serviceTitle}>{y.service}</h4>
+                    <p className={styles.description}>{y.description}</p>
                   </div>
                 ))}
               </div>

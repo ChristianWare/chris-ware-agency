@@ -6,7 +6,6 @@
 
 .content {
   display: flex;
-  /* flex-direction/: row-reverse; */
   align-items: flex-end;
   justify-content: center;
   padding: 5rem;
