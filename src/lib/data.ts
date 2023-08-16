@@ -8,8 +8,7 @@ import Fe from "../../public/icons/fe.png";
 import Be from "../../public/icons/be.png";
 import Bolt from "../../public/icons/bolt.png";
 import Blog from "../../public/icons/blog.png";
-
-
+import Taco from "../../public/images/livemas.png";
 
 export const servicesSection = [
   {
@@ -101,3 +100,24 @@ export const servicesSection = [
     ],
   },
 ] as const;
+
+export const portfolio = [
+  {
+    title: "Project One",
+    description:
+      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
+    src: Taco,
+  },
+  {
+    title: "Project Two",
+    description:
+      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
+    src: Taco,
+  },
+  {
+    title: "Project Three",
+    description:
+      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
+    src: Taco,
+  },
+];

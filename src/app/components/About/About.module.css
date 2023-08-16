@@ -1,5 +1,6 @@
 .container {
   margin-bottom: 20rem;
+  padding-bottom: 5rem;
 }
 
 .content {
@@ -8,7 +9,7 @@
 
 .top {
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(89, 31, 206, 0.2);
+  border-bottom: 2px solid var(--secondary);
 }
 
 .bottom {
@@ -27,13 +28,15 @@
 .imgContainer {
   position: relative;
   height: 600px;
+  border: 5px solid rgba(89, 31, 206, 0.2);
+  border-radius: 15px;
 }
 
 .img {
   object-fit: cover;
   font-size: 0;
   border-radius: 10px;
-  border: 5px solid rgba(89, 31, 206, 0.2);
+  border: 5px solid var(--secondary);
 }
 
 .overview {
