@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
+import Hosting from '../../../../public/icons/hosting.svg'
 
 const Hero = () => {
   return (
@@ -24,10 +25,12 @@ const Hero = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
-            <Image src={HeroImage} alt='hero' className={styles.img} fill sizes="100vw" />
+            <Image src={HeroImage} alt='hero' className={styles.img} fill={true} sizes="100vw" priority
+             />
           </div>
         </div>
       </div>
+      {/* <Hosting className={styles.icon} /> */}
     </section>
   );
 };

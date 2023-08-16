@@ -52,7 +52,7 @@ const Nav = () => {
                 : styles.navMenu + " " + styles.active
             }
           >
-            <li>
+            <li onClick={openMenu}>
               <Link href='/' className={styles.logo2}>
                 Chris Ware . Agency
               </Link>
@@ -120,9 +120,9 @@ const Nav = () => {
               </Link>
             </li>
             <div className={styles.bottom}>
-                <p className={styles.copy}>
-                  Copyright &copy; 2023 Chris Ware Agency || All Rights Reserved
-                </p>
+              <p className={styles.copy}>
+                Copyright &copy; 2023 Chris Ware Agency || All Rights Reserved
+              </p>
             </div>
           </ul>
           <span
