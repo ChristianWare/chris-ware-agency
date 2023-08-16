@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px solid var(--primary);
+  border: 2px solid rgba(89, 31, 206, 0.2);
   padding: 2rem;
   border-radius: 8px;
 }

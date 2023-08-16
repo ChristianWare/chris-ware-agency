@@ -17,19 +17,19 @@
 .primary {
   color: var(--neutral);
   background-color: var(--primary);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .primary:hover {
   color: var(--text);
   background-color: var(--secondary);
-  border-color: var(--primary);
+  border: 2px solid rgba(89, 31, 206, 0.2);
 }
 
 .secondary {
   color: var(--text);
   background-color: var(--secondary);
-  border: 1px solid var(--primary);
+  border: 2px solid rgba(89, 31, 206, 0.2);
 }
 
 .secondary:hover {
