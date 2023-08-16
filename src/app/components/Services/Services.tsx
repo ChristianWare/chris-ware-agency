@@ -9,7 +9,7 @@ const Services = () => {
           <Label text='Services' />
           <h2 className={styles.heading}>
             Web Solutions Beyond Boundaries: Our Range of Web Development
-            Services
+            Offerings
           </h2>
         </div>
         <div className={styles.bottom}>
