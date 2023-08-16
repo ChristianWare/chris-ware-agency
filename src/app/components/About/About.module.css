@@ -7,11 +7,6 @@
   padding: 5rem;
 }
 
-.top {
-  padding-bottom: 3rem;
-  border-bottom: 2px solid var(--secondary);
-}
-
 .bottom {
   margin-top: 5rem;
   display: flex;
@@ -48,6 +43,11 @@
 
 .right {
   position: relative;
+}
+
+.right h3 {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 .right::before {

@@ -3,19 +3,18 @@ import styles from "./Services.module.css";
 import { servicesSection } from "../../../lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Services = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.top}>
-          <Label text='Services' />
-          <h2 className={styles.heading}>
-            Our Range of Web Development Services
-          </h2>
-          <p className={styles.copy}>
-            Feel free to contact us for custom soultions.
-          </p>
+          <SectionHeading
+            labelText='Services'
+            headingText='Our Range of web development services'
+            copyText='Feel free to contact us for custom solutions.'
+          />
         </div>
         <div className={styles.bottom}>
           {servicesSection.slice(0, 1).map((x) => (

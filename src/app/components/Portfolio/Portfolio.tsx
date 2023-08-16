@@ -1,5 +1,6 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Portfolio.module.css";
+import { portfolio } from "@/lib/data";
 
 const Portfolio = () => {
   return (
