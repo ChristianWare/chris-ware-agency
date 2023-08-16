@@ -1,13 +1,13 @@
 .container {
   animation: fadeIn 1s;
   position: relative;
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 
 .content {
   display: flex;
   /* flex-direction/: row-reverse; */
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   padding: 5rem;
   padding-top: 3rem;

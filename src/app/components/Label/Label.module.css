@@ -1,0 +1,10 @@
+.label {
+  font-size: 1.6rem;
+  font-family: var(--roboto);
+  padding: 5px 15px;
+  background-color: var(--accent1);
+  color: var(--text);
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
