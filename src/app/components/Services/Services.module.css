@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0rem;
 }
 
 .serviceCard {
@@ -51,33 +51,50 @@
 }
 
 .icon {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .serviceTitle {
-    text-align: center;
+  text-align: center;
 }
 
 .description {
   opacity: 0.7;
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 @media screen and (max-width: 820px) {
-    .content {
-        padding: 1rem;
-    }
-    
-    .serviceCardContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .content {
+    padding: 1rem;
+  }
+
+  .serviceCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 568px) {
-    .content {
-        padding: 0rem;
-    }
-    
-    .serviceCardContainer {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .content {
+    padding: 0rem;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .serviceCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 }
