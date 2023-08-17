@@ -52,7 +52,7 @@ const Services = () => {
           </p>
           <div className={styles.featuresBottom}>
             <div className={styles.left}>
-              {features.map((z) => (
+              {features.slice(0, 2).map((z) => (
                 <div key={z.id} className={styles.featuresCard}>
                   <div className={styles.imgFeatureContainer}>
                     <Image
@@ -63,7 +63,7 @@ const Services = () => {
                     />
                     <h4>{z.feature}</h4>
                   </div>
-                  <p>{z.description}</p>
+                  <p className={styles.description}>{z.description}</p>
                 </div>
               ))}
             </div>
@@ -76,6 +76,22 @@ const Services = () => {
                   className={styles.img}
                 />
               </div>
+            </div>
+            <div className={styles.left}>
+              {features.slice(2, 4).map((z) => (
+                <div key={z.id} className={styles.featuresCard}>
+                  <div className={styles.imgFeatureContainer}>
+                    <Image
+                      src={z.icon}
+                      alt={z.feature}
+                      width={60}
+                      height={60}
+                    />
+                    <h4>{z.feature}</h4>
+                  </div>
+                  <p className={styles.description}>{z.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
