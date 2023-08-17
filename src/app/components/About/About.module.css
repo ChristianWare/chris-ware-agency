@@ -20,6 +20,11 @@
   flex: 1;
 }
 
+.left {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .imgContainer {
   position: relative;
   height: 600px;
@@ -78,7 +83,7 @@
   }
 
   .imgContainer {
-    width: 90vw;
+    width: 92vw;
     height: 675px;
   }
 }

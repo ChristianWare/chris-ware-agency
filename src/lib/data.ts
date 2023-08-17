@@ -12,6 +12,10 @@ import Taco from "../../public/images/livemas.png";
 import Fonts from "../../public/images/48laws.png";
 import Drone from "../../public/images/drone.png";
 import Person from "../../public/icons/person.png";
+import Access from "../../public/icons/access.png";
+import Responsive from "../../public/icons/responsive.png";
+import SEOFeature from "../../public/icons/seoFeature.png";
+import Speed from "../../public/icons/speed.png";
 
 export const servicesSection = [
   {
@@ -192,5 +196,36 @@ export const reviews = [
     reviewer: "Lisa S.",
     company: "NBC",
     person: Person,
+  },
+] as const;
+
+export const features = [
+  {
+    id: 15,
+    icon: Responsive,
+    feature: "Responsive",
+    description:
+      "We create responsive websites that adapt to all devices and screens, ensuring optimal display on desktops, laptops, tablets, smartphones, and smart TVs. Our design scales elements to fit various screen sizes, guaranteeing your website looks great on any device.",
+  },
+  {
+    id: 15,
+    icon: Access,
+    feature: "Accessible",
+    description:
+      "Our websites are designed for accessibility, ensuring inclusivity for people with disabilities. We create sites that are easily navigable and interactive, particularly for screen reader users. Web accessibility is crucial for equal access and opportunity for all abilities.",
+  },
+  {
+    id: 15,
+    icon: SEOFeature,
+    feature: "Search Engine Optimized",
+    description:
+      "SEO, or Search Engine Optimization, enhances a website's technical setup for easy discoverability. This elevates credibility, drives more traffic, and enhances online visibility.",
+  },
+  {
+    id: 15,
+    icon: Speed,
+    feature: "Page Speed Optimized",
+    description:
+      "Website optimization boosts traffic and conversions, delivering a superior user experience. Our sites load in under 3 seconds for optimal performance.",
   },
 ] as const;

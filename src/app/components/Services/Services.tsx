@@ -1,9 +1,10 @@
 import Label from "../Label/Label";
 import styles from "./Services.module.css";
-import { servicesSection } from "../../../lib/data";
+import { servicesSection, features } from "../../../lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import Devices from "../../../../public/images/devices.png";
 
 const Services = () => {
   return (
@@ -39,9 +40,48 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className={styles.btnContainer}>
-          <Button href='/services' text='More services' btnType='primary' />
+        <div className={styles.featuresSection}>
+          <h3 className={styles.heading2}>
+            All websites we build include the following features:
+          </h3>
+          <p className={styles.copy}>
+            We integrate essential features into every site we create. These
+            features boost search engine rankings, driving more clicks and
+            visitors to your page. Contact us now to enhance your business&#39;s
+            online presence and increase revenue!
+          </p>
+          <div className={styles.featuresBottom}>
+            <div className={styles.left}>
+              {features.map((z) => (
+                <div key={z.id} className={styles.featuresCard}>
+                  <div className={styles.imgFeatureContainer}>
+                    <Image
+                      src={z.icon}
+                      alt={z.feature}
+                      width={60}
+                      height={60}
+                    />
+                    <h4>{z.feature}</h4>
+                  </div>
+                  <p>{z.description}</p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.right}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={Devices}
+                  alt='A mix of different devices'
+                  fill
+                  className={styles.img}
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className={styles.btnContainer}>
+        <Button href='/services' text='More services' btnType='primary' />
       </div>
     </section>
   );
