@@ -5,6 +5,7 @@
   --accent2: #0c9cee;
   --neutral: #f9fafb;
   --text: #2d1069;
+  --border: rgba(89, 31, 206, 0.2);
 }
 
 * {
@@ -53,6 +54,8 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  color: var(--text);
+  text-decoration: underline;
 }
 
 h4 {

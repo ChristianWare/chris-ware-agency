@@ -23,7 +23,7 @@
 .imgContainer {
   position: relative;
   height: 600px;
-  border: 5px solid rgba(89, 31, 206, 0.2);
+  border: 5px solid var(--border);
   border-radius: 15px;
 }
 
@@ -43,11 +43,6 @@
 
 .right {
   position: relative;
-}
-
-.right h3 {
-  color: var(--text);
-  text-decoration: underline;
 }
 
 .right::before {

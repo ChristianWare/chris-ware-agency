@@ -1,6 +1,7 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Portfolio.module.css";
 import { portfolio } from "@/lib/data";
+import Image from "next/image";
 
 const Portfolio = () => {
   return (
@@ -14,7 +15,21 @@ const Portfolio = () => {
           />
         </div>
         <div className={styles.bottom}>
-            Here, we will map throug a list of projects.
+          {portfolio.map((x) => (
+            <div key={x.id} className={styles.cardContainer}>
+              <h3>{x.title}</h3>
+              <p className={styles.desc}>{x.description}</p>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={x.src}
+                  alt='hello'
+                  fill
+                  sizes='100vw'
+                  className={styles.img}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
