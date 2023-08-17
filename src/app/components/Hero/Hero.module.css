@@ -37,7 +37,7 @@
 
 .icon {
   font-size: 1rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .right {
@@ -119,6 +119,15 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+
+  .imgContainer {
+    width: 90vw;
+    height: 450px;
+  }
+
+  .img{
+    object-fit: cover;
   }
 }
 

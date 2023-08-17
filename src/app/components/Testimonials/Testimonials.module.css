@@ -21,6 +21,8 @@
   grid-auto-flow: column;
   animation: moveReverse 20s linear infinite;
   width: 100%;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* .cardContainer1:hover {
@@ -37,7 +39,7 @@
   border: 2px solid var(--border);
   border-radius: 8px;
   width: 465px;
-  margin: 2rem;
+  position: relative;
 }
 
 .review {
