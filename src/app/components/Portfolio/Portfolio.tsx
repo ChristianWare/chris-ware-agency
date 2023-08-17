@@ -20,6 +20,7 @@ const Portfolio = () => {
               <h3>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
               <div className={styles.imgContainer}>
+                <div className={styles.gradient}></div>
                 <Image
                   src={x.src}
                   alt='hello'
