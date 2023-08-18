@@ -18,6 +18,10 @@ import SEOFeature from "../../public/icons/seoFeature.png";
 import Speed from "../../public/icons/speed.png";
 import Discover from "../../public/images/discovery.png";
 import ResearchProcess from "../../public/images/research.png";
+import Design from "../../public/images/design.png";
+import Review from "../../public/images/review.png";
+import Develop from "../../public/images/develop.png";
+import Deploy from "../../public/images/deploy.png";
 
 export const servicesSection = [
   {
@@ -254,7 +258,7 @@ export const process = [
     processName: "3. Design",
     processDescription:
       "Once the research phase concludes, we transition into the design stage for your website. Our designs seamlessly align with your website's overarching theme and atmosphere. Presenting you with several initial low-fidelity design options, we await your choice for us to proceed with building your preferred design in the subsequent phase.",
-    src: Discover,
+    src: Design,
     flip: "flip",
   },
   {
@@ -262,7 +266,7 @@ export const process = [
     processName: "4. Develop",
     processDescription:
       "After gathering the insights shared during the interview and the design you've selected, we embark on transforming it into reality. We meticulously craft every element from scratch, employing pure code rather than relying on platforms like Wordpress or similar tools. This approach guarantees a swift, mobile-responsive website that excels in Google rankings.",
-    src: Discover,
+    src: Develop,
     flip: "",
   },
   {
@@ -270,7 +274,7 @@ export const process = [
     processName: "5. Review",
     processDescription:
       "Upon completion, we will engage in a joint review of the developed website, facilitating open discussions for any desired refinements. This collaborative process ensures that the final product aligns precisely with your vision and requirements.",
-    src: Discover,
+    src: Review,
     flip: "flip",
   },
   {
@@ -278,7 +282,7 @@ export const process = [
     processName: "6. Deployment",
     processDescription:
       "After receiving your approval on all aspects, we will proceed to deploy the website for public access, ensuring a seamless and successful launch that reflects your vision. Our meticulous process guarantees that your website is presented to the world in its finest form.",
-    src: Discover,
+    src: Deploy,
     flip: "",
   },
 ] as const;
