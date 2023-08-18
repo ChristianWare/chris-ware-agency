@@ -4,7 +4,7 @@ import { servicesSection, features } from "../../../lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import Devices from "../../../../public/images/devices.png";
+import Collection from "../../../../public/images/collection.png";
 
 const Services = () => {
   return (
@@ -70,7 +70,7 @@ const Services = () => {
             <div className={styles.right}>
               <div className={styles.imgContainer}>
                 <Image
-                  src={Devices}
+                  src={Collection}
                   alt='A mix of different devices'
                   fill
                   className={styles.img}
