@@ -16,6 +16,7 @@ import Access from "../../public/icons/access.png";
 import Responsive from "../../public/icons/responsive.png";
 import SEOFeature from "../../public/icons/seoFeature.png";
 import Speed from "../../public/icons/speed.png";
+import Discover from "../../public/images/discovery.png";
 
 export const servicesSection = [
   {
@@ -231,29 +232,52 @@ export const features = [
 ] as const;
 
 export const process = [
-{
-  id: 19,
-  processName: "Discovery Call",
-  processDescription: "We initiate a mutual understanding, fostering stronger rapport. Through this, we ascertain the most effective ways to fulfill your website aspirations and objectives.",
-},
-{
-  id: 20,
-  processName: "Research",
-  processDescription: "Analyzing the provided information, we delve into researching your industry and competitive landscape. This comprehensive approach aids us in devising an optimal online promotion strategy tailored to enhance your business presence.",
-},
-{
-  id: 21,
-  processName: "Design",
-  processDescription: "Once the research phase concludes, we transition into the design stage for your website. Our designs seamlessly align with your website's overarching theme and atmosphere. Presenting you with several initial low-fidelity design options, we await your choice for us to proceed with building your preferred design in the subsequent phase.",
-},
-{
-  id: 22,
-  processName: "Develop",
-  processDescription: "After gathering the insights shared during the interview and the design you've selected, we embark on transforming it into reality. We meticulously craft every element from scratch, employing pure code rather than relying on platforms like Wordpress or similar tools. This approach guarantees a swift, mobile-responsive website that excels in Google rankings.",
-},
-{
-  id: 23,
-  processName: "Discovery Call",
-  processDescription: "We initiate a mutual understanding, fostering stronger rapport. Through this, we ascertain the most effective ways to fulfill your website aspirations and objectives.",
-},
-] as const 
+  {
+    id: 19,
+    processName: "1. Discovery Call",
+    processDescription:
+      "We initiate a mutual understanding, fostering stronger rapport. Through this, we ascertain the most effective ways to fulfill your website aspirations and objectives.",
+    src: Discover,
+    flip: "flip",
+  },
+  {
+    id: 20,
+    processName: "2. Research",
+    processDescription:
+      "Analyzing the provided information, we delve into researching your industry and competitive landscape. This comprehensive approach aids us in devising an optimal online promotion strategy tailored to enhance your business presence.",
+    src: Discover,
+    flip: "",
+  },
+  {
+    id: 21,
+    processName: "3. Design",
+    processDescription:
+      "Once the research phase concludes, we transition into the design stage for your website. Our designs seamlessly align with your website's overarching theme and atmosphere. Presenting you with several initial low-fidelity design options, we await your choice for us to proceed with building your preferred design in the subsequent phase.",
+    src: Discover,
+    flip: "flip",
+  },
+  {
+    id: 22,
+    processName: "4. Develop",
+    processDescription:
+      "After gathering the insights shared during the interview and the design you've selected, we embark on transforming it into reality. We meticulously craft every element from scratch, employing pure code rather than relying on platforms like Wordpress or similar tools. This approach guarantees a swift, mobile-responsive website that excels in Google rankings.",
+    src: Discover,
+    flip: "",
+  },
+  {
+    id: 23,
+    processName: "5. Review",
+    processDescription:
+      "Upon completion, we will engage in a joint review of the developed website, facilitating open discussions for any desired refinements. This collaborative process ensures that the final product aligns precisely with your vision and requirements.",
+    src: Discover,
+    flip: "flip",
+  },
+  {
+    id: 24,
+    processName: "6. Deployment",
+    processDescription:
+      "After receiving your approval on all aspects, we will proceed to deploy the website for public access, ensuring a seamless and successful launch that reflects your vision. Our meticulous process guarantees that your website is presented to the world in its finest form.",
+    src: Discover,
+    flip: "",
+  },
+] as const;
