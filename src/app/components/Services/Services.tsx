@@ -1,4 +1,3 @@
-import Label from "../Label/Label";
 import styles from "./Services.module.css";
 import { servicesSection, features } from "../../../lib/data";
 import Image from "next/image";
