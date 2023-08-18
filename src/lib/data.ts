@@ -22,6 +22,7 @@ import Design from "../../public/images/design.png";
 import Review from "../../public/images/review.png";
 import Develop from "../../public/images/develop.png";
 import Deploy from "../../public/images/deploy.png";
+import Success from "../../public/images/success.png";
 
 export const servicesSection = [
   {
@@ -284,5 +285,13 @@ export const process = [
       "After receiving your approval on all aspects, we will proceed to deploy the website for public access, ensuring a seamless and successful launch that reflects your vision. Our meticulous process guarantees that your website is presented to the world in its finest form.",
     src: Deploy,
     flip: "",
+  },
+  {
+    id: 25,
+    processName: "Final Result: Your Success",
+    processDescription:
+      "Following the successful completion of the website, now you're beaming with satisfaction. More people have discovered your business online, helping it grow and succeed even more.",
+    src: Success,
+    flip: "flip",
   },
 ] as const;
