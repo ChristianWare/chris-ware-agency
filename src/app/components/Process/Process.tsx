@@ -2,6 +2,8 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Process.module.css";
 import Image from "next/image";
 import { process } from "@/lib/data";
+import Button from "../Button/Button";
+import Calendar from '../../../../public/icons/calendar.svg'
 
 const Process = () => {
   return (
@@ -10,7 +12,7 @@ const Process = () => {
         <SectionHeading
           labelText='Our Process'
           headingText='The way we do things'
-          copyText='You&#39;re 5 steps away from a new website...'
+          copyText='You&#39;re 6 steps away from a new website...'
         />
 
         <div className={styles.bottom}>
@@ -37,6 +39,18 @@ const Process = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.cta}>
+            <h4>Ready to start a Project?</h4>
+          <div className={styles.btnContainer}>
+            <Button href='/contact' btnType='primary' text='Get in touch' />
+            <Button
+              href='/contact'
+              btnType='secondary'
+              text='Book a meeting'
+              icon={<Calendar className={styles.icon} width={20} height={20} />}
+            />
+          </div>
         </div>
       </div>
     </section>
