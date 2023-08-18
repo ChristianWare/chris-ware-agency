@@ -9,7 +9,7 @@ const Process = () => {
         <SectionHeading
           labelText='Our Process'
           headingText='The way we do things'
-          copyText='Our Web Development Workflow'
+          copyText='You&#39;re 5 steps away from a new website...'
         />
       </div>
       <div className={styles.bottom}>

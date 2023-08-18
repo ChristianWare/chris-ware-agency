@@ -208,24 +208,52 @@ export const features = [
       "We create responsive websites that adapt to all devices and screens, ensuring optimal display on desktops, laptops, tablets, smartphones, and smart TVs. Our design scales elements to fit various screen sizes, guaranteeing your website looks great on any device.",
   },
   {
-    id: 15,
+    id: 16,
     icon: Access,
     feature: "Accessible",
     description:
       "Our websites are designed for accessibility, ensuring inclusivity for people with disabilities. We create sites that are easily navigable and interactive, particularly for screen reader users. Web accessibility is crucial for equal access and opportunity for all abilities.",
   },
   {
-    id: 15,
+    id: 17,
     icon: SEOFeature,
     feature: "Search Engine Optimized",
     description:
       "SEO, or Search Engine Optimization, enhances a website's technical setup for easy discoverability. This elevates credibility, drives more traffic, and enhances online visibility.",
   },
   {
-    id: 15,
+    id: 18,
     icon: Speed,
     feature: "Page Speed Optimized",
     description:
       "Website optimization boosts traffic and conversions, delivering a superior user experience. Our sites load in under 3 seconds for optimal performance.",
   },
 ] as const;
+
+export const process = [
+{
+  id: 19,
+  processName: "Discovery Call",
+  processDescription: "We initiate a mutual understanding, fostering stronger rapport. Through this, we ascertain the most effective ways to fulfill your website aspirations and objectives.",
+},
+{
+  id: 20,
+  processName: "Research",
+  processDescription: "Analyzing the provided information, we delve into researching your industry and competitive landscape. This comprehensive approach aids us in devising an optimal online promotion strategy tailored to enhance your business presence.",
+},
+{
+  id: 21,
+  processName: "Design",
+  processDescription: "Once the research phase concludes, we transition into the design stage for your website. Our designs seamlessly align with your website's overarching theme and atmosphere. Presenting you with several initial low-fidelity design options, we await your choice for us to proceed with building your preferred design in the subsequent phase.",
+},
+{
+  id: 22,
+  processName: "Develop",
+  processDescription: "After gathering the insights shared during the interview and the design you've selected, we embark on transforming it into reality. We meticulously craft every element from scratch, employing pure code rather than relying on platforms like Wordpress or similar tools. This approach guarantees a swift, mobile-responsive website that excels in Google rankings.",
+},
+{
+  id: 23,
+  processName: "Discovery Call",
+  processDescription: "We initiate a mutual understanding, fostering stronger rapport. Through this, we ascertain the most effective ways to fulfill your website aspirations and objectives.",
+},
+] as const 
