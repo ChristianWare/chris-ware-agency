@@ -17,6 +17,7 @@ import Responsive from "../../public/icons/responsive.png";
 import SEOFeature from "../../public/icons/seoFeature.png";
 import Speed from "../../public/icons/speed.png";
 import Discover from "../../public/images/discovery.png";
+import ResearchProcess from "../../public/images/research.png";
 
 export const servicesSection = [
   {
@@ -245,7 +246,7 @@ export const process = [
     processName: "2. Research",
     processDescription:
       "Analyzing the provided information, we delve into researching your industry and competitive landscape. This comprehensive approach aids us in devising an optimal online promotion strategy tailored to enhance your business presence.",
-    src: Discover,
+    src: ResearchProcess,
     flip: "",
   },
   {
