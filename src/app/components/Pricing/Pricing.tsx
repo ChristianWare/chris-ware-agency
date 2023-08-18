@@ -10,6 +10,9 @@ const Pricing = () => {
           headingText='Your Vision, Your Budget'
           copyText='Flexible plans for every business'
         />
+        <div className={styles.bottom}>
+          
+        </div>
       </div>
     </section>
   );
