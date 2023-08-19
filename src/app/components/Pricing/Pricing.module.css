@@ -10,7 +10,7 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   /* padding: 0rem 20rem; */
 }
 
@@ -104,5 +104,9 @@
 @media screen and (max-width: 568px) {
   .content {
     padding: 2rem;
+  }
+
+  .planName, .price, .description {
+    text-align: center;
   }
 }
