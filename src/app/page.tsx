@@ -12,14 +12,14 @@ import ContactSection from "./components/ContactSection/ContactSection";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <About />
       <Services />
       <Portfolio />
       <Testimonials />
       <Process />
       <Pricing />
-      <BlogSection />
+      <BlogSection /> */}
       <ContactSection />
     </main>
   );
