@@ -6,28 +6,28 @@
 
 .container::after {
   content: "";
-  top: 30%;
+  top: -3%;
   left: 0;
   position: absolute;
-  filter: blur(20rem);
+  filter: blur(10rem);
   transform: translateZ(0);
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   background-color: var(--accent1);
   z-index: -1;
 }
 
 .container::before {
   content: "";
-  bottom: 10%;
+  bottom: -5%;
   right: 10%;
   position: absolute;
-  filter: blur(20rem);
+  filter: blur(10rem);
   transform: translateZ(0);
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   background-color: var(--accent2);
   z-index: -1;
 }
@@ -46,6 +46,7 @@
 .card {
   background-color: var(--border2);
   border-radius: 8px;
+  border: 1px solid var(--border);
   padding: 2rem;
 }
 
@@ -135,7 +136,9 @@
     padding: 2rem;
   }
 
-  .planName, .price, .description {
+  .planName,
+  .price,
+  .description {
     text-align: center;
   }
 }
