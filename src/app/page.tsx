@@ -7,18 +7,20 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Process from "./components/Process/Process";
 import Pricing from "./components/Pricing/Pricing";
 import BlogSection from "./components/BlogSection/BlogSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
     <main>
-      {/* <Hero />
+      <Hero />
       <About />
       <Services />
       <Portfolio />
       <Testimonials />
       <Process />
-      <Pricing /> */}
+      <Pricing />
       <BlogSection />
+      <ContactSection />
     </main>
   );
 }
