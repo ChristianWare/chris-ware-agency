@@ -17,11 +17,11 @@ const Pricing = () => {
         <div className={styles.bottom}>
           {pricing.map((x) => (
             <div key={x.id} className={styles.card}>
-              <h3>{x.plan}</h3>
-              <p>{x.description}</p>
-              <hr />
-              <h4>${x.price} / mo</h4>
-              <p>Includes</p>
+              <h3 className={styles.planName}>{x.plan}</h3>
+              <p className={styles.description}>{x.description}</p>
+              <hr className={styles.hr} />
+              <h4 className={styles.price}>$ {x.price} <span className={styles.span}>/ mo</span></h4>
+              <p className={styles.includes}>Includes</p>
               <div className={styles.checkFeatureContainer}>
                 {x.includes.map((y, index) => (
                   <ul key={index} className={styles.featuresList} >
