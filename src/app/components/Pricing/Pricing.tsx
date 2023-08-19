@@ -11,7 +11,7 @@ const Pricing = () => {
       <div className={styles.content}>
         <SectionHeading
           labelText='Pricing'
-          headingText='Your Vision, Your Budget'
+          headingText='Our prices'
           copyText='Flexible plans for every business'
         />
         <div className={styles.bottom}>

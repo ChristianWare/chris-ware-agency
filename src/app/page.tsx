@@ -10,12 +10,12 @@ import Pricing from "./components/Pricing/Pricing";
 export default function Home() {
   return (
     <main>
-      {/* <Hero />
+      <Hero />
       <About />
       <Services />
       <Portfolio />
       <Testimonials />
-      <Process /> */}
+      <Process />
       <Pricing />
     </main>
   );
