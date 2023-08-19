@@ -11,13 +11,13 @@ import BlogSection from "./components/BlogSection/BlogSection";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <About />
       <Services />
       <Portfolio />
       <Testimonials />
       <Process />
-      <Pricing />
+      <Pricing /> */}
       <BlogSection />
     </main>
   );

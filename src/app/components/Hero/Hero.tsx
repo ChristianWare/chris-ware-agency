@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
-import Calendar from "../../../../public/icons/calendar.svg";
+import Calendar from "../../../../public/icons/calendar.png";
 
 const Hero = () => {
   return (
@@ -24,7 +24,15 @@ const Hero = () => {
               href='/contact'
               btnType='secondary'
               text='Book a meeting'
-              icon={<Calendar className={styles.icon} width={20} height={20} />}
+              icon={
+                <Image
+                  src={Calendar}
+                  alt='hey'
+                  className={styles.icon}
+                  width={20}
+                  height={20}
+                />
+              }
             />
           </div>
         </div>

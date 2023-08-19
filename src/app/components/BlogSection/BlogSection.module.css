@@ -7,6 +7,12 @@
   padding: 5rem;
 }
 
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
 @media screen and (max-width: 820px) {
   .content {
     padding: 2rem;
