@@ -351,7 +351,7 @@ export const pricing = [
   {
     id: 28,
     plan: "Custom Plan",
-    description: "A website tailored to your specific needs",
+    description: "A website tailored to your specific wants and needs",
     price: "Custom",
     includes: [
       {
@@ -371,6 +371,6 @@ export const pricing = [
         feature: "Time involved",
       },
     ],
-    btnType: "secondary",
+    btnType: "tertiary",
   },
 ] as const;

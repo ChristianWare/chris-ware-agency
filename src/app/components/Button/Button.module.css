@@ -33,7 +33,13 @@
   border: 2px solid var(--border);
 }
 
-.secondary:hover {
+.tertiary {
+  color: var(--text);
+  background-color: var(--neutral);
+  border: 2px solid var(--primary);
+}
+
+.secondary:hover, .tertiary:hover {
   color: var(--neutral);
   background-color: var(--primary);
 }
