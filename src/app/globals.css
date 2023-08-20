@@ -122,8 +122,8 @@ input:focus {
     font-size: 50%;
   }
 
-  p {
+  p, label {
     font-size: 125%;
-    /* line-height: 24px; */
+    
   }
 }

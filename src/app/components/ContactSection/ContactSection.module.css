@@ -58,7 +58,6 @@
 }
 
 .form {
-  /* background-color: var(--secondary); */
   padding: 2rem;
   padding-bottom: 3rem;
   border-radius: 8px;
@@ -197,6 +196,11 @@
 
   .namesContainer {
     flex-direction: column;
+    gap: 0rem;
+  }
+
+  .labelInputBox:nth-child(1) {
+    
   }
 
   .btnBtnContainer {
