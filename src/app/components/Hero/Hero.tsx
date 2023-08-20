@@ -4,7 +4,6 @@ import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
 import Calendar from "../../../../public/icons/calendar.png";
 
-
 const Hero = () => {
   return (
     <section className={styles.container}>
@@ -20,9 +19,9 @@ const Hero = () => {
             to New Heights in the Digital Landscape.
           </p>
           <div className={styles.btnContainer}>
-            <Button href='/contact' btnType='primary' text='Get in touch' />
+            <Button href='/' btnType='primary' text='Get in touch' />
             <Button
-              href='/contact'
+              href='/'
               btnType='secondary'
               text='Book a meeting'
               icon={

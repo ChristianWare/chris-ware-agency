@@ -12,7 +12,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = ({ href = "", text, btnType, icon }) => {
   return (
-    <button>
+    <button className={styles.container}>
       <Link href={href} className={`${styles.btn} ${styles[btnType]}`}>
         {icon && <span className={styles.icon}>{icon}</span> }
         {text}

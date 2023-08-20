@@ -75,7 +75,7 @@
 
 .aboutFeature span {
   font-size: 3.8rem;
-  line-height: .7;
+  line-height: 0.7;
 }
 
 .btnContainer {
@@ -106,6 +106,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .aboutFeature {
+    font-size: 113.7%;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .imgContainer {
     height: 450px;
@@ -114,5 +120,9 @@
   .btnContainer {
     display: grid;
     width: 100%;
+  }
+
+  .aboutFeature {
+    font-size: 125%;
   }
 }
