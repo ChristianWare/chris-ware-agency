@@ -14,15 +14,38 @@ const ContactSection = () => {
           <div className={styles.left}>
             <h3 className={styles.heading}>
               We&#39;re dedicated to building impressive websites for your
-              business. Collaborate with the chris ware agency today!
+              business.
             </h3>
           </div>
           <div className={styles.right}>
             <form className={styles.form}>
-              <label></label>
-              <input type='email' />
-              <textarea />
-              <button type='submit'>Submit</button>
+              <div className={styles.namesContainer}>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='firstName'>First Name</label>
+                  <input id='firstName' type='text' required />
+                </div>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='lastName'>Last Name</label>
+                  <input id='lastName' type='text' required />
+                </div>
+              </div>
+              <div className={styles.everythingElse}>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='email'>Email</label>
+                  <small>So we can respond. We won&#39;t send you spam.</small>
+                  <input id='email' type='email' required />
+                </div>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='companyName'>Company Name</label>
+                  <input id='companyName' type='text' />
+                </div>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='message'>Message</label>
+                  <textarea id='message' />
+                </div>
+              </div>
+              {/* <textarea /> */}
+              <button type='submit'>Submit Button</button>
             </form>
           </div>
         </div>
