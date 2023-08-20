@@ -410,3 +410,66 @@ export const about = [
       "Expertise in combining innovation with design for impactful web experiences",
   },
 ] as const;
+
+export const faqs = [
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+  {
+    id: 36,
+    question: "What types of websites do you specialize in creating?",
+    answer:
+      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+  },
+] as const;

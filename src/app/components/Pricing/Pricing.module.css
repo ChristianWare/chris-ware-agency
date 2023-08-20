@@ -121,6 +121,13 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .planName,
+  .price,
+  .description,
+  .includes {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -140,10 +147,5 @@
     padding: 2rem;
   }
 
-  .planName,
-  .price,
-  .description,
-  .includes {
-    text-align: center;
-  }
+  
 }
