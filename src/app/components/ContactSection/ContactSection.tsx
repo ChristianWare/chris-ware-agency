@@ -32,7 +32,7 @@ const ContactSection = () => {
               <div className={styles.everythingElse}>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='email'>Email</label>
-                  <small>So we can respond. We won&#39;t send you spam.</small>
+                  <span>So we can respond. We won&#39;t send you spam.</span>
                   <input id='email' type='email' required />
                 </div>
                 <div className={styles.labelInputBox}>
@@ -41,11 +41,17 @@ const ContactSection = () => {
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='message'>Message</label>
+                  <span>No solicitations, please.</span>
                   <textarea id='message' />
                 </div>
               </div>
-              {/* <textarea /> */}
-              <button type='submit'>Submit Button</button>
+              <div className={styles.btnBtnContainer}>
+                <div className={styles.btnContainer}>
+                  <button type='submit' className={styles.btn}>
+                    Fire Away! 
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </div>

@@ -38,8 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem
-
+  gap: 3rem;
 }
 
 .labelInputBox {
@@ -50,13 +49,82 @@
   flex: 1;
 }
 
-.labelInputBox input {
+.labelInputBox label {
+  font-family: var(--roboto);
+  font-weight: 400;
+  color: var(--text);
+  padding-left: 0.3rem;
+  width: 100%;
+  resize: none;
+}
+
+.labelInputBox input,
+.labelInputBox textarea {
   border-radius: 8px;
   border-color: var(--border);
   border-width: 1px;
   height: 40px;
   width: 100%;
+  color: var(--text);
   padding: 1rem;
+  width: 100%;
+  resize: none;
+}
+
+.labelInputBox span {
+  font-family: var(--roboto);
+  font-size: 1.4rem;
+  color: rgb(140, 139, 139);
+}
+
+.labelInputBox textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.btnContainer {
+  position: relative;
+  display: block;
+  width: fit-content;
+  z-index: 1;
+}
+
+.btnContainer::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -7px;
+  top: 9px;
+  width: 98%;
+  height: 93%;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  border-radius: 5px;
+  user-select: none;
+  transition: all 0.1s ease-in;
+  display: inline-block;
+  padding: 10px 35px;
+  font-weight: 700;
+  color: var(--neutral);
+  background-color: var(--primary);
+  border: 2.7px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(7px, 7px);
 }
 
 @media screen and (max-width: 820px) {
@@ -68,5 +136,14 @@
 @media screen and (max-width: 568px) {
   .content {
     padding: 1rem;
+  }
+
+  .namesContainer {
+    flex-direction: column;
+  }
+
+  .btnBtnContainer {
+    display: grid;
+    width: 100%;
   }
 }
