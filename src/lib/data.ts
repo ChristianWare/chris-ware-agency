@@ -132,7 +132,7 @@ export const portfolio = [
   },
   {
     id: 6,
-    title: "48 Laws of power",
+    title: "48 Laws",
     description:
       "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
     src: Fonts,

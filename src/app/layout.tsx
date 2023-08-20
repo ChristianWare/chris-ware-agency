@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto, Staatliches } from "next/font/google";
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./layout.module.css";
 import Nav from "./components/Nav/Nav";
@@ -11,13 +11,6 @@ const roboto = Roboto({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--roboto",
-});
-
-const staatliches = Staatliches({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-  variable: "--staatliches",
 });
 
 const bebasneue = localFont({
@@ -38,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${roboto.variable} ${staatliches.variable} ${bebasneue.variable} ${styles.layout}`}
+        className={`${roboto.variable} ${bebasneue.variable} ${styles.layout}`}
       >
         <Nav />
         {children}

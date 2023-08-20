@@ -1,6 +1,6 @@
 .header {
   margin-top: 1rem;
-  font-family: var(--staatliches);
+  font-family: var(--bebasneue);
   color: var(--text);
 }
 
@@ -12,7 +12,7 @@
 
 .logo,
 .logo2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in;
 }
@@ -35,7 +35,7 @@
 }
 
 .navItem {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   position: relative;
 }
 
@@ -214,6 +214,12 @@
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
   }
 }
 
