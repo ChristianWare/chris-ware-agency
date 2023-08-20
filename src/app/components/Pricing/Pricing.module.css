@@ -40,14 +40,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  /* padding: 0rem 20rem; */
 }
 
 .card {
   background-color: var(--border2);
   border-radius: 8px;
   border: 1px solid var(--border);
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .planName {
@@ -83,6 +82,11 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
+}
+
+.icon {
+  border: 1px solid var(--primary);
+  border-radius: 50%;
 }
 
 .featuresList li {

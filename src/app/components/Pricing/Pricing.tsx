@@ -12,7 +12,7 @@ const Pricing = () => {
         <SectionHeading
           labelText='Pricing'
           headingText='Our prices'
-          copyText='Flexible plans for every business'
+          copyText='Dollars behind the details'
         />
         <div className={styles.bottom}>
           {pricing.map((x) => (
@@ -20,17 +20,20 @@ const Pricing = () => {
               <h3 className={styles.planName}>{x.plan}</h3>
               <p className={styles.description}>{x.description}</p>
               <hr className={styles.hr} />
-              <h4 className={styles.price}>$ {x.price} <span className={styles.span}>/ mo</span></h4>
+              <h4 className={styles.price}>
+                $ {x.price} <span className={styles.span}>/ mo</span>
+              </h4>
               <p className={styles.includes}>Includes</p>
               <div className={styles.checkFeatureContainer}>
                 {x.includes.map((y, index) => (
-                  <ul key={index} className={styles.featuresList} >
+                  <ul key={index} className={styles.featuresList}>
                     <li>
                       <Image
                         src={Check}
                         alt='check icon'
                         width={30}
                         height={30}
+                        className={styles.icon}
                       />{" "}
                       {y.feature}
                     </li>

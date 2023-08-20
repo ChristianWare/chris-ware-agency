@@ -13,7 +13,7 @@ const Services = () => {
           <SectionHeading
             labelText='Services'
             headingText='Our Range of web development services'
-            copyText='Feel free to contact us for custom solutions.'
+            copyText='The things we build and what they include'
           />
         </div>
         <div className={styles.bottom}>

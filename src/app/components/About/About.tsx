@@ -13,7 +13,7 @@ const About = () => {
           <SectionHeading
             labelText='About us'
             headingText='Welcome to the Chris Ware Agency'
-            copyText='An overview of who we are as a company and why you will love us!'
+            copyText='An overview of the owner and our values'
           />
         </div>
         <div className={styles.bottom}>
