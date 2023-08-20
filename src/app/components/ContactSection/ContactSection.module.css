@@ -9,19 +9,20 @@
 
 .bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .left,
 .right {
   flex: 1;
+  width: 100%;
 }
 
 .heading {
-  font-size: 7rem;
-  line-height: 115%;
+  font-size: 10rem;
+  line-height: 100%;
   width: 90%;
   color: var(--primary);
   text-decoration: none;
@@ -30,8 +31,10 @@
 .form {
   /* background-color: var(--secondary); */
   padding: 2rem;
+  padding-bottom: 3rem;
   border-radius: 8px;
   border: 1px solid var(--primary);
+  width: 100%;
 }
 
 .namesContainer {
@@ -39,6 +42,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  width: 100%;
 }
 
 .labelInputBox {
@@ -47,6 +51,7 @@
   gap: 0.3rem;
   margin-bottom: 1.5rem;
   flex: 1;
+  width: 100%;
 }
 
 .labelInputBox label {
@@ -54,8 +59,6 @@
   font-weight: 400;
   color: var(--text);
   padding-left: 0.3rem;
-  width: 100%;
-  resize: none;
 }
 
 .labelInputBox input,
@@ -68,7 +71,6 @@
   color: var(--text);
   padding: 1rem;
   width: 100%;
-  resize: none;
 }
 
 .labelInputBox span {
@@ -80,6 +82,10 @@
 .labelInputBox textarea {
   height: 130px;
   resize: vertical;
+}
+
+.btnBtnContainer {
+  margin-top: 3rem;
 }
 
 .btnContainer {
@@ -127,9 +133,18 @@
   transform: translate(7px, 7px);
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 958px) {
   .content {
     padding: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
   }
 }
 
