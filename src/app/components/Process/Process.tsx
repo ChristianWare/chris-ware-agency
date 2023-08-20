@@ -11,7 +11,7 @@ const Process = () => {
       <div className={styles.content}>
         <SectionHeading
           labelText='Our Process'
-          headingText='The way we do things'
+          headingText='Our Six step Method'
           copyText='You&#39;re 6 steps away from a new website...'
         />
 
@@ -69,6 +69,3 @@ const Process = () => {
   );
 };
 export default Process;
-
-
-    

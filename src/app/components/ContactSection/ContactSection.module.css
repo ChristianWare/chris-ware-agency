@@ -8,13 +8,32 @@
 }
 
 .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
+.left,
+.right {
+  flex: 1;
+}
 
+.heading {
+  font-family: var(--staatliches);
+  font-size: 6rem;
+  line-height: 100%;
+  width: 90%;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.form {
+  /* background-color: var(--secondary); */
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+}
 
 @media screen and (max-width: 820px) {
   .content {

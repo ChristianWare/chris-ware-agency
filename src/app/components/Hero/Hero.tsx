@@ -4,6 +4,7 @@ import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
 import Calendar from "../../../../public/icons/calendar.png";
 
+
 const Hero = () => {
   return (
     <section className={styles.container}>
