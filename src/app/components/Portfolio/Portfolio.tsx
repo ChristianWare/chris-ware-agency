@@ -10,8 +10,8 @@ const Portfolio = () => {
         <div className={styles.top}>
           <SectionHeading
             labelText='Our Work'
-            copyText='From Code to Creation'
             headingText='A Glimpse into Our Portfolio'
+            copyText='Our latest projects'
           />
         </div>
         <div className={styles.bottom}>
