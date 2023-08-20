@@ -32,7 +32,9 @@ const Process = () => {
                   <Image
                     src={x.src}
                     alt={x.processName}
+                    title={x.processName}
                     fill
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     className={styles.img}
                   />
                 </div>
@@ -55,7 +57,8 @@ const Process = () => {
               icon={
                 <Image
                   src={Calendar}
-                  alt='hey'
+                  alt='calendar icon'
+                  title='calendar icon'
                   className={styles.icon}
                   width={20}
                   height={20}

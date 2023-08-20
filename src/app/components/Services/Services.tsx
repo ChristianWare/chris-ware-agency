@@ -74,6 +74,7 @@ const Services = () => {
                   alt='A mix of different devices'
                   title='A mix of different devices'
                   fill
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                   className={styles.img}
                 />
               </div>

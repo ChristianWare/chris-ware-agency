@@ -12,7 +12,14 @@ const BlogCard: FC<BlogCardProps> = ({ src }) => {
   return (
     <article className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src={src} alt='image details' fill className={styles.img} />
+        <Image
+          src={src}
+          alt='image details'
+          title='image details'
+          fill
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          className={styles.img}
+        />
       </div>
       <div className={styles.date}>08/18/2023</div>
       <h3 className={styles.title}>Article Title Here</h3>

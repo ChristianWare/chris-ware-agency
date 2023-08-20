@@ -28,6 +28,7 @@ const Hero = () => {
                 <Image
                   src={Calendar}
                   alt='calendar'
+                  title='calendar'
                   className={styles.icon}
                   width={20}
                   height={20}
@@ -43,8 +44,8 @@ const Hero = () => {
               alt='Business man looking in his laptop'
               title='Business man looking in his laptop'
               className={styles.img}
-              fill={true}
-              sizes='100vw'
+              fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               priority
             />
           </div>

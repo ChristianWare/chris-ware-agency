@@ -31,6 +31,7 @@ const Pricing = () => {
                       <Image
                         src={Check}
                         alt='check icon'
+                        title='check icon'
                         width={30}
                         height={30}
                         className={styles.icon}

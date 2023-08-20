@@ -23,6 +23,7 @@ const Testimonials = () => {
                   <Image
                     src={x.person}
                     alt='person'
+                    title='person'
                     width={50}
                     height={50}
                     className={styles.personImage}
@@ -43,6 +44,7 @@ const Testimonials = () => {
                   <Image
                     src={x.person}
                     alt='person'
+                    title='person'
                     width={50}
                     height={50}
                     className={styles.personImage}

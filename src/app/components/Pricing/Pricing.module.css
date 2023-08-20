@@ -23,7 +23,7 @@
   bottom: -5%;
   right: 10%;
   position: absolute;
-  filter: blur(10rem);
+  filter: blur(15rem);
   transform: translateZ(0);
   border-radius: 50%;
   width: 100px;

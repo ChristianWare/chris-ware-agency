@@ -14,6 +14,7 @@
 
 .left {
   flex: 1.5;
+  width: 100%;
 }
 
 .title {
@@ -43,6 +44,7 @@
   flex: 2;
   position: relative;
   font-size: 0;
+  width: 100%;
 }
 
 .right::after {
@@ -81,7 +83,6 @@
 .img {
   object-fit: contain;
   transform: scaleX(-1);
-  position: relative;
 }
 
 @media screen and (max-width: 1000px) {
@@ -99,7 +100,7 @@
   }
 
   .imgContainer {
-    width: 80vw;
+    /* width: 80vw; */
     height: 450px;
   }
 
@@ -121,7 +122,7 @@
   }
 
   .imgContainer {
-    width: 90vw;
+    /* width: 90vw; */
     height: 450px;
   }
 
