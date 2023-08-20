@@ -115,6 +115,7 @@
     z-index: 998;
     background-color: var(--neutral);
     padding: 1rem;
+    padding-left: 2rem;
   }
 
   .navMenu.active {
