@@ -326,8 +326,7 @@ export const pricing = [
   {
     id: 27,
     plan: "E-Commerce",
-    description:
-      "Your own customized online store to sell products & services",
+    description: "Your own customized online store to sell products & services",
     price: 250,
     includes: [
       {
@@ -374,5 +373,36 @@ export const pricing = [
       },
     ],
     btnType: "tertiary",
+  },
+] as const;
+
+export const about = [
+  {
+    id: 29,
+    title: "Dedicated to merging advanced technologies and creative design for website development",
+  },
+  {
+    id: 30,
+    title: "Focus on surpassing client expectations and fulfilling their specific requirements",
+  },
+  {
+    id: 31,
+    title: "Strong commitment to ongoing learning and self-improvement",
+  },
+  {
+    id: 32,
+    title: "Adept at paying meticulous attention to detail in all projects",
+  },
+  {
+    id: 33,
+    title: "Enthusiastic about bringing web projects to life",
+  },
+  {
+    id: 34,
+    title: "Striving to craft digital solutions that make a significant and enduring impression",
+  },
+  {
+    id: 35,
+    title: "Expertise in combining innovation with design for impactful web experiences",
   },
 ] as const;

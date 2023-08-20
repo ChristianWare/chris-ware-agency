@@ -61,6 +61,23 @@
   z-index: -1;
 }
 
+.aboutFeature {
+  font-weight: 400;
+  font-family: var(--roboto);
+  hyphens: auto;
+  font-size: 1.8rem;
+  color: var(--text);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.aboutFeature span {
+  font-size: 3.8rem;
+  line-height: .7;
+}
+
 .btnContainer {
   margin-top: 5rem;
 }
