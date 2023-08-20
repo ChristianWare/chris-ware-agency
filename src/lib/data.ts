@@ -419,57 +419,64 @@ export const faqs = [
       "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
   },
   {
-    id: 36,
+    id: 37,
+    question: "How long does it typically take to build a website?",
+    answer:
+      "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
+  },
+  {
+    id: 38,
     question: "What types of websites do you specialize in creating?",
     answer:
       "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 39,
+    question: "Can you design a website that matches my brand's identity?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      " Absolutely! We'll work closely with you to ensure your website's design aligns with your brand's colors, logo, and overall identity to create a cohesive online presence.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 40,
+    question: "Will my website be mobile-friendly and responsive?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Yes, all websites we develop are mobile-friendly and responsive. We prioritize delivering an optimal user experience on various devices and screen sizes.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 41,
+    question: "Can I update the website content myself after it's built?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Certainly! We often use content management systems (CMS) like WordPress, allowing you to easily update and manage your website's content without needing technical expertise.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 42,
+    question: "Do you offer website maintenance and support?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 43,
+    question: "Will my website be search engine friendly?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Absolutely, we follow best practices for on-page SEO during development, helping your website rank well on search engines and driving organic traffic.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 44,
+    question: "Can you integrate e-commerce functionality into my website?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Yes, we can incorporate e-commerce features, allowing you to sell products or services directly from your website, complete with Stripe, a secure payment gateway.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 45,
+    question: "What's the process for getting started on my project?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "To get started, simply reach out to us via our contact form or phone. We'll schedule a consultation to discuss your goals, needs, and provide you with a tailored plan and estimate for your project.",
   },
   {
-    id: 36,
-    question: "What types of websites do you specialize in creating?",
+    id: 46,
+    question:
+      "Can you assist with transferring my existing domain name to your hosting service?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Absolutely, we can guide you through the process of transferring your domain name to our hosting service. We'll ensure a smooth transition so that your website remains accessible with minimal downtime during the switch.",
   },
 ] as const;
