@@ -71,13 +71,13 @@
 
 @media screen and (max-width: 820px) {
   .content {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 568px) {
   .content {
-    padding: 0rem;
+    padding: 1rem;
   }
 }
 
