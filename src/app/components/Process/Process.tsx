@@ -23,7 +23,7 @@ const Process = () => {
             >
               <div className={styles.left}>
                 <div className={styles.headingCopyContainer}>
-                  <h3>{x.processName}</h3>
+                  <h3 className={styles.headingh3}>{x.processName}</h3>
                   <p className={styles.copy}>{x.processDescription}</p>
                 </div>
               </div>

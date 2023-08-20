@@ -29,7 +29,7 @@ const About = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <h3>About The Owner</h3>
+            <h3 className={styles.heading3}>About The Owner</h3>
             <div className={styles.overview}></div>
             <p>
               I&rsquo;m Chris Ware, the owner and creative force behind The
@@ -41,7 +41,7 @@ const About = () => {
             </p>
 
             <br />
-            <h3>our values</h3>
+            <h3 className={styles.heading3}>our values</h3>
             <div className={styles.overview}></div>
             {about.map((x) => (
               <div key={x.id} className={styles.aboutFeature}>

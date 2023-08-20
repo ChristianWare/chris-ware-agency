@@ -138,7 +138,8 @@
 
   .planName,
   .price,
-  .description {
+  .description,
+  .includes {
     text-align: center;
   }
 }

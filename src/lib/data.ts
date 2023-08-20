@@ -318,7 +318,7 @@ export const pricing = [
       },
       {
         id: 27.3,
-        feature: "1 blog article per month",
+        feature: "6 blog articles",
       },
     ],
     btnType: "primary",
@@ -331,19 +331,19 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "5 page website",
+        feature: "Everything in Marketing, plus:",
       },
       {
         id: 26.2,
-        feature: "Unlimited edits",
+        feature: "Online store",
       },
       {
         id: 26.3,
-        feature: "Includes hosting",
+        feature: "Admin Dashboard",
       },
       {
         id: 27.3,
-        feature: "1 blog article per month",
+        feature: "Payment Setup",
       },
     ],
     btnType: "secondary",
@@ -379,11 +379,13 @@ export const pricing = [
 export const about = [
   {
     id: 29,
-    title: "Dedicated to merging advanced technologies and creative design for website development",
+    title:
+      "Dedicated to merging advanced technologies and creative design for website development",
   },
   {
     id: 30,
-    title: "Focus on surpassing client expectations and fulfilling their specific requirements",
+    title:
+      "Focus on surpassing client expectations and fulfilling their specific requirements",
   },
   {
     id: 31,
@@ -399,10 +401,12 @@ export const about = [
   },
   {
     id: 34,
-    title: "Striving to craft digital solutions that make a significant and enduring impression",
+    title:
+      "Striving to craft digital solutions that make a significant and enduring impression",
   },
   {
     id: 35,
-    title: "Expertise in combining innovation with design for impactful web experiences",
+    title:
+      "Expertise in combining innovation with design for impactful web experiences",
   },
 ] as const;

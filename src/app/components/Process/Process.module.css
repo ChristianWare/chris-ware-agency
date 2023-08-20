@@ -97,6 +97,10 @@
     width: 100%;
   }
 
+  .headingh3 {
+    margin-bottom: 1rem;
+  }
+
   .bottom {
     margin-left: auto;
     margin-right: auto;
@@ -115,6 +119,10 @@
 @media screen and (max-width: 568px) {
   .content {
     padding: 1rem;
+  }
+
+  .headingh3 {
+    text-align: center;
   }
 
   .btnContainer {

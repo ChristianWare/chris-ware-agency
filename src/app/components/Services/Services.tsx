@@ -25,8 +25,8 @@ const Services = () => {
                   <div key={y.id} className={styles.serviceCard}>
                     <Image
                       src={y.icon}
-                      alt='hello'
-                      title='hello'
+                      alt={y.service}
+                      title={y.service}
                       width={50}
                       height={50}
                       className={styles.icon}
@@ -57,6 +57,7 @@ const Services = () => {
                     <Image
                       src={z.icon}
                       alt={z.feature}
+                      title={z.feature}
                       width={60}
                       height={60}
                     />
@@ -71,6 +72,7 @@ const Services = () => {
                 <Image
                   src={Collection}
                   alt='A mix of different devices'
+                  title='A mix of different devices'
                   fill
                   className={styles.img}
                 />
@@ -83,6 +85,7 @@ const Services = () => {
                     <Image
                       src={z.icon}
                       alt={z.feature}
+                      title={z.feature}
                       width={60}
                       height={60}
                     />
@@ -94,9 +97,9 @@ const Services = () => {
             </div>
           </div>
         </div>
-      <div className={styles.btnContainer}>
-        <Button href='/services' text='More services' btnType='primary' />
-      </div>
+        <div className={styles.btnContainer}>
+          <Button href='/services' text='More services' btnType='primary' />
+        </div>
       </div>
     </section>
   );

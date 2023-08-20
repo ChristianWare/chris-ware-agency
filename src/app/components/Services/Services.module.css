@@ -129,6 +129,22 @@
   padding: 2rem;
   border: 5px solid var(--border);
   border-radius: 8px;
+  position: relative;
+}
+
+.featuresCard::after {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 1%;
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: var(--accent1);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .right {
@@ -228,7 +244,23 @@
     margin-bottom: 5rem;
   }
 
+  .featuresCard::after {
+    left: 40%;
+  }
+
   .left {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imgFeatureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnContainer {
+    display: grid;
+    width: 100%;
   }
 }
