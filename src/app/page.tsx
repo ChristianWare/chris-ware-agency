@@ -8,17 +8,19 @@ import Process from "./components/Process/Process";
 import Pricing from "./components/Pricing/Pricing";
 import BlogSection from "./components/BlogSection/BlogSection";
 import ContactSection from "./components/ContactSection/ContactSection";
+import Faq from "./components/Faq/Faq";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <About />
       <Services />
       <Portfolio />
       <Testimonials />
-      <Process />
+      <Process /> */}
       <Pricing />
+      <Faq />
       <BlogSection />
       <ContactSection />
     </main>
