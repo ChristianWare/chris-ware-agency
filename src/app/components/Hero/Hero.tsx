@@ -27,7 +27,7 @@ const Hero = () => {
               icon={
                 <Image
                   src={Calendar}
-                  alt='hey'
+                  alt='calendar'
                   className={styles.icon}
                   width={20}
                   height={20}
@@ -40,7 +40,8 @@ const Hero = () => {
           <div className={styles.imgContainer}>
             <Image
               src={HeroImage}
-              alt='hero'
+              alt='Business man looking in his laptop'
+              title='Business man looking in his laptop'
               className={styles.img}
               fill={true}
               sizes='100vw'

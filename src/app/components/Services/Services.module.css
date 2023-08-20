@@ -63,9 +63,9 @@
 }
 
 .btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .featuresSection {
