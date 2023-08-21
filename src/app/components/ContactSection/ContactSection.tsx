@@ -8,7 +8,7 @@ const ContactSection = () => {
         <SectionHeading
           labelText='Contact'
           headingText='Get in Touch'
-          copyText="Let's start a conversation about your web projects."
+          copyText="Let's start a conversation about your web projects"
         />
         <div className={styles.bottom}>
           <div className={styles.left}>
@@ -48,7 +48,7 @@ const ContactSection = () => {
               <div className={styles.btnBtnContainer}>
                 <div className={styles.btnContainer}>
                   <button type='submit' className={styles.btn}>
-                    Fire Away! 
+                    Fire Away!
                   </button>
                 </div>
               </div>
