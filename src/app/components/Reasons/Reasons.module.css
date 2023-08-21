@@ -56,4 +56,8 @@
   .info {
     align-items: center;
   }
+
+  .imgContainer {
+    height: 300px;
+  }
 }

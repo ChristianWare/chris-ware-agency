@@ -112,6 +112,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    padding: 1rem;
+  }
+  
   .imgContainer {
     height: 450px;
   }

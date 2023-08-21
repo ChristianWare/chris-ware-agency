@@ -44,7 +44,13 @@ const Reasons = () => {
           {cards.map((x) => (
             <div className={styles.card} key={x.id}>
               <div className={styles.imgContainer}>
-                <Image src={x.src} alt='Reson' fill className={styles.img} />
+                <Image
+                  src={x.src}
+                  alt={x.reason}
+                  title={x.reason}
+                  fill
+                  className={styles.img}
+                />
               </div>
               <div className={styles.info}>
                 <strong className={styles.reason}>{x.reason}</strong>

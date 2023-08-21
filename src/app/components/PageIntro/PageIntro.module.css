@@ -55,11 +55,16 @@
   }
 
   .right::after {
-    top: 300px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
   }
 
-  .left::before {
-    top: 300px;
+  .right::before {
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    filter: blur(10rem);
   }
 }
 
