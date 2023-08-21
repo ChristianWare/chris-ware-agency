@@ -26,6 +26,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: all 0.1s ease-in;
 }
 
 .icon {
@@ -34,8 +35,12 @@
   transition: all 0.1s ease-in;
 }
 
-.icon:hover {
-  color: red;
+.iconContainer:hover {
+  background-color: var(--primary);
+}
+
+.iconContainer:hover .icon {
+  color: var(--secondary);
 }
 
 .bottom {
@@ -59,10 +64,11 @@
 }
 
 @media screen and (max-width: 568px) {
-  .content {
+  .content, .top {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
   }
 }
