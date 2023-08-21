@@ -2,6 +2,12 @@
   animation: fadeIn 1s;
 }
 
+.content {
+  padding: 5rem;
+  padding-top: 3rem;
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;

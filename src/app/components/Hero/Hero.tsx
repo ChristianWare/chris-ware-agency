@@ -11,8 +11,7 @@ const Hero = () => {
       <div className={styles.content}>
         <div className={styles.left}>
           <Label text='Chris Ware Agency' />
-          <h1 className={styles.title}>
-            {/* Chris Ware Agency: <br /> */}
+          <h1>
             Elevating Brands through Innovative Web Design and Development.
           </h1>
           <p className={styles.copy}>
