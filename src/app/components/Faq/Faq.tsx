@@ -43,8 +43,6 @@ const Faq = () => {
                     src={ArrowRight}
                     alt='arrow'
                     title='arrow icon'
-                    // width={35}
-                    // height={35}
                     className={styles.arrow}
                   />
                 ) : (
@@ -52,8 +50,6 @@ const Faq = () => {
                     src={ArrowRight}
                     alt='arrow'
                     title='arrow icnn'
-                    // width={35}
-                    // height={35}
                     className={styles.arrowFlip}
                   />
                 )}
