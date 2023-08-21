@@ -2,11 +2,9 @@
   animation: fadeIn 1s;
 }
 
-.content {
-  padding: 5rem;
-  padding-top: 3rem;
+.pageIntroContainer {
+  margin-bottom: 8rem;
 }
-
 
 @keyframes fadeIn {
   from {

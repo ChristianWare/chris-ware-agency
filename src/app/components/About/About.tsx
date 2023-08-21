@@ -21,8 +21,8 @@ const About = () => {
             <div className={styles.imgContainer}>
               <Image
                 src={Chris}
-                alt='hello'
-                title='hello'
+                alt='Image of the owner, Chris Ware'
+                title='Chris Ware'
                 className={styles.img}
                 fill
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
