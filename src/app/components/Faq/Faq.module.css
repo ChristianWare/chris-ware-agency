@@ -74,7 +74,7 @@
 .arrow,
 .arrowFlip {
   border-radius: 50%;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   width: 35px;
   height: 35px;
   transition: all 0.4s ease-in-out;
