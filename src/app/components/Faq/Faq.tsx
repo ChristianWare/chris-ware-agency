@@ -42,7 +42,7 @@ const Faq = () => {
                   <Image
                     src={ArrowRight}
                     alt='arrow'
-                    title='arrow icnn'
+                    title='arrow icon'
                     width={40}
                     height={40}
                     className={styles.arrowFlip}
