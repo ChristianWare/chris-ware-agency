@@ -1,6 +1,5 @@
 .container {
-  margin-bottom: 15rem;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   position: relative;
 }
 
@@ -99,6 +98,8 @@
   color: var(--text);
   padding: 1rem;
   width: 100%;
+  font-family: var(--roboto);
+  font-weight: 400;
 }
 
 .labelInputBox span {
@@ -200,7 +201,6 @@
   }
 
   .labelInputBox:nth-child(1) {
-    
   }
 
   .btnBtnContainer {

@@ -78,7 +78,8 @@ button {
 }
 
 p,
-input {
+input,
+textarea {
   font-weight: 400;
   font-family: var(--roboto);
   hyphens: auto;

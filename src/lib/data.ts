@@ -424,12 +424,7 @@ export const faqs = [
     answer:
       "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
   },
-  {
-    id: 38,
-    question: "What types of websites do you specialize in creating?",
-    answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
-  },
+
   {
     id: 39,
     question: "Can you design a website that matches my brand's identity?",

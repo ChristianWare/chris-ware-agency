@@ -13,7 +13,7 @@ import Faq from "./components/Faq/Faq";
 export default function Home() {
   return (
     <main>
-      {/* <Hero />
+      <Hero />
       <About />
       <Services />
       <Portfolio />
@@ -21,7 +21,7 @@ export default function Home() {
       <Process />
       <Pricing />
       <Faq />
-      <BlogSection /> */}
+      <BlogSection />
       <ContactSection />
     </main>
   );
