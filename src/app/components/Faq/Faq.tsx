@@ -4,6 +4,9 @@ import { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Faq.module.css";
 import { faqs } from "@/lib/data";
+import Button from "../Button/Button";
+import ArrowRight from "../../../../public/icons/faqArrow.png";
+import Image from "next/image";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -25,13 +28,25 @@ const Faq = () => {
           copyText='Common questions and answers'
         />
         <div className={styles.bottom}>
-          {faqs.map((x, i) => (
+          {faqs.slice(0, 4).map((x, i) => (
             <div
               key={x.id}
               className={styles.qaContainer}
               onClick={() => toggle(i)}
             >
-              <h3 className={styles.question}>{x.question}</h3>
+              <div className={styles.headingArrowContainer}>
+                <h3 className={styles.question} lang='en'>
+                  {x.question}
+                </h3>
+                <Image
+                  src={ArrowRight}
+                  alt='arrow'
+                  title='arrow icnn'
+                  width={40}
+                  height={40}
+                  className={styles.arrow}
+                />
+              </div>
               <div
                 className={
                   selected === i
@@ -39,10 +54,15 @@ const Faq = () => {
                     : styles.answerContainer
                 }
               >
-                <p className={styles.answer}>{x.answer}</p>
+                <p className={styles.answer} lang='en'>
+                  {x.answer}
+                </p>
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.btnContainer}>
+          <Button href='/faq' text='More FAQs' btnType='primary' />
         </div>
       </div>
     </section>
