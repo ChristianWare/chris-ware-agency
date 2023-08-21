@@ -51,6 +51,7 @@
   .container {
     flex-direction: column;
     padding: 2rem;
+    padding-top: 5rem;
   }
 
   .right::after {
@@ -65,5 +66,6 @@
 @media screen and (max-width: 568px) {
   .container {
     padding: 1rem;
+    padding-top: 5rem;
   }
 }

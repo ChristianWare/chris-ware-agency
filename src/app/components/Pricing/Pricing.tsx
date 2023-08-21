@@ -23,7 +23,7 @@ const Pricing = () => {
               <strong className={styles.price}>
                 $ {x.price} <span className={styles.span}>/ mo</span>
               </strong>
-              <p className={styles.includes}>Includes</p>
+              <p className={styles.includes}>Includes:</p>
               <div className={styles.checkFeatureContainer}>
                 {x.includes.map((y, index) => (
                   <ul key={index} className={styles.featuresList}>

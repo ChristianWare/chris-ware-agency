@@ -1,6 +1,5 @@
 .container {
   margin-bottom: 8rem;
-  background-color: var(--border2);
 }
 
 .content {
@@ -8,7 +7,6 @@
 }
 
 .bottom {
-  margin-top: 5rem;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -112,6 +110,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    padding: 1rem;
+  }
+
   .imgContainer {
     height: 450px;
   }

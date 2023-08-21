@@ -22,11 +22,11 @@ const Reasons = () => {
         "Each website is a unique creation. We craft and construct visually appealing sites, leaving no room for generic templates.",
     },
     {
-      id: 2,
+      id: 3,
       src: Code,
       reason: "Custom Code",
       details:
-        "We refrain from employing page builders such as WordPress or Wix. Our approach involves coding everything from scratch.",
+        "We stay away from page generic builders like WordPress, Go Daddy, or Wix. Our approach involves coding everything from scratch.",
     },
   ];
 
@@ -58,5 +58,3 @@ const Reasons = () => {
   );
 };
 export default Reasons;
-
-// Affordable, creative, we dont use page builders, only custom code.
