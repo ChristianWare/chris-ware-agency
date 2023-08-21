@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.content::after {
+.workCulture::after {
   content: "";
   top: -3%;
   left: 0;
@@ -20,7 +20,7 @@
   z-index: -1;
 }
 
-.content::before {
+.workCulture::before {
   content: "";
   bottom: -5%;
   right: 10%;
