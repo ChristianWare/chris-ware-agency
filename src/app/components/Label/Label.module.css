@@ -5,6 +5,7 @@
   background-color: var(--accent1);
   color: var(--text);
   border-radius: 5px;
+  border: 1px solid var(--border);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;

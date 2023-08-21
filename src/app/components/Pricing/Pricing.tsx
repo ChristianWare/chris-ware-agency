@@ -20,9 +20,9 @@ const Pricing = () => {
               <h3 className={styles.planName}>{x.plan}</h3>
               <p className={styles.description}>{x.description}</p>
               <hr className={styles.hr} />
-              <h4 className={styles.price}>
+              <strong className={styles.price}>
                 $ {x.price} <span className={styles.span}>/ mo</span>
-              </h4>
+              </strong>
               <p className={styles.includes}>Includes</p>
               <div className={styles.checkFeatureContainer}>
                 {x.includes.map((y, index) => (

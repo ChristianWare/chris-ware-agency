@@ -43,18 +43,18 @@ const Faq = () => {
                     src={ArrowRight}
                     alt='arrow'
                     title='arrow icon'
-                    width={40}
-                    height={40}
-                    className={styles.arrowFlip}
+                    // width={35}
+                    // height={35}
+                    className={styles.arrow}
                   />
                 ) : (
                   <Image
                     src={ArrowRight}
                     alt='arrow'
                     title='arrow icnn'
-                    width={40}
-                    height={40}
-                    className={styles.arrow}
+                    // width={35}
+                    // height={35}
+                    className={styles.arrowFlip}
                   />
                 )}
               </div>

@@ -31,7 +31,7 @@ const Services = () => {
                       height={50}
                       className={styles.icon}
                     />
-                    <h4 className={styles.serviceTitle}>{y.service}</h4>
+                    <strong className={styles.serviceTitle}>{y.service}</strong>
                     <p className={styles.description}>{y.description}</p>
                   </div>
                 ))}
@@ -61,7 +61,7 @@ const Services = () => {
                       width={60}
                       height={60}
                     />
-                    <h4>{z.feature}</h4>
+                    <strong>{z.feature}</strong>
                   </div>
                   <p className={styles.description}>{z.description}</p>
                 </div>
@@ -90,7 +90,7 @@ const Services = () => {
                       width={60}
                       height={60}
                     />
-                    <h4>{z.feature}</h4>
+                    <strong>{z.feature}</strong>
                   </div>
                   <p className={styles.description}>{z.description}</p>
                 </div>

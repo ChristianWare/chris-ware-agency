@@ -3,14 +3,16 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import HeroImage from "../../../../public/images/hero5.png";
 import Calendar from "../../../../public/icons/calendar.png";
+import Label from "../Label/Label";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.left}>
+          <Label text='Chris Ware Agency' />
           <h1 className={styles.title}>
-            Chris Ware Agency: <br />
+            {/* Chris Ware Agency: <br /> */}
             Elevating Brands through Innovative Web Design and Development.
           </h1>
           <p className={styles.copy}>

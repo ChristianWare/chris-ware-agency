@@ -1,5 +1,5 @@
 .container {
-  margin-bottom: 15rem;
+  margin-bottom: 8rem;
   background-color: var(--border2);
 }
 
@@ -65,7 +65,7 @@
   font-weight: 400;
   font-family: var(--roboto);
   hyphens: auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--text);
   display: flex;
   align-items: flex-start;
@@ -74,8 +74,8 @@
 }
 
 .aboutFeature span {
-  font-size: 3.8rem;
-  line-height: 0.7;
+  font-size: 3rem;
+  line-height: 0.95;
 }
 
 .btnContainer {

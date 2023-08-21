@@ -35,8 +35,8 @@ a {
 }
 
 h1 {
-  font-size: 7rem;
-  line-height: 115%;
+  font-size: 4.8rem;
+  line-height: 120%;
 }
 
 h1,
@@ -44,17 +44,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-family: var(--bebasneue);
   color: var(--primary);
 }
 
 h2 {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--text);
   text-decoration: underline;
 }
@@ -71,6 +72,10 @@ h6 {
   font-size: 3rem;
 }
 
+strong {
+  font-size: 2.4rem;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -80,12 +85,12 @@ button {
 p,
 input,
 textarea {
-  font-weight: 400;
-  font-family: var(--roboto);
-  hyphens: auto;
-  font-size: 1.8rem;
-  color: var(--text);
-  /* line-height: 26px; */
+font-weight: 400;
+font-family: var(--roboto);
+hyphens: auto;
+font-size: 1.6rem;
+color: var(--text);
+line-height: 150%;
 }
 
 input:focus {
@@ -123,8 +128,8 @@ input:focus {
     font-size: 50%;
   }
 
-  p, label {
+  p,
+  label {
     font-size: 125%;
-    
   }
 }

@@ -43,7 +43,7 @@ const Process = () => {
           ))}
         </div>
         <div className={styles.cta}>
-          <h4>Ready to start a Project?</h4>
+          <strong>Ready to start a Project?</strong>
           <div className={styles.btnContainer}>
             <Button
               href='/contact'
