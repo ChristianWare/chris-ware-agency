@@ -2,7 +2,6 @@ import CompanyCulture from "../components/CompanyCulture/CompanyCulture";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Faq from "../components/Faq/Faq";
 import PageIntro from "../components/PageIntro/PageIntro";
-import Process from "../components/Process/Process";
 import Reasons from "../components/Reasons/Reasons";
 import Team from "../components/Team/Team";
 import styles from "./About.module.css";
