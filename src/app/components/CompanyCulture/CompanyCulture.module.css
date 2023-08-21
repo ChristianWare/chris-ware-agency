@@ -1,0 +1,145 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 10rem;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* width: fit-content; */
+}
+
+.card,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.card2 {
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 0;
+}
+
+.copy {
+  width: 30vw;
+}
+
+.card4 {
+  align-items: flex-start;
+}
+
+.card3,
+.card4 {
+  flex-direction: column-reverse;
+}
+
+.imgContainer {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.img {
+  object-fit: contain;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 6px;
+}
+
+.img2 {
+  object-fit: contain;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 6px;
+}
+
+.img3 {
+  object-fit: contain;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 6px;
+}
+
+.img4 {
+  object-fit: contain;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .copy {
+    width: 260px;
+  }
+
+  .imgContainer {
+    position: relative;
+    height: 175px;
+    width: 175px;
+  }
+
+  .img {
+    object-fit: contain;
+    border-top-left-radius: 175px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .img2 {
+    object-fit: contain;
+    border-top-right-radius: 175px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .img3 {
+    object-fit: contain;
+    border-bottom-left-radius: 175px;
+    border-top-right-radius: 6px;
+  }
+
+  .img4 {
+    object-fit: contain;
+    border-bottom-right-radius: 175px;
+    border-top-left-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .copy {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .card2 {
+    order: -1;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .img,
+  .img2,
+  .img3,
+  .img4 {
+    object-fit: cover;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 8px;
+  }
+}
