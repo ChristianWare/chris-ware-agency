@@ -22,7 +22,7 @@
 }
 
 .copy {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2.1rem;
   opacity: 0.7;
 }
@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .icon {

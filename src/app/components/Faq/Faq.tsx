@@ -38,14 +38,25 @@ const Faq = () => {
                 <h3 className={styles.question} lang='en'>
                   {x.question}
                 </h3>
-                <Image
-                  src={ArrowRight}
-                  alt='arrow'
-                  title='arrow icnn'
-                  width={40}
-                  height={40}
-                  className={styles.arrow}
-                />
+                {selected === i ? (
+                  <Image
+                    src={ArrowRight}
+                    alt='arrow'
+                    title='arrow icnn'
+                    width={40}
+                    height={40}
+                    className={styles.arrowFlip}
+                  />
+                ) : (
+                  <Image
+                    src={ArrowRight}
+                    alt='arrow'
+                    title='arrow icnn'
+                    width={40}
+                    height={40}
+                    className={styles.arrow}
+                  />
+                )}
               </div>
               <div
                 className={

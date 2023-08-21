@@ -64,7 +64,7 @@
 .answerContainer.show {
   height: auto;
   max-height: 9999px;
-  transition: all 2s ease-in-out;
+  transition: all 4s ease-in-out;
 }
 
 .headingArrowContainer {
@@ -74,11 +74,18 @@
   gap: 2rem;
 }
 
-.arrow {
+.arrow,
+.arrowFlip {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border);
   border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.arrowFlip {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
 }
 
 .question {
