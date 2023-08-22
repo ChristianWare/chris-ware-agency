@@ -21,17 +21,23 @@ const ContactSection = () => {
             <form className={styles.form}>
               <div className={styles.namesContainer}>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='firstName'>First Name <span className={styles.required}>*</span></label>
+                  <label htmlFor='firstName'>
+                    First Name <span className={styles.required}>*</span>
+                  </label>
                   <input id='firstName' type='text' required />
                 </div>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='lastName'>Last Name <span className={styles.required}>*</span></label>
+                  <label htmlFor='lastName'>
+                    Last Name <span className={styles.required}>*</span>
+                  </label>
                   <input id='lastName' type='text' required />
                 </div>
               </div>
               <div className={styles.everythingElse}>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='email'>Email</label>
+                  <label htmlFor='email'>
+                    Email <span className={styles.required}>*</span>
+                  </label>
                   <span>So we can respond. We won&#39;t send you spam.</span>
                   <input id='email' type='email' required />
                 </div>
@@ -40,11 +46,13 @@ const ContactSection = () => {
                   <input id='companyName' type='text' />
                 </div>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='companyName'>Current Website URL</label>
-                  <input id='companyName' type='text' />
+                  <label htmlFor='currentWebsiteUrl'>Current Website URL</label>
+                  <input id='currentWebsiteUrl' type='text' />
                 </div>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='message'>Message <span className={styles.required}>*</span></label>
+                  <label htmlFor='message'>
+                    Message <span className={styles.required}>*</span>
+                  </label>
                   <span>No solicitations, please.</span>
                   <textarea id='message' />
                 </div>
