@@ -1,5 +1,9 @@
 import AllServices from "../components/AllServices/AllServices";
+import ContactSection from "../components/ContactSection/ContactSection";
+import Faq from "../components/Faq/Faq";
+import FinalCta from "../components/FinalCta/FinalCta";
 import PageIntro from "../components/PageIntro/PageIntro";
+import Pricing from "../components/Pricing/Pricing";
 import Process2 from "../components/Process2/Process2";
 import styles from "./Services.module.css";
 
@@ -15,6 +19,10 @@ const ServicesPage = () => {
       </div>
       <AllServices />
       <Process2 />
+      <Pricing />
+      <Faq />
+      <FinalCta />
+      <ContactSection />
     </section>
   );
 };

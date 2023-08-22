@@ -4,6 +4,7 @@
   grid-gap: 2rem;
   margin-top: 10rem;
   position: relative;
+  margin-bottom: 8rem;
 }
 
 .workCulture::after {
@@ -58,24 +59,16 @@
   justify-content: flex-start;
 }
 
-.card3 .heading {
-  text-align: right;
-}
-
-.card3 .copy {
-  text-align: right;
-}
-
-.copy {
-  width: 30vw;
-}
-
 .card4 {
   align-items: flex-start;
 }
 
 .card4 {
   flex-direction: column-reverse;
+}
+
+.heading {
+  color: var(--primary);
 }
 
 .imgContainer {
@@ -87,18 +80,6 @@
 .img {
   object-fit: contain;
   border-top-left-radius: 200px;
-  border: 1px solid var(--primary);
-}
-
-.img2 {
-  object-fit: contain;
-  border-top-right-radius: 200px;
-  border: 1px solid var(--primary);
-}
-
-.img3 {
-  object-fit: contain;
-  border-bottom-left-radius: 200px;
   border: 1px solid var(--primary);
 }
 
@@ -115,10 +96,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .copy {
-    width: 260px;
-  }
-
   .imgContainer {
     position: relative;
     height: 175px;
@@ -128,33 +105,15 @@
   .img {
     object-fit: contain;
     border-top-left-radius: 175px;
-    border-bottom-right-radius: 6px;
-  }
-
-  .img2 {
-    object-fit: contain;
-    border-top-right-radius: 175px;
-    border-bottom-left-radius: 6px;
-  }
-
-  .img3 {
-    object-fit: contain;
-    border-bottom-left-radius: 175px;
-    border-top-right-radius: 6px;
   }
 
   .img4 {
     object-fit: contain;
     border-bottom-right-radius: 175px;
-    border-top-left-radius: 6px;
   }
 }
 
-@media screen and (max-width: 668px) {
-  .copy {
-    width: 100%;
-  }
-
+@media screen and (max-width: 480px) {
   .imgContainer {
     position: relative;
     height: 140px;
@@ -164,18 +123,6 @@
   .img {
     object-fit: contain;
     border-top-left-radius: 200px;
-    border: 1px solid var(--primary);
-  }
-
-  .img2 {
-    object-fit: contain;
-    border-top-right-radius: 140px;
-    border: 1px solid var(--primary);
-  }
-
-  .img3 {
-    object-fit: contain;
-    border-bottom-left-radius: 140px;
     border: 1px solid var(--primary);
   }
 

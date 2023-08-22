@@ -8,6 +8,7 @@ import Pricing from "./components/Pricing/Pricing";
 import BlogSection from "./components/BlogSection/BlogSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import Faq from "./components/Faq/Faq";
+import FinalCta from "./components/FinalCta/FinalCta";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Pricing />
       <Faq />
       <BlogSection />
+      <FinalCta />
       <ContactSection />
     </main>
   );
