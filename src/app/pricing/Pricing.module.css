@@ -1,0 +1,18 @@
+.container {
+  animation: fadeIn 1s;
+}
+
+.pageIntroContainer {
+  margin-bottom: 8rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

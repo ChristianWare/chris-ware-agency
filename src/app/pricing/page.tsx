@@ -3,7 +3,7 @@ import Faq from "../components/Faq/Faq";
 import FinalCta from "../components/FinalCta/FinalCta";
 import PageIntro from "../components/PageIntro/PageIntro";
 import Pricing from "../components/Pricing/Pricing";
-import styles from "./Page.module.css";
+import styles from './Pricing.module.css'
 
 const PricingPage = () => {
   return (
