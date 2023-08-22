@@ -5,6 +5,9 @@
   margin-top: 10rem;
   position: relative;
   margin-bottom: 8rem;
+  background-color: var(--border2);
+  padding: 5rem 0rem;
+  border-radius: 8px;
 }
 
 .workCulture::after {

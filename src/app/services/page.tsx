@@ -1,4 +1,5 @@
 import AllServices from "../components/AllServices/AllServices";
+import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Faq from "../components/Faq/Faq";
 import FinalCta from "../components/FinalCta/FinalCta";
@@ -21,6 +22,7 @@ const ServicesPage = () => {
       <Process2 />
       <Pricing />
       <Faq />
+      <BlogSection />
       <FinalCta />
       <ContactSection />
     </section>

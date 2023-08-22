@@ -1,3 +1,4 @@
+import BlogSection from "../components/BlogSection/BlogSection";
 import CompanyCulture from "../components/CompanyCulture/CompanyCulture";
 import ContactSection from "../components/ContactSection/ContactSection";
 import Faq from "../components/Faq/Faq";
@@ -21,6 +22,7 @@ const AboutPage = () => {
       <CompanyCulture />
       <Team />
       <Faq />
+      <BlogSection />
       <FinalCta />
       <ContactSection />
     </section>
