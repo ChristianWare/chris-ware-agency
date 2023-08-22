@@ -55,26 +55,6 @@ const CompanyCulture = () => {
             </div>
           </div>
         </div>
-        {/* <div className={styles.bottom}>
-          <div className={styles.left}>
-            <h3>Client-Centric Dedication</h3>
-            <p className={styles.copy}>
-              Our culture revolves around serving our clients with dedication
-              and excellence. We go the extra mile to understand their goals,
-              communicate effectively, and ensure that our web development
-              solutions align with their vision and business objectives.
-            </p>
-          </div>
-          <div className={styles.left}>
-            <h3>Adaptability and Agilit</h3>
-            <p className={styles.copy}>
-              In the dynamic world of web development, adaptability is key. Our
-              culture embraces change and agility. We&#39;re quick to adapt to
-              emerging technologies, industry trends, and client needs, ensuring
-              that we&#39;re always one step ahead.
-            </p>
-          </div>
-        </div> */}
       </div>
     </Section>
   );

@@ -113,6 +113,10 @@
   resize: vertical;
 }
 
+.required {
+  color: red !important;
+}
+
 .btnBtnContainer {
   margin-top: 3rem;
 }

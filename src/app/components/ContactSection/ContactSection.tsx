@@ -21,11 +21,11 @@ const ContactSection = () => {
             <form className={styles.form}>
               <div className={styles.namesContainer}>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='firstName'>First Name</label>
+                  <label htmlFor='firstName'>First Name <span className={styles.required}>*</span></label>
                   <input id='firstName' type='text' required />
                 </div>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='lastName'>Last Name</label>
+                  <label htmlFor='lastName'>Last Name <span className={styles.required}>*</span></label>
                   <input id='lastName' type='text' required />
                 </div>
               </div>
@@ -40,7 +40,11 @@ const ContactSection = () => {
                   <input id='companyName' type='text' />
                 </div>
                 <div className={styles.labelInputBox}>
-                  <label htmlFor='message'>Message</label>
+                  <label htmlFor='companyName'>Current Website URL</label>
+                  <input id='companyName' type='text' />
+                </div>
+                <div className={styles.labelInputBox}>
+                  <label htmlFor='message'>Message <span className={styles.required}>*</span></label>
                   <span>No solicitations, please.</span>
                   <textarea id='message' />
                 </div>

@@ -83,28 +83,24 @@
 .img {
   object-fit: contain;
   border-top-left-radius: 200px;
-  border-bottom-right-radius: 6px;
   border: 1px solid var(--primary);
 }
 
 .img2 {
   object-fit: contain;
   border-top-right-radius: 200px;
-  border-bottom-left-radius: 6px;
   border: 1px solid var(--primary);
 }
 
 .img3 {
   object-fit: contain;
   border-bottom-left-radius: 200px;
-  border-top-right-radius: 6px;
   border: 1px solid var(--primary);
 }
 
 .img4 {
   object-fit: contain;
   border-bottom-right-radius: 200px;
-  border-top-left-radius: 6px;
   border: 1px solid var(--primary);
 }
 
