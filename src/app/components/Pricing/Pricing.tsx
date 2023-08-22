@@ -1,11 +1,16 @@
+"use client";
+
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Pricing.module.css";
 import { pricing } from "@/lib/data";
 import Check from "../../../../public/icons/check.png";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Pricing = () => {
+  const pathname = usePathname();
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -41,9 +46,11 @@ const Pricing = () => {
                   </ul>
                 ))}
               </div>
-              <div className={styles.btnContainer}>
-                <Button href='/' text='More detials' btnType={x.btnType} />
-              </div>
+              {pathname === "/" && (
+                <div className={styles.btnContainer}>
+                  <Button href='/' text='More detials' btnType={x.btnType} />
+                </div>
+              )}
             </div>
           ))}
         </div>
