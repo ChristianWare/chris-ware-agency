@@ -1,5 +1,6 @@
 import AllServices from "../components/AllServices/AllServices";
 import PageIntro from "../components/PageIntro/PageIntro";
+import Process2 from "../components/Process2/Process2";
 import styles from "./Services.module.css";
 
 const ServicesPage = () => {
@@ -13,6 +14,7 @@ const ServicesPage = () => {
         />
       </div>
       <AllServices />
+      <Process2 />
     </section>
   );
 };
