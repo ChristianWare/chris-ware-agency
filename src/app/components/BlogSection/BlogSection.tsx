@@ -1,7 +1,7 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./BlogSection.module.css";
 import BlogCard from "../BlogCard/BlogCard";
-import Card from '../../../../public/images/success.png'
+import Card from "../../../../public/images/success.png";
 import Button from "../Button/Button";
 
 const BlogSection = () => {
@@ -19,9 +19,9 @@ const BlogSection = () => {
           <BlogCard src={Card} />
           <BlogCard src={Card} />
         </div>
-      </div>
-      <div className={styles.btnContainer}>
-        <Button href='/blog' text='See all posts' btnType='primary' />
+        <div className={styles.btnContainer}>
+          <Button href='/blog' text='See all posts' btnType='primary' />
+        </div>
       </div>
     </section>
   );

@@ -357,7 +357,7 @@ export const pricing = [
     includes: [
       {
         id: 28.1,
-        feature: "Price dependant on:",
+        feature: "Price dependent on:",
       },
       {
         id: 28.2,

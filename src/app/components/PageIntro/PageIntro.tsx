@@ -13,7 +13,7 @@ const PageIntro: FC<PageIntroProps> = ({ label, heading, copy }) => {
     <div className={styles.container}>
       <div className={styles.left}>
         <Label text={label} />
-        <h1>{heading}</h1>
+        <h1 className={styles.heading}>{heading}</h1>
         <p className={styles.copy}>{copy}</p>
       </div>
       <div className={styles.right}></div>
