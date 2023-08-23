@@ -1,13 +1,21 @@
+.container {
+  margin-top: 10rem;
+  background-color: var(--border2);
+  border-radius: 8px;
+  margin-bottom: 8rem;
+  padding-top: 5rem;
+}
+
+.container h2 {
+  text-align: center;
+}
+
 .workCulture {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  margin-top: 10rem;
   position: relative;
-  margin-bottom: 8rem;
-  background-color: var(--border2);
   padding: 5rem 0rem;
-  border-radius: 8px;
 }
 
 .workCulture::after {
@@ -72,6 +80,7 @@
 
 .heading {
   color: var(--primary);
+  display: none;
 }
 
 .imgContainer {
@@ -133,5 +142,15 @@
     object-fit: contain;
     border-bottom-right-radius: 140px;
     border: 1px solid var(--primary);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .heading {
+    display: block;
+  }
+
+  .btnContainer {
+    display: none;
   }
 }
