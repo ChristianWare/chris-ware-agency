@@ -1,20 +1,28 @@
 import { FC } from "react";
 import Label from "../Label/Label";
 import styles from "./PageIntro.module.css";
-import Image from "next/image";
-import img1 from "../../../../public/images/contact1.png";
-import img2 from "../../../../public/images/contact2.png";
-import img3 from "../../../../public/images/contact3.png";
-import img4 from "../../../../public/images/contact4.png";
+import Image, { StaticImageData } from "next/image";
+
 
 interface PageIntroProps {
   heading: string;
   copy: string;
+  src1: StaticImageData;
+  src2: StaticImageData;
+  src3: StaticImageData;
+  src4: StaticImageData;
 }
 
-const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
+const PageIntro: FC<PageIntroProps> = ({
+  heading,
+  copy,
+  src1,
+  src2,
+  src3,
+  src4,
+}) => {
   return (
-    <div className={`${styles.container} ${styles.flip}`}>
+    <div className={styles.container}>
       <div className={styles.left}>
         <h1 className={styles.heading}>{heading}</h1>
         <p className={styles.copy}>{copy}</p>
@@ -23,7 +31,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
         <div className={styles.top}>
           <div className={styles.rightLeft}>
             <Image
-              src={img4}
+              src={src1}
               alt='hello'
               title='hello'
               fill
@@ -33,7 +41,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
           </div>
           <div className={styles.rightRight}>
             <Image
-              src={img1}
+              src={src2}
               alt='hello'
               title='hello'
               fill
@@ -45,7 +53,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
             <Image
-              src={img2}
+              src={src3}
               alt='hello'
               title='hello'
               fill
@@ -55,7 +63,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
           </div>
           <div className={styles.bottomRight}>
             <Image
-              src={img3}
+              src={src4}
               alt='hello'
               title='hello'
               fill
