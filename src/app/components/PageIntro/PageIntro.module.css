@@ -18,8 +18,8 @@
 }
 
 .heading {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+}
 
 .right {
   position: relative;
@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 480px) {
   .container {
-    padding: 0rem;
+    padding-top: 3rem;
   }
 
   .rightLeft {
@@ -203,8 +203,6 @@
   }
 
   .heading {
-    width: 150px;
-    height: 150px;
     font-size: 3.5rem;
   }
 }
@@ -234,11 +232,6 @@
     height: 120px;
     border-bottom-right-radius: 120px;
   }
-
-  .heading {
-    width: 120px;
-    height: 120px;
-  }
 }
 
 @media screen and (max-width: 358px) {
@@ -265,10 +258,5 @@
     width: 130px;
     height: 130px;
     border-bottom-right-radius: 130px;
-  }
-
-  .heading {
-    width: 130px;
-    height: 130px;
   }
 }
