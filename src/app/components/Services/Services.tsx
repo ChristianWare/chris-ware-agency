@@ -50,7 +50,10 @@ const Services = () => {
             visitors to your page. Contact us now to enhance your business&#39;s
             online presence and increase revenue!
           </p>
-          <div className={styles.featuresBottom}>
+          
+        </div>
+        <Features />
+        <div className={styles.featuresBottom}>
             <div className={styles.left}>
               {features.slice(0, 2).map((z) => (
                 <div key={z.id} className={styles.featuresCard}>
@@ -67,18 +70,6 @@ const Services = () => {
                   <p className={styles.description}>{z.description}</p>
                 </div>
               ))}
-            </div>
-            <div className={styles.right}>
-              <div className={styles.imgContainer}>
-                <Image
-                  src={Collection}
-                  alt='A mix of different devices'
-                  title='A mix of different devices'
-                  fill
-                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                  className={styles.img}
-                />
-              </div>
             </div>
             <div className={styles.left}>
               {features.slice(2, 4).map((z) => (
@@ -98,8 +89,6 @@ const Services = () => {
               ))}
             </div>
           </div>
-          <Features />
-        </div>
         <div className={styles.btnContainer}>
           <Button href='/services' text='More services' btnType='primary' />
         </div>
