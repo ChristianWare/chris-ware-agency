@@ -36,9 +36,9 @@ const Q1 = () => {
               />
             </div>
             <div className={styles.bottomRight}>
-              <h2 className={styles.heading}>
+              <strong className={styles.heading}>
                 Responsive
-              </h2>
+              </strong>
             </div>
           </div>
     </div>

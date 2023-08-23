@@ -61,6 +61,7 @@
   width: 200px;
   height: 200px;
   text-align: center;
+  font-size: 3.6rem;
   line-height: 100%;
   border: 1px solid var(--primary);
   display: flex;

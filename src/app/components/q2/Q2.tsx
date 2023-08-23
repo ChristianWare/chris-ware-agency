@@ -28,7 +28,7 @@ const Q2 = () => {
         </div>
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
-            <h2 className={styles.heading}>Accessible</h2>
+            <strong className={styles.heading}>Accessible</strong>
           </div>
           <div className={styles.bottomRight}>
             <Image

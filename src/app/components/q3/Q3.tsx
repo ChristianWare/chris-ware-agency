@@ -19,7 +19,7 @@ const Q3 = () => {
               />
             </div>
             <div className={styles.rightRight}>
-              <h2 className={styles.heading}>Search Engine Optimized</h2>
+              <strong className={styles.heading}>Search Engine Optimized</strong>
             </div>
           </div>
           <div className={styles.bottom}>

@@ -9,7 +9,7 @@ const Q4 = () => {
       <div className={styles.right}>
         <div className={styles.top}>
           <div className={styles.rightLeft}>
-            <h2 className={styles.heading}>Page Speed Optimized</h2>
+            <strong className={styles.heading}>Page Speed Optimized</strong>
           </div>
           <div className={styles.rightRight}>
             <Image
