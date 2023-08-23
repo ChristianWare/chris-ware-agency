@@ -102,7 +102,6 @@
 .bottomRight {
   width: 200px;
   height: 200px;
-  /* position: relative; */
 }
 
 .img3 {
@@ -125,6 +124,15 @@
 
 .copy {
   opacity: 0.7;
+  text-align: justify;
+  width: 80%;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 968px) {
+  .copy {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -132,10 +140,6 @@
     flex-direction: column;
     padding: 2rem;
     padding-top: 5rem;
-  }
-
-  .copy {
-    text-align: right;
   }
 
   .right::after {
@@ -160,11 +164,6 @@
 @media screen and (max-width: 568px) {
   .container {
     padding: 1rem;
-  }
-
-  .container2 {
-    padding: 1rem;
-    padding-top: 5rem;
   }
 
   .left {
