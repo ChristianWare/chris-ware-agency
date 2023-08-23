@@ -67,6 +67,7 @@
 
 .price {
   font-size: 5rem;
+  display: block;
 }
 
 .span {
