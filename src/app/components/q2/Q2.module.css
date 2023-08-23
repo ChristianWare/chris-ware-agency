@@ -106,7 +106,7 @@
   }
 
   .img2 {
-    border-bottom-left-radius: 150px;
+    /* border-bottom-left-radius: 150px; */
   }
 
   .bottomRight {
@@ -142,10 +142,6 @@
     height: 120px;
   }
 
-  .img2 {
-    border-bottom-left-radius: 120px;
-  }
-
   .bottomRight {
     width: 120px;
     height: 120px;
@@ -176,10 +172,6 @@
   .bottomLeft {
     width: 130px;
     height: 130px;
-  }
-
-  .img2 {
-    border-bottom-left-radius: 130px;
   }
 
   .bottomRight {

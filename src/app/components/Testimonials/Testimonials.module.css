@@ -20,8 +20,8 @@
   grid-auto-flow: column;
   animation: moveReverse 20s linear infinite;
   width: 100%;
-  grid-gap: 2rem;
-  margin-bottom: 2rem;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* .cardContainer1:hover {

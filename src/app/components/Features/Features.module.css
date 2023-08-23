@@ -1,20 +1,38 @@
 .container {
   padding: 5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.top,
-.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+.q1,
+.q3 {
+  justify-self: end;
+}
+.q2,
+.q4 {
+  justify-self: start;
 }
 
 @media screen and (max-width: 930px) {
-  .top,
-  .bottom {
-    display: grid;
+  .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .q1,
+  .q2,
+  .q3,
+  .q4 {
+    justify-self: center;
+  }
+
+  .q2 {
+    order: 2;
+  }
+
+  .q4 {
+    order: 4;
   }
 }

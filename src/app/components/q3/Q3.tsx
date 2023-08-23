@@ -5,8 +5,6 @@ import Image from "next/image";
 const Q3 = () => {
   return (
     <div className={styles.pageIntroContainer}>
-      <div className={styles.container2}>
-        <div className={styles.left}></div>
         <div className={styles.right}>
           <div className={styles.top}>
             <div className={styles.rightLeft}>
@@ -43,7 +41,6 @@ const Q3 = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

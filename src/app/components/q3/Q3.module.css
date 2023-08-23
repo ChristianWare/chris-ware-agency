@@ -75,11 +75,6 @@
     padding: 2rem;
     padding-top: 5rem;
   }
-
-  .container2 {
-    flex-direction: column-reverse;
-    padding: 2rem;
-  }
 }
 
 @media screen and (max-width: 568px) {

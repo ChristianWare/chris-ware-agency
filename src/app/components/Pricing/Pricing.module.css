@@ -38,13 +38,13 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 1rem;
 }
 
 .card {
   background-color: var(--border2);
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--primary);
   padding: 3rem;
 }
 
