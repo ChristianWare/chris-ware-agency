@@ -7,7 +7,14 @@ import Button from "../Button/Button";
 const FinalCta = () => {
   return (
     <div className={styles.container}>
-      <h2>The Chris Ware Agency</h2>
+      <div className={styles.top}>
+        <h2>The Chris Ware Agency</h2>
+        <p className={styles.copy}>
+          We Merge Imagination and Innovation in Web Design and Development,
+          Crafting Websites that Captivate, Convert, and Catapult Businesses to
+          New Heights in the Digital Landscape.
+        </p>
+      </div>
       <div className={styles.workCulture}>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
@@ -22,15 +29,9 @@ const FinalCta = () => {
         </div>
         <div className={styles.card2}>
           <h3 className={styles.heading}>Don&#39;t wait to Act</h3>
-          <div className={styles.btnContainer}>
-            <Button text='Schedule a meeting' btnType='secondary' href='/' />
-          </div>
         </div>
         <div className={styles.card3}>
           <h3 className={styles.heading}>Contact Us Now</h3>
-          <div className={styles.btnContainer}>
-            <Button text='contact us' btnType='primary' href='/' />
-          </div>
         </div>
         <div className={styles.card4}>
           <div className={styles.imgContainer}>
