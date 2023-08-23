@@ -126,7 +126,7 @@
 
 .copy {
   opacity: 0.7;
-  text-align: justify;
+  text-align: right;
   width: 80%;
   margin-left: auto;
 }
@@ -146,6 +146,7 @@
 
   .copy {
     width: 100%;
+    text-align: left;
   }
 
   .right::after {
@@ -168,7 +169,10 @@
 }
 
 @media screen and (max-width: 568px) {
-
+  .container2 {
+    padding: 2rem;
+  }
+  
   .left {
     display: flex;
     flex-direction: column;
@@ -179,9 +183,13 @@
 
 @media screen and (max-width: 480px) {
   .container2 {
-    padding: 0rem;
+    /* padding: .5rem; */
   }
 
+  .copy {
+    padding: 1rem;
+  }
+  
   .rightLeft {
     width: 150px;
     height: 150px;

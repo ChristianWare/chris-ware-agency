@@ -2,27 +2,33 @@ import { FC } from "react";
 import Label from "../Label/Label";
 import styles from "./PageIntro.module.css";
 import Image from "next/image";
-import img1 from "../../../../public/images/affordable.png";
-import img2 from "../../../../public/images/code.png";
-import img3 from "../../../../public/images/creative.png";
-import img4 from "../../../../public/images/success.png";
+import img1 from "../../../../public/images/contact1.png";
+import img2 from "../../../../public/images/contact2.png";
+import img3 from "../../../../public/images/contact3.png";
+import img4 from "../../../../public/images/contact4.png";
 
 interface PageIntroProps {
-  label: string;
   heading: string;
   copy: string;
 }
 
-const PageIntro: FC<PageIntroProps> = ({ label, heading, copy }) => {
+const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+        <h1 className={styles.heading}>{heading}</h1>
         <p className={styles.copy}>{copy}</p>
       </div>
       <div className={styles.right}>
         <div className={styles.top}>
           <div className={styles.rightLeft}>
-            <h1 className={styles.heading}>{heading}</h1>
+            <Image
+              src={img4}
+              alt='hello'
+              title='hello'
+              fill
+              className={styles.img5}
+            />
           </div>
           <div className={styles.rightRight}>
             <Image

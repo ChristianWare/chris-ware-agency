@@ -123,7 +123,7 @@
 
 .copy {
   opacity: 0.7;
-  text-align: justify;
+  text-align: right;
   width: 80%;
   margin-left: auto;
 }
@@ -139,6 +139,10 @@
     flex-direction: column;
     padding: 2rem;
     padding-top: 5rem;
+  }
+
+  .copy {
+    text-align: left;
   }
 
   .right::after {
@@ -188,23 +192,14 @@
     height: 150px;
   }
 
-  .img {
-    border-top-left-radius: 150px;
-  }
-
   .bottomLeft {
     width: 150px;
     height: 150px;
   }
 
-  .img2 {
-    border-bottom-left-radius: 150px;
-  }
-
   .bottomRight {
     width: 150px;
     height: 150px;
-    border-bottom-right-radius: 150px;
   }
 
   .heading {
@@ -232,10 +227,6 @@
   .bottomLeft {
     width: 120px;
     height: 120px;
-  }
-
-  .img2 {
-    border-bottom-left-radius: 120px;
   }
 
   .bottomRight {
@@ -268,10 +259,6 @@
   .bottomLeft {
     width: 130px;
     height: 130px;
-  }
-
-  .img2 {
-    border-bottom-left-radius: 130px;
   }
 
   .bottomRight {
