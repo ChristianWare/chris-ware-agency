@@ -54,7 +54,7 @@ const PricingPage = () => {
               </div>
               <div className={styles.bottomRight}>
                 <h1 className={styles.heading}>
-                  Our <br /> Prices <br /> Explained
+                  Our <br /> low <br /> prices
                 </h1>
               </div>
             </div>
