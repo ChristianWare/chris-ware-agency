@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Collection from "../../../../public/images/collection.png";
+import Features from "../Features/Features";
 
 const Services = () => {
   return (
@@ -97,6 +98,7 @@ const Services = () => {
               ))}
             </div>
           </div>
+          <Features />
         </div>
         <div className={styles.btnContainer}>
           <Button href='/services' text='More services' btnType='primary' />

@@ -9,6 +9,8 @@ import BlogSection from "./components/BlogSection/BlogSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import Faq from "./components/Faq/Faq";
 import FinalCta from "./components/FinalCta/FinalCta";
+import Q1 from "./components/q1/Q1";
+import Q2 from "./components/q2/Q2";
 
 export default function Home() {
   return (

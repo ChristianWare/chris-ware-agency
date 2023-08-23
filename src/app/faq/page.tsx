@@ -6,8 +6,6 @@ import FinalCta from "../components/FinalCta/FinalCta";
 import styles from "./Faq.module.css";
 import img1 from "../../../public/images/collab3.png";
 
-
-
 const FaqPage = () => {
   return (
     <section className={styles.container}>
