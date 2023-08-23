@@ -13,6 +13,10 @@
   grid-gap: 1rem;
 }
 
+.card {
+  position: relative;
+}
+
 
 .imgContainer {
   position: relative;

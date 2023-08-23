@@ -12,9 +12,9 @@ interface PageIntroProps {
   copy: string;
 }
 
-const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
+const PageIntro: FC<PageIntroProps> = ({ heading, copy }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.flip}`}>
       <div className={styles.left}>
         <h1 className={styles.heading}>{heading}</h1>
         <p className={styles.copy}>{copy}</p>
@@ -27,6 +27,7 @@ const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
               alt='hello'
               title='hello'
               fill
+              priority
               className={styles.img5}
             />
           </div>
@@ -36,6 +37,7 @@ const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
               alt='hello'
               title='hello'
               fill
+              priority
               className={styles.img}
             />
           </div>
@@ -47,6 +49,7 @@ const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
               alt='hello'
               title='hello'
               fill
+              priority
               className={styles.img2}
             />
           </div>
@@ -56,6 +59,7 @@ const PageIntro: FC<PageIntroProps> = ({  heading, copy }) => {
               alt='hello'
               title='hello'
               fill
+              priority
               className={styles.img3}
             />
           </div>
