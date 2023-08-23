@@ -7,9 +7,9 @@ import FinalCta from "../components/FinalCta/FinalCta";
 import Pricing from "../components/Pricing/Pricing";
 import Process2 from "../components/Process2/Process2";
 import styles from "./Services.module.css";
-import img1 from "../../../public/images/affordable.png";
-import img2 from "../../../public/images/code.png";
-import img3 from "../../../public/images/creative.png";
+import img1 from "../../../public/images/collab1.png";
+
+
 
 const ServicesPage = () => {
   return (
@@ -49,7 +49,7 @@ const ServicesPage = () => {
             <div className={styles.bottom}>
               <div className={styles.bottomLeft}>
                 <Image
-                  src={img2}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
@@ -58,7 +58,7 @@ const ServicesPage = () => {
               </div>
               <div className={styles.bottomRight}>
                 <Image
-                  src={img3}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill

@@ -7,9 +7,7 @@ import FinalCta from "../components/FinalCta/FinalCta";
 import Reasons from "../components/Reasons/Reasons";
 import Team from "../components/Team/Team";
 import styles from "./About.module.css";
-import img1 from "../../../public/images/affordable.png";
-import img2 from "../../../public/images/code.png";
-import img3 from "../../../public/images/creative.png";
+import img1 from "../../../public/images/hero4.png";
 
 const AboutPage = () => {
   return (
@@ -48,7 +46,7 @@ const AboutPage = () => {
             <div className={styles.bottom}>
               <div className={styles.bottomLeft}>
                 <Image
-                  src={img2}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
@@ -57,7 +55,7 @@ const AboutPage = () => {
               </div>
               <div className={styles.bottomRight}>
                 <Image
-                  src={img3}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill

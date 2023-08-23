@@ -6,8 +6,6 @@ import FinalCta from "../components/FinalCta/FinalCta";
 import Pricing from "../components/Pricing/Pricing";
 import styles from "./Pricing.module.css";
 import img1 from "../../../public/images/affordable.png";
-import img2 from "../../../public/images/code.png";
-import img3 from "../../../public/images/creative.png";
 
 const PricingPage = () => {
   return (
@@ -20,7 +18,7 @@ const PricingPage = () => {
               without compromising quality. This is why our pricing options
               start at only $150 per month. They are designed to accommodate
               your budget, ensuring that you can access exceptional web
-              solutions tailored to your needs. 
+              solutions tailored to your needs.
             </p>
           </div>
           <div className={styles.right}>
@@ -36,7 +34,7 @@ const PricingPage = () => {
               </div>
               <div className={styles.rightRight}>
                 <Image
-                  src={img3}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
@@ -47,7 +45,7 @@ const PricingPage = () => {
             <div className={styles.bottom}>
               <div className={styles.bottomLeft}>
                 <Image
-                  src={img2}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
@@ -56,7 +54,7 @@ const PricingPage = () => {
               </div>
               <div className={styles.bottomRight}>
                 <h1 className={styles.heading}>
-                  Our  <br /> Prices <br /> Explained
+                  Our <br /> Prices <br /> Explained
                 </h1>
               </div>
             </div>

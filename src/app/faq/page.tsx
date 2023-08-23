@@ -4,9 +4,9 @@ import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCta from "../components/FinalCta/FinalCta";
 import styles from "./Faq.module.css";
-import img1 from "../../../public/images/affordable.png";
-import img2 from "../../../public/images/code.png";
-import img3 from "../../../public/images/creative.png";
+import img1 from "../../../public/images/collab3.png";
+
+
 
 const FaqPage = () => {
   return (
@@ -35,7 +35,7 @@ const FaqPage = () => {
               </div>
               <div className={styles.rightRight}>
                 <Image
-                  src={img3}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
@@ -52,7 +52,7 @@ const FaqPage = () => {
               </div>
               <div className={styles.bottomRight}>
                 <Image
-                  src={img2}
+                  src={img1}
                   alt='hello'
                   title='hello'
                   fill
