@@ -1,5 +1,8 @@
+"use client";
+
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./ContactSection.module.css";
+import { sendEmail } from "../../../../actions/sendEmail";
 
 const ContactSection = () => {
   return (
@@ -18,19 +21,24 @@ const ContactSection = () => {
             </h3>
           </div>
           <div className={styles.right}>
-            <form className={styles.form}>
+            <form
+              className={styles.form}
+              action={async (formData) => {
+                await sendEmail(formData);
+              }}
+            >
               <div className={styles.namesContainer}>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='firstName'>
                     First Name <span className={styles.required}>*</span>
                   </label>
-                  <input id='firstName' type='text' required />
+                  <input id='firstName' name='firstName' type='text' required />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='lastName'>
                     Last Name <span className={styles.required}>*</span>
                   </label>
-                  <input id='lastName' type='text' required />
+                  <input id='lastName' name='lastName' type='text' required />
                 </div>
               </div>
               <div className={styles.everythingElse}>
@@ -39,22 +47,28 @@ const ContactSection = () => {
                     Email <span className={styles.required}>*</span>
                   </label>
                   <span>So we can respond. We won&#39;t send you spam.</span>
-                  <input id='email' type='email' required />
+                  <input
+                    id='email'
+                    type='email'
+                    name='senderEmail'
+                    required
+                    maxLength={500}
+                  />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='companyName'>Company Name</label>
-                  <input id='companyName' type='text' />
+                  <input id='companyName' type='text' name='companyName' />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='currentWebsiteUrl'>Current Website URL</label>
-                  <input id='currentWebsiteUrl' type='text' />
+                  <input id='currentWebsiteUrl' type='text' name='url' />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='message'>
                     Message <span className={styles.required}>*</span>
                   </label>
                   <span>No solicitations, please.</span>
-                  <textarea id='message' />
+                  <textarea id='message' name='message' maxLength={5000} />
                 </div>
               </div>
               <div className={styles.btnBtnContainer}>

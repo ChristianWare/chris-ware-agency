@@ -1,10 +1,15 @@
+"use client";
+
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./BlogSection.module.css";
 import BlogCard from "../BlogCard/BlogCard";
 import Card from "../../../../public/images/success.png";
 import Button from "../Button/Button";
+import { usePathname } from "next/navigation";
 
 const BlogSection = () => {
+  const pathname = usePathname();
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -19,9 +24,11 @@ const BlogSection = () => {
           <BlogCard src={Card} />
           <BlogCard src={Card} />
         </div>
-        <div className={styles.btnContainer}>
-          <Button href='/blog' text='See all posts' btnType='primary' />
-        </div>
+        {pathname !== "/blog" && (
+          <div className={styles.btnContainer}>
+            <Button href='/blog' text='See all posts' btnType='primary' />
+          </div>
+        )}
       </div>
     </section>
   );
