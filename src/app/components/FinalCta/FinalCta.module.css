@@ -26,7 +26,7 @@
 
 .workCulture {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   position: relative;
   padding: 5rem 0rem;
@@ -62,7 +62,6 @@
 
 .card,
 .card2,
-.card3,
 .card4 {
   display: flex;
   flex-direction: column;
@@ -76,12 +75,23 @@
   justify-content: flex-end;
   height: 100%;
   gap: 0;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  border: 1px solid var(--primary);
 }
 
 .card3 {
-  gap: 0;
-  align-items: flex-end;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  display: block;
+  margin-left: auto;
 }
 
 .card4 {
@@ -94,6 +104,8 @@
 
 .heading {
   color: var(--primary);
+  text-decoration: none;
+  line-height: 100%;
 }
 
 .imgContainer {
@@ -121,7 +133,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .imgContainer {
+  .imgContainer,
+  .card2,
+  .card3 {
     position: relative;
     height: 175px;
     width: 175px;
@@ -145,7 +159,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .imgContainer {
+  .imgContainer, .card2,
+  .card3 {
     position: relative;
     height: 140px;
     width: 140px;

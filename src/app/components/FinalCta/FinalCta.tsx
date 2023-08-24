@@ -31,7 +31,7 @@ const FinalCta = () => {
           <h3 className={styles.heading}>Don&#39;t wait to Act</h3>
         </div>
         <div className={styles.card3}>
-          <h3 className={styles.heading}>Contact Us Now</h3>
+          <h3 className={styles.heading}>Contact Us Today</h3>
         </div>
         <div className={styles.card4}>
           <div className={styles.imgContainer}>
