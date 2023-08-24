@@ -3,6 +3,7 @@ import styles from "./FinalCta.module.css";
 import img3 from "../../../../public/images/success.png";
 import img4 from "../../../../public/images/affordable.png";
 import Button from "../Button/Button";
+import Cal from '../../../../public/icons/calendar-mark-svgrepo-com.svg'
 
 const FinalCta = () => {
   return (
@@ -28,10 +29,10 @@ const FinalCta = () => {
           </div>
         </div>
         <div className={styles.card2}>
-          <h3 className={styles.heading}>Don&#39;t wait to Act</h3>
+          <h3 className={styles.heading}>Ready to start a project?</h3>
         </div>
         <div className={styles.card3}>
-          <h3 className={styles.heading}>Contact Us Today</h3>
+          <h3 className={styles.heading}>Call Us Today 📞</h3>
         </div>
         <div className={styles.card4}>
           <div className={styles.imgContainer}>

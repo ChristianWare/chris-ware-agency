@@ -93,6 +93,7 @@
   display: block;
   margin-left: auto;
   border-bottom-left-radius: 200px;
+  background-color: var(--secondary);
 }
 
 .card4 {
@@ -104,10 +105,15 @@
 }
 
 .heading {
-  color: var(--primary);
+  color: var(--text);
   text-decoration: none;
   line-height: 100%;
   text-align: right;
+}
+
+.card2 .heading {
+  text-align: left;
+  color: var(--text);
 }
 
 .imgContainer {
@@ -161,7 +167,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .imgContainer, .card2,
+  .imgContainer,
+  .card2,
   .card3 {
     position: relative;
     height: 140px;
