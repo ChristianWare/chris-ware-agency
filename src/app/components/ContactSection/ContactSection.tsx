@@ -6,8 +6,27 @@ import { sendEmail } from "../../../../actions/sendEmail";
 
 import SubmitButton from "../SubmitButton/SubmitButton";
 import toast from "react-hot-toast";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [inputs, setInputs] = useState({
+    firstName: "",
+    lastName: "",
+    senderEmail: "",
+    companyName: "",
+    currentWebsiteUrl: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+  };
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -34,6 +53,14 @@ const ContactSection = () => {
                   return;
                 }
                 toast.success("Email sent successfully!");
+                setInputs({
+                  firstName: "",
+                  lastName: "",
+                  senderEmail: "",
+                  companyName: "",
+                  currentWebsiteUrl: "",
+                  message: "",
+                });
               }}
             >
               <div className={styles.namesContainer}>
@@ -41,13 +68,27 @@ const ContactSection = () => {
                   <label htmlFor='firstName'>
                     First Name <span className={styles.required}>*</span>
                   </label>
-                  <input id='firstName' name='firstName' type='text' required />
+                  <input
+                    id='firstName'
+                    name='firstName'
+                    type='text'
+                    value={inputs.firstName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='lastName'>
                     Last Name <span className={styles.required}>*</span>
                   </label>
-                  <input id='lastName' name='lastName' type='text' required />
+                  <input
+                    id='lastName'
+                    name='lastName'
+                    type='text'
+                    value={inputs.lastName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
               </div>
               <div className={styles.everythingElse}>
@@ -57,27 +98,47 @@ const ContactSection = () => {
                   </label>
                   <span>So we can respond. We won&#39;t send you spam.</span>
                   <input
-                    id='email'
+                    id='senderEmail'
                     type='email'
                     name='senderEmail'
+                    value={inputs.senderEmail}
+                    onChange={handleChange}
                     required
                     maxLength={500}
                   />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='companyName'>Company Name</label>
-                  <input id='companyName' type='text' name='companyName' />
+                  <input
+                    id='companyName'
+                    type='text'
+                    name='companyName'
+                    value={inputs.companyName}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='currentWebsiteUrl'>Current Website URL</label>
-                  <input id='currentWebsiteUrl' type='text' name='url' />
+                  <input
+                    id='currentWebsiteUrl'
+                    type='text'
+                    name='url'
+                    value={inputs.currentWebsiteUrl}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className={styles.labelInputBox}>
                   <label htmlFor='message'>
                     Message <span className={styles.required}>*</span>
                   </label>
                   <span>No solicitations, please.</span>
-                  <textarea id='message' name='message' maxLength={5000} />
+                  <textarea
+                    id='message'
+                    name='message'
+                    maxLength={5000}
+                    value={inputs.message}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className={styles.btnBtnContainer}>

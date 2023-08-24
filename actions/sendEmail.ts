@@ -2,13 +2,14 @@
 
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
-import { error } from "console";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
+  const companyName = formData.get("companyName");
+  const currentWebsiteUrl = formData.get("currentWebsiteUrl");
 
   //   simple serverside validation
   if (!validateString(senderEmail, 500)) {
