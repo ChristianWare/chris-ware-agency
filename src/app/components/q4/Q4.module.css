@@ -11,55 +11,55 @@
 }
 
 .rightLeft {
-  width: 200px;
-  height: 200px;
-  border-top-left-radius: 200px;
+  width: 175px;
+  height: 175px;
+  border-top-left-radius: 175px;
   position: relative;
 }
 
 .rightRight {
-  width: 200px;
-  height: 200px;
-  border-top-right-radius: 200px;
+  width: 175px;
+  height: 175px;
+  border-top-right-radius: 175px;
   border: 1px solid var(--primary);
   position: relative;
 }
 
 .img {
   object-fit: cover;
-  border-top-right-radius: 200px;
+  border-top-right-radius: 175px;
 }
 
 .bottomLeft {
-  width: 200px;
-  height: 200px;
-  border-bottom-left-radius: 200px;
+  width: 175px;
+  height: 175px;
+  border-bottom-left-radius: 175px;
   border: 1px solid var(--primary);
   position: relative;
 }
 
 .img2 {
   object-fit: cover;
-  border-bottom-left-radius: 200px;
+  border-bottom-left-radius: 175px;
 }
 
 .bottomRight {
-  width: 200px;
-  height: 200px;
-  border-bottom-right-radius: 200px;
+  width: 175px;
+  height: 175px;
+  border-bottom-right-radius: 175px;
   border: 1px solid var(--primary);
   position: relative;
 }
 
 .img3 {
   object-fit: cover;
-  border-bottom-right-radius: 200px;
+  border-bottom-right-radius: 175px;
 }
 
 .heading {
   padding: 1rem;
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   text-align: center;
   font-size: 3.6rem;
   line-height: 100%;
