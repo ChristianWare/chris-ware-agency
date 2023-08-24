@@ -46,7 +46,7 @@ const Pricing = () => {
                   </ul>
                 ))}
               </div>
-              {pathname === "/" && (
+              {pathname !== "/princing" && (
                 <div className={styles.btnContainer}>
                   <Button href='/' text='More detials' btnType={x.btnType} />
                 </div>
