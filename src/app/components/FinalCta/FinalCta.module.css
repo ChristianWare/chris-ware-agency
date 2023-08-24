@@ -92,6 +92,7 @@
   border: 1px solid var(--primary);
   display: block;
   margin-left: auto;
+  border-bottom-left-radius: 200px;
 }
 
 .card4 {
@@ -106,6 +107,7 @@
   color: var(--primary);
   text-decoration: none;
   line-height: 100%;
+  text-align: right;
 }
 
 .imgContainer {
