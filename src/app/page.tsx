@@ -13,8 +13,24 @@ import Q1 from "./components/q1/Q1";
 import Q2 from "./components/q2/Q2";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Chris Ware Agency",
+    image: "/images/hero4.png",
+    description:
+      "Description Here Description Here Description Here Description Here",
+  };
+
   return (
     <main>
+      <script
+        key='schema-jsonld'
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd, null, "\t"),
+        }}
+      />
       <Hero />
       <About />
       <Services />
