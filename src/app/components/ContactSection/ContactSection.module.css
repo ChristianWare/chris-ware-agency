@@ -121,50 +121,7 @@
   margin-top: 3rem;
 }
 
-.btnContainer {
-  position: relative;
-  display: block;
-  width: fit-content;
-  z-index: 1;
-}
 
-.btnContainer::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: -7px;
-  top: 9px;
-  width: 98%;
-  height: 93%;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
-}
-
-.btn {
-  text-align: center;
-  font-size: 1.8rem;
-  white-space: nowrap;
-  border-radius: 5px;
-  user-select: none;
-  transition: all 0.1s ease-in;
-  display: inline-block;
-  padding: 10px 35px;
-  font-weight: 700;
-  color: var(--neutral);
-  background-color: var(--primary);
-  border: 2.7px solid var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.btn:active {
-  transform: translate(7px, 7px);
-}
 
 @media screen and (max-width: 958px) {
   .content {
@@ -202,9 +159,6 @@
   .namesContainer {
     flex-direction: column;
     gap: 0rem;
-  }
-
-  .labelInputBox:nth-child(1) {
   }
 
   .btnBtnContainer {

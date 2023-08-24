@@ -85,12 +85,12 @@ button {
 p,
 input,
 textarea {
-font-weight: 400;
-font-family: var(--roboto);
-hyphens: auto;
-font-size: 1.6rem;
-color: var(--text);
-line-height: 150%;
+  font-weight: 400;
+  font-family: var(--roboto);
+  hyphens: auto;
+  font-size: 1.6rem;
+  color: var(--text);
+  line-height: 150%;
 }
 
 input:focus {
@@ -132,4 +132,8 @@ input:focus {
   label {
     font-size: 125%;
   }
+}
+
+.toastFont {
+  font-family: var(--roboto);
 }

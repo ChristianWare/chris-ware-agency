@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import styles from "./layout.module.css";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const roboto = Roboto({
   weight: ["400", "500"],
@@ -33,6 +34,12 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${bebasneue.variable} ${styles.layout}`}
       >
+        <Toaster
+          position='top-right'
+          toastOptions={{
+            className: "toastFont",
+          }}
+        />
         <Nav />
         {children}
         <Footer />

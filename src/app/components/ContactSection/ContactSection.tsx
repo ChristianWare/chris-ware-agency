@@ -4,6 +4,9 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./ContactSection.module.css";
 import { sendEmail } from "../../../../actions/sendEmail";
 
+import SubmitButton from "../SubmitButton/SubmitButton";
+import toast from "react-hot-toast";
+
 const ContactSection = () => {
   return (
     <section className={styles.container}>
@@ -24,7 +27,13 @@ const ContactSection = () => {
             <form
               className={styles.form}
               action={async (formData) => {
-                await sendEmail(formData);
+                const { data, error } = await sendEmail(formData);
+
+                if (error) {
+                  toast.error(error);
+                  return;
+                }
+                toast.success("Email sent successfully!");
               }}
             >
               <div className={styles.namesContainer}>
@@ -72,11 +81,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className={styles.btnBtnContainer}>
-                <div className={styles.btnContainer}>
-                  <button type='submit' className={styles.btn}>
-                    Fire Away!
-                  </button>
-                </div>
+                <SubmitButton />
               </div>
             </form>
           </div>
