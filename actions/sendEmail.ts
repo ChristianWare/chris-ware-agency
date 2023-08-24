@@ -6,6 +6,8 @@ import { validateString, getErrorMessage } from "@/lib/utils";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
+  const firstName = formData.get("firstName");
+  const lastName = formData.get("lastName");
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
   const companyName = formData.get("companyName");
@@ -31,7 +33,14 @@ export const sendEmail = async (formData: FormData) => {
       to: "c.p.ware@hotmail.com",
       subject: "Message from Contact Form",
       reply_to: senderEmail as string,
-      text: message as string,
+      // text: message as string,
+      html: `<p>You have a contact form submission</p><br>
+        <p><strong>Name: </strong> ${firstName} ${lastName}</p><br>
+        <p><strong>Email: </strong> ${senderEmail}</p><br>
+        <p><strong>Company: </strong> ${companyName}</p><br>
+        <p><strong>Website: </strong> ${currentWebsiteUrl}</p><br>
+        <p><strong>Message: </strong> ${message}</p><br>
+      `,
     });
   } catch (error: unknown) {
     return {

@@ -122,7 +122,7 @@ const ContactSection = () => {
                   <input
                     id='currentWebsiteUrl'
                     type='text'
-                    name='url'
+                    name='currentWebsiteUrl'
                     value={inputs.currentWebsiteUrl}
                     onChange={handleChange}
                   />
