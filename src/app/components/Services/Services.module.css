@@ -20,7 +20,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  margin: 5rem 0rem;
+  margin: 3rem 0rem;
+  margin-top: 2rem;
+  background-color: var(--border2);
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  padding: 1rem;
 }
 
 .serviceCard {
@@ -28,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 2px solid var(--border);
+  background-color: var(--border);
   padding: 2rem;
   border-radius: 8px;
   position: relative;
@@ -184,7 +189,6 @@
   .left {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  
   }
 }
 

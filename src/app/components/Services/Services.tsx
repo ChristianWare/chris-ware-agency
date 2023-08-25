@@ -3,7 +3,6 @@ import { servicesSection, features } from "../../../lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import Collection from "../../../../public/images/collection.png";
 import Features from "../Features/Features";
 
 const Services = () => {
