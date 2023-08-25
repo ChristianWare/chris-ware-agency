@@ -1,14 +1,14 @@
 .container {
   padding: 2rem;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border);
   border-radius: 8px;
 }
 
 .imgContainer {
   position: relative;
   height: 275px;
-  border: 5px solid var(--border);
-  border-radius: 12px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
 }
 
 .img {
@@ -39,5 +39,5 @@
   color: var(--text);
   text-transform: uppercase;
   border-bottom: 3px solid var(--secondary);
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
 }

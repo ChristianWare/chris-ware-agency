@@ -71,17 +71,16 @@
   gap: 2rem;
 }
 
-.arrow,
-.arrowFlip {
-  border-radius: 50%;
-  border: 1px solid var(--primary);
-  width: 30px;
-  height: 30px;
+.icon {
+  color: var(--text);
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
-.arrowFlip {
-  transform: rotate(180deg);
+.iconFlip {
+  transform: rotate(135deg);
+  color: var(--text);
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 

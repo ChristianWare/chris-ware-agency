@@ -5,7 +5,7 @@ import Section from "../Section/Section";
 import styles from "./AllFaq.module.css";
 import { faqs } from "@/lib/data";
 import { useState } from "react";
-import ArrowRight from "../../../../public/icons/faqArrow.png";
+import Plus from "../../../../public/icons/plus.svg";
 
 const AllFaq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -36,19 +36,9 @@ const AllFaq = () => {
                 {x.question}
               </h3>
               {selected === i ? (
-                <Image
-                  src={ArrowRight}
-                  alt='arrow'
-                  title='arrow icon'
-                  className={styles.arrow}
-                />
+                <Plus className={styles.iconFlip} width={30} height={30} />
               ) : (
-                <Image
-                  src={ArrowRight}
-                  alt='arrow'
-                  title='arrow icnn'
-                  className={styles.arrowFlip}
-                />
+                <Plus className={styles.icon} width={30} height={30} />
               )}
             </div>
             <div

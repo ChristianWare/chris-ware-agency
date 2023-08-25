@@ -107,7 +107,8 @@
 
 .btnContainer {
   display: grid;
-  width: 100%;
+  width: fit-content;
+  margin-left: auto;
   margin-top: 3rem;
 }
 
@@ -149,5 +150,9 @@
 @media screen and (max-width: 568px) {
   .content {
     padding: 2rem;
+  }
+
+  .btnContainer {
+    width: 100%;
   }
 }

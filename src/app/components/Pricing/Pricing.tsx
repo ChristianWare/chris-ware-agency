@@ -46,14 +46,14 @@ const Pricing = () => {
                   </ul>
                 ))}
               </div>
-              {pathname !== "/princing" && (
-                <div className={styles.btnContainer}>
-                  <Button href='/' text='More detials' btnType={x.btnType} />
-                </div>
-              )}
             </div>
           ))}
         </div>
+          {pathname !== "/pricing" && (
+            <div className={styles.btnContainer}>
+              <Button href='/pricing' text='More detials' btnType='primary' />
+            </div>
+          )}
       </div>
     </section>
   );

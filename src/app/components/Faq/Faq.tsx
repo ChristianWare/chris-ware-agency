@@ -7,6 +7,7 @@ import { faqs } from "@/lib/data";
 import Button from "../Button/Button";
 import ArrowRight from "../../../../public/icons/faqArrow.png";
 import Image from "next/image";
+import Plus from "../../../../public/icons/plus.svg";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -39,19 +40,9 @@ const Faq = () => {
                   {x.question}
                 </h3>
                 {selected === i ? (
-                  <Image
-                    src={ArrowRight}
-                    alt='arrow'
-                    title='arrow icon'
-                    className={styles.arrow}
-                  />
+                  <Plus className={styles.iconFlip} width={30} height={30} />
                 ) : (
-                  <Image
-                    src={ArrowRight}
-                    alt='arrow'
-                    title='arrow icnn'
-                    className={styles.arrowFlip}
-                  />
+                  <Plus className={styles.icon} width={30} height={30} />
                 )}
               </div>
               <div
