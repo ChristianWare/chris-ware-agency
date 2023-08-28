@@ -39,7 +39,7 @@ export default function Home() {
       <Faq />
       <BlogSection />
       <FinalCta />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </main>
   );
 }
