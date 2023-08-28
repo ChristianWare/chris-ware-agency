@@ -6,8 +6,14 @@ import BlogCard from "../BlogCard/BlogCard";
 import Card from "../../../../public/images/success.png";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import { FC } from "react";
+import { Post } from "@/app/lib/interface";
 
-const BlogSection = () => {
+interface BlogSectionProps {
+  posts: Post[];
+}
+
+const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
   const pathname = usePathname();
 
   return (
@@ -18,11 +24,12 @@ const BlogSection = () => {
           headingText='News & Updates'
           copyText=' Insights and Innovations in Web Development'
         />
-
         <div className={styles.bottom}>
-          <BlogCard src={Card} />
-          <BlogCard src={Card} />
-          <BlogCard src={Card} />
+          {posts.map((post) => (
+            // <div>
+              <BlogCard key={post._id} src={Card} post={post} />
+            // </div>
+          ))}
         </div>
         {pathname !== "/blog" && (
           <div className={styles.btnContainer}>
