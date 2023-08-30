@@ -4,6 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Logo from '../../../../public/icons/cwlogo.svg'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,7 @@ const Nav = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            CW . Agency
+            <Logo className={styles.officialLogo} />
           </Link>
         </div>
         <div className={styles.menuItemsGroup}>

@@ -21,8 +21,12 @@
   display: none;
 }
 
-.logo:hover {
+/* .logo:hover {
   scale: 1.2;
+} */
+
+.officialLogo {
+  margin-top: 1rem;
 }
 
 .menuItemsGroup,

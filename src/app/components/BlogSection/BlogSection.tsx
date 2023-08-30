@@ -13,8 +13,16 @@ interface BlogSectionProps {
   posts: Post[];
 }
 
+export const revalidate = 60;
+
 const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
+  console.log(posts)
+  
   const pathname = usePathname();
+
+  if (!posts || posts.length === 0) {
+    return <div>No posts available.</div>;
+  }
 
   return (
     <section className={styles.container}>
@@ -27,7 +35,7 @@ const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
         <div className={styles.bottom}>
           {posts.map((post) => (
             // <div>
-              <BlogCard key={post._id} src={Card} post={post} />
+            <BlogCard key={post._id} src={Card} post={post} />
             // </div>
           ))}
         </div>
