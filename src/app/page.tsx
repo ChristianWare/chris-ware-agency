@@ -30,7 +30,6 @@ export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function Home() {
   const data = (await getData()) as Post[];
-  console.log(data)
   return (
     <main>
       <script
@@ -48,7 +47,6 @@ export default async function Home() {
       <Process />
       <Pricing />
       <Faq />
-
       <BlogSection posts={data} />
       <FinalCta />
     </main>

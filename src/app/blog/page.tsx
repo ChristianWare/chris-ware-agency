@@ -1,5 +1,4 @@
 import BlogSection from "../components/BlogSection/BlogSection";
-import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCta from "../components/FinalCta/FinalCta";
 import PageIntro from "../components/PageIntro/PageIntro";
 import styles from "./blogPage.module.css";
@@ -7,8 +6,20 @@ import img1 from "../../../public/images/blog1.png";
 import img2 from "../../../public/images/blog2.png";
 import img3 from "../../../public/images/blog3.png";
 import img4 from "../../../public/images/blog4.png";
+import { Post } from "../lib/interface";
+import { client } from "../lib/sanity";
 
-const BlogPage = () => {
+async function getData() {
+  const query = `*[_type == 'post']`;
+  const data = await client.fetch(query);
+  return data;
+}
+
+export const revalidate = 60; // revalidate this page every 60 seconds
+
+
+export default async function BlogPage() {
+  const data = (await getData()) as Post[];
   return (
     <section className={styles.container}>
       <div className={styles.pageIntroContainer}>
@@ -21,10 +32,8 @@ const BlogPage = () => {
           src4={img4}
         />
       </div>
-      <BlogSection />
+      <BlogSection posts={data} />
       <FinalCta />
-      <ContactSection />
     </section>
   );
-};
-export default BlogPage;
+}
