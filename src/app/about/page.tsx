@@ -8,8 +8,19 @@ import Reasons from "../components/Reasons/Reasons";
 import Team from "../components/Team/Team";
 import styles from "./About.module.css";
 import img1 from "../../../public/images/hero4.png";
+import { Post } from "../lib/interface";
+import { client } from "../lib/sanity";
 
-const AboutPage = () => {
+async function getData() {
+  const query = `*[_type == 'post']`;
+  const data = await client.fetch(query);
+  return data;
+}
+
+export const revalidate = 60; // revalidate this page every 60 seconds
+
+export default async function AboutPage() {
+  const data = (await getData()) as Post[];
   return (
     <section className={styles.container}>
       <div className={styles.pageIntroContainer}>
@@ -70,10 +81,8 @@ const AboutPage = () => {
       <CompanyCulture />
       <Team />
       <Faq />
-      <BlogSection />
+      <BlogSection posts={data} />
       <FinalCta />
-      <ContactSection />
     </section>
   );
-};
-export default AboutPage;
+}
