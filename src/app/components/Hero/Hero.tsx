@@ -10,7 +10,7 @@ const Hero = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.left}>
-          <Label text='Chris Ware Agency' />
+          <Label text='Welcome!' />
           <h1>
             Elevating Brands through Innovative Web Design and Development.
           </h1>

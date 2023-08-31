@@ -17,7 +17,6 @@
   width: 100%;
 }
 
-
 .copy {
   margin-top: 1rem;
   opacity: 0.7;
@@ -106,10 +105,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .content {
-    padding-top: 3rem;
-  }
-
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -117,7 +112,6 @@
   }
 
   .imgContainer {
-    /* width: 90vw; */
     height: 450px;
   }
 

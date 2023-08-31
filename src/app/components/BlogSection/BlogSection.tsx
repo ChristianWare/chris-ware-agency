@@ -16,8 +16,6 @@ interface BlogSectionProps {
 export const revalidate = 60;
 
 const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
-  console.log(posts)
-  
   const pathname = usePathname();
 
   if (!posts || posts.length === 0) {

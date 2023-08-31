@@ -8,10 +8,20 @@ import Pricing from "../components/Pricing/Pricing";
 import Process2 from "../components/Process2/Process2";
 import styles from "./Services.module.css";
 import img1 from "../../../public/images/collab1.png";
+import { Post } from "../lib/interface";
+import { client } from "../lib/sanity";
 
+async function getData() {
+  const query = `*[_type == 'post']`;
+  const data = await client.fetch(query);
+  return data;
+}
 
+export const revalidate = 60; // revalidate this page every 60 seconds
 
-const ServicesPage = () => {
+export default async function ServicesPage() {
+  const data = (await getData()) as Post[];
+
   return (
     <section className={styles.container}>
       <div className={styles.pageIntroContainer}>
@@ -73,10 +83,9 @@ const ServicesPage = () => {
       <Process2 />
       <Pricing />
       <Faq />
-      <BlogSection />
+      <BlogSection posts={data} />
       <FinalCta />
       <ContactSection />
     </section>
   );
-};
-export default ServicesPage;
+}

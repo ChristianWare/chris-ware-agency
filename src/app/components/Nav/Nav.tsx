@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from '../../../../public/icons/cwlogo.svg'
+import Logo from "../../../../public/icons/cwlogo.svg";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,8 +54,8 @@ const Nav = () => {
             }
           >
             <li onClick={openMenu}>
-              <Link href='/' className={styles.logo2}>
-                Chris Ware . Agency
+              <Link href='/' className={styles.logo}>
+                <Logo className={styles.officialLogoMobile} />
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>

@@ -21,7 +21,6 @@ function formatDate(dateString: string): string {
 export const revalidate = 60;
 
 const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
-  console.log(post);
   return (
     <div className={styles.container}>
       <article className={styles.card}>

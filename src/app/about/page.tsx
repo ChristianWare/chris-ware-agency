@@ -83,6 +83,7 @@ export default async function AboutPage() {
       <Faq />
       <BlogSection posts={data} />
       <FinalCta />
+      <ContactSection />
     </section>
   );
 }
