@@ -4,8 +4,8 @@
   justify-content: center;
   gap: 3rem;
   padding: 5rem;
-  margin-top: 8rem;
   margin-top: 3rem;
+  margin-bottom: 8rem;
   background-color: var(--border2);
   border-radius: 8px;
 }

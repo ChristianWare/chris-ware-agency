@@ -1,15 +1,27 @@
 import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCta from "../components/FinalCta/FinalCta";
-import PageIntro from "../components/PageIntro/PageIntro";
+
 import styles from "./ContactPage.module.css";
 import img1 from "../../../public/images/contact1.png";
 import img2 from "../../../public/images/contact2.png";
 import img3 from "../../../public/images/contact3.png";
 import img4 from "../../../public/images/contact4.png";
+import { Post } from "../lib/interface";
+import { client } from "../lib/sanity";
+import PageIntro from "../components/PageIntro/PageIntro";
 
+async function getData() {
+  const query = `*[_type == 'post']`;
+  const data = await client.fetch(query);
+  return data;
+}
 
-const ContactPage = () => {
+export const revalidate = 60; // revalidate this page every 60 seconds
+
+export default async function ContactPage() {
+  const data = (await getData()) as Post[];
+
   return (
     <section className={styles.container}>
       <div className={styles.pageIntroContainer}>
@@ -23,9 +35,8 @@ const ContactPage = () => {
         />
       </div>
       <ContactSection />
-      <BlogSection />
+      <BlogSection posts={data} />
       <FinalCta />
     </section>
   );
-};
-export default ContactPage;
+}
