@@ -5,8 +5,6 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Faq.module.css";
 import { faqs } from "@/lib/data";
 import Button from "../Button/Button";
-import ArrowRight from "../../../../public/icons/faqArrow.png";
-import Image from "next/image";
 import Plus from "../../../../public/icons/plus.svg";
 
 const Faq = () => {

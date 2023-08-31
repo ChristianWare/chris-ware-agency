@@ -6,17 +6,6 @@
   margin-bottom: 8rem;
 }
 
-.container2 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 3rem;
-  padding: 5rem;
-  margin-top: 3rem;
-  background-color: var(--border2);
-  border-radius: 8px;
-}
 
 .left,
 .right {
@@ -152,11 +141,6 @@
     width: 100px;
     height: 100px;
     filter: blur(10rem);
-  }
-
-  .container2 {
-    flex-direction: column-reverse;
-    padding: 2rem;
   }
 }
 

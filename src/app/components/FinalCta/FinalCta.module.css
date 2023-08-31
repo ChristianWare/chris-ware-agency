@@ -207,3 +207,21 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .imgContainer,
+  .card2,
+  .card3 {
+    position: relative;
+    height: 110px;
+    width: 110px;
+  }
+
+  .img {
+    border-top-left-radius: 110px;
+  }
+
+  .img4 {
+    border-bottom-right-radius: 110px;
+  }
+}

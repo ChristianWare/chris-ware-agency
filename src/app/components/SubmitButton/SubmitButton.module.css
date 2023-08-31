@@ -24,18 +24,13 @@
   border-radius: 5px;
   user-select: none;
   transition: all 0.1s ease-in;
-  display: inline-block;
   padding: 10px 35px;
   font-weight: 700;
   color: var(--neutral);
   background-color: var(--primary);
   border: 2.7px solid var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  position: relative;
-  z-index: 1;
+  display: grid;
+  width: fit-content;
   cursor: pointer;
 }
 
@@ -46,4 +41,12 @@
 
 .btn:active {
   transform: translate(7px, 7px);
+}
+
+
+@media screen and (max-width: 568px) {
+  .btnContainer, .btn {
+    display: grid;
+    width: 100%;
+  }
 }
