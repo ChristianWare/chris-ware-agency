@@ -37,6 +37,7 @@ export default async function ServicesPage() {
         src2={img1}
         src3={img1}
         src4={img1}
+        labelText='Services'
       />
       <AllServices />
       <Process2 />

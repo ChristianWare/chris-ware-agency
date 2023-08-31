@@ -37,6 +37,7 @@ export default async function AboutPage() {
         src2={img1}
         src3={img1}
         src4={img1}
+        labelText='About'
       />
       <Reasons />
       <CompanyCulture />

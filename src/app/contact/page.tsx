@@ -32,6 +32,7 @@ export default async function ContactPage() {
           src2={img2}
           src3={img3}
           src4={img4}
+          labelText='Contact'
         />
       </div>
       <ContactSection />

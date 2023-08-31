@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./PageIntro.module.css";
 import Image, { StaticImageData } from "next/image";
-
+import Label from "../Label/Label";
 
 interface PageIntroProps {
   heading: string;
@@ -10,6 +10,7 @@ interface PageIntroProps {
   src2: StaticImageData;
   src3: StaticImageData;
   src4: StaticImageData;
+  labelText: string;
 }
 
 const PageIntro: FC<PageIntroProps> = ({
@@ -19,10 +20,12 @@ const PageIntro: FC<PageIntroProps> = ({
   src2,
   src3,
   src4,
+  labelText,
 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+        <Label text={labelText} />
         <h1 className={styles.heading}>{heading}</h1>
         <p className={styles.copy}>{copy}</p>
       </div>

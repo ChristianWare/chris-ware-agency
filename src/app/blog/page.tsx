@@ -30,6 +30,7 @@ export default async function BlogPage() {
           src2={img2}
           src3={img3}
           src4={img4}
+          labelText='Blog'
         />
       </div>
       <BlogSection posts={data} />
