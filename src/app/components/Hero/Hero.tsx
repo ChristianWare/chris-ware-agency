@@ -12,10 +12,10 @@ const Hero = () => {
         <div className={styles.left}>
           <Label text='Welcome!' />
           <h1>
-            Elevating Brands through Innovative Web Design and Development.
+            We Elevate Brands through Innovative Web Design and Development.
           </h1>
           <p className={styles.copy}>
-            We Merge Imagination and Innovation in Web Design and Development,
+            At the Chris Ware Agency, we Merge Imagination and Innovation in Web Design and Development,
             Crafting Websites that Captivate, Convert, and Catapult Businesses
             to New Heights in the Digital Landscape.
           </p>

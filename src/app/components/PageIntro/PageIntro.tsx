@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Label from "../Label/Label";
 import styles from "./PageIntro.module.css";
 import Image, { StaticImageData } from "next/image";
 

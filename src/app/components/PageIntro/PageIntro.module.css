@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  /* flex-direction: row-reverse; */
   align-items: center;
   justify-content: center;
   gap: 3rem;
@@ -74,12 +73,14 @@
 .rightLeft {
   width: 200px;
   height: 200px;
-  border-top-left-radius: 200px;
+  /* border-bottom-left-radius: 200px; */
   position: relative;
 }
 
 .img5 {
   border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
   border: 1px solid var(--primary);
 }
 
@@ -93,12 +94,16 @@
   object-fit: contain;
   border: 1px solid var(--primary);
   border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
 }
 
 .bottomLeft {
   width: 200px;
   height: 200px;
   border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 200px;
   border: 1px solid var(--primary);
   position: relative;
 }
@@ -106,19 +111,25 @@
 .img2 {
   object-fit: contain;
   border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 200px;
 }
 
 .bottomRight {
   width: 200px;
   height: 200px;
-  border-bottom-right-radius: 200px;
   border: 1px solid var(--primary);
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
   position: relative;
 }
 
 .img3 {
   object-fit: contain;
   border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
 }
 
 .copy {
