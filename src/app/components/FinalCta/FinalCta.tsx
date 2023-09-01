@@ -3,7 +3,6 @@ import styles from "./FinalCta.module.css";
 import img3 from "../../../../public/images/success.png";
 import img4 from "../../../../public/images/affordable.png";
 import Button from "../Button/Button";
-import Cal from "../../../../public/icons/calendar-mark-svgrepo-com.svg";
 import Calendar from "../../../../public/icons/calendar.png";
 
 const FinalCta = () => {
@@ -16,6 +15,24 @@ const FinalCta = () => {
           Crafting Websites that Captivate, Convert, and Catapult Businesses to
           New Heights in the Digital Landscape.
         </p>
+        <div className={styles.btnContainer}>
+          <Button href='/contact' btnType='primary' text='Get in touch' />
+          <Button
+            href='/'
+            btnType='secondary'
+            text='Book a meeting'
+            icon={
+              <Image
+                src={Calendar}
+                alt='calendar'
+                title='calendar'
+                className={styles.icon}
+                width={20}
+                height={20}
+              />
+            }
+          />
+        </div>
       </div>
       <div className={styles.workCulture}>
         <div className={styles.card}>
@@ -46,24 +63,6 @@ const FinalCta = () => {
             />
           </div>
         </div>
-      </div>
-      <div className={styles.btnContainer}>
-        <Button href='/contact' btnType='primary' text='Get in touch' />
-        <Button
-          href='/'
-          btnType='secondary'
-          text='Book a meeting'
-          icon={
-            <Image
-              src={Calendar}
-              alt='calendar'
-              title='calendar'
-              className={styles.icon}
-              width={20}
-              height={20}
-            />
-          }
-        />
       </div>
     </div>
   );
