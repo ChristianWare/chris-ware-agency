@@ -34,12 +34,12 @@ const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
             className={styles.img}
           />
         </div>
-        {/* <div className={styles.date}>{formatDate(post._createdAt)}</div> */}
+        <div className={styles.date}>{formatDate(post._createdAt)}</div>
         <h3 className={styles.title}>{post.title}</h3>
         <p className={styles.preview}>{post.overview}</p>
-        {/* <Link href={`/blog/${post.slug.current}`} className={styles.readMore}>
+        <Link href={`/blog/${post.slug}`} className={styles.readMore}>
           Read Article
-        </Link> */}
+        </Link>
       </article>
     </div>
   );

@@ -10,7 +10,7 @@ export interface Button {
 
 export type Posts = {
   _id: string;
-  _createdAt: Date;
+  _createdAt: string;
   title: string;
   overview: string;
   image: string;
