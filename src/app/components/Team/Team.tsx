@@ -2,7 +2,7 @@ import Image from "next/image";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Team.module.css";
 import Chris from "../../../../public/images/chrisware.jpg";
-import { about } from "@/lib/data";
+import { about } from "@/app/lib/data";
 import Button from "../Button/Button";
 
 const Team = () => {
@@ -51,7 +51,6 @@ const Team = () => {
                   {x.title}
                 </div>
               ))}
-              
             </div>
           </div>
         </div>

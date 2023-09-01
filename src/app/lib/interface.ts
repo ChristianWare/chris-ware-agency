@@ -1,15 +1,5 @@
 import { ReactNode } from "react";
-
-export interface Post {
-  title: string;
-  overview: string;
-  content: any;
-  _id: string;
-  slug: {
-    current: string;
-  };
-  _createdAt: string;
-}
+import { PortableTextBlock } from "sanity";
 
 export interface Button {
   href: string;
@@ -17,3 +7,13 @@ export interface Button {
   btnType: string;
   icon?: ReactNode;
 }
+
+export type Posts = {
+  _id: string;
+  _createdAt: Date;
+  title: string;
+  overview: string;
+  image: string;
+  slug: string;
+  content: PortableTextBlock[];
+};

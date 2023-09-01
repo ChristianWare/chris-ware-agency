@@ -1,4 +1,4 @@
-import { process } from "@/lib/data";
+import { process } from "@/app/lib/data";
 import Section from "../Section/Section";
 import styles from "./Process2.module.css";
 import Image from "next/image";

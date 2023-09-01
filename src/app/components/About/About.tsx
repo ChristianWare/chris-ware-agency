@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 import Image from "next/image";
 import Chris from "../../../../public/images/chrisware.jpg";
 import Button from "../Button/Button";
-import { about } from "@/lib/data";
+import { about } from "@/app/lib/data";
 
 const About = () => {
   return (

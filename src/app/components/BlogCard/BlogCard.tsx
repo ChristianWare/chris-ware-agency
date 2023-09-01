@@ -3,11 +3,11 @@ import { FC } from "react";
 import styles from "./BlogCard.module.css";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { Post } from "@/app/lib/interface";
+import { Posts } from "@/app/lib/interface";
 
 interface BlogCardProps {
   src: StaticImageData;
-  post: Post;
+  post: Posts;
 }
 
 function formatDate(dateString: string): string {
@@ -26,7 +26,7 @@ const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
       <article className={styles.card}>
         <div className={styles.imgContainer}>
           <Image
-            src={src}
+            src={post.image}
             alt='image details'
             title='image details'
             fill
@@ -34,12 +34,12 @@ const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
             className={styles.img}
           />
         </div>
-        <div className={styles.date}>{formatDate(post._createdAt)}</div>
+        {/* <div className={styles.date}>{formatDate(post._createdAt)}</div> */}
         <h3 className={styles.title}>{post.title}</h3>
         <p className={styles.preview}>{post.overview}</p>
-        <Link href={`/blog/${post.slug.current}`} className={styles.readMore}>
+        {/* <Link href={`/blog/${post.slug.current}`} className={styles.readMore}>
           Read Article
-        </Link>
+        </Link> */}
       </article>
     </div>
   );

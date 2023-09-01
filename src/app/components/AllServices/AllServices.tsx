@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Section from "../Section/Section";
 import styles from "./AllServices.module.css";
-import { servicesSection } from "@/lib/data";
+import { servicesSection } from "@/app/lib/data";
 
 const AllServices = () => {
   return (

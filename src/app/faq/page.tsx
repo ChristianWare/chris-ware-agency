@@ -18,7 +18,7 @@ async function getData() {
 export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function FaqPage() {
-    const data = (await getData()) as Post[];
+  const data = (await getData()) as Post[];
 
   return (
     <section className={styles.container}>

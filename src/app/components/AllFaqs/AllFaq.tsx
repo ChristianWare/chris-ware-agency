@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Section from "../Section/Section";
 import styles from "./AllFaq.module.css";
-import { faqs } from "@/lib/data";
+import { faqs } from "@/app/lib/data";
 import { useState } from "react";
 import Plus from "../../../../public/icons/plus.svg";
 

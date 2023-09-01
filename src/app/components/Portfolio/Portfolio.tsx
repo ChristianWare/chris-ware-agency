@@ -1,6 +1,6 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Portfolio.module.css";
-import { portfolio } from "@/lib/data";
+import { portfolio } from "@/app/lib/data";
 import Image from "next/image";
 
 const Portfolio = () => {

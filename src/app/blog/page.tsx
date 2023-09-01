@@ -17,7 +17,6 @@ async function getData() {
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 
-
 export default async function BlogPage() {
   const data = (await getData()) as Post[];
   return (

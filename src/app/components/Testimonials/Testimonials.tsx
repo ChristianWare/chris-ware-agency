@@ -1,6 +1,6 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Testimonials.module.css";
-import { reviews } from "@/lib/data";
+import { reviews } from "@/app/lib/data";
 import Image from "next/image";
 
 const Testimonials = () => {

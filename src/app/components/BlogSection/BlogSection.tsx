@@ -7,10 +7,10 @@ import Card from "../../../../public/images/success.png";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
-import { Post } from "@/app/lib/interface";
+import { Posts } from "@/app/lib/interface";
 
 interface BlogSectionProps {
-  posts: Post[];
+  posts: Posts[];
 }
 
 export const revalidate = 60;
@@ -32,9 +32,7 @@ const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
         />
         <div className={styles.bottom}>
           {posts.map((post) => (
-            // <div>
             <BlogCard key={post._id} src={Card} post={post} />
-            // </div>
           ))}
         </div>
         {pathname !== "/blog" && (

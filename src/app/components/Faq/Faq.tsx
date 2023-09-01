@@ -3,7 +3,7 @@
 import { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Faq.module.css";
-import { faqs } from "@/lib/data";
+import { faqs } from "@/app/lib/data";
 import Button from "../Button/Button";
 import Plus from "../../../../public/icons/plus.svg";
 

@@ -1,7 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/lib/utils";
+import { validateString, getErrorMessage } from "@/app/lib/utils";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

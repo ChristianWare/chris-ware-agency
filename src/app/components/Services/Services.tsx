@@ -1,5 +1,5 @@
 import styles from "./Services.module.css";
-import { servicesSection, features } from "../../../lib/data";
+import { servicesSection, features } from "../../lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
@@ -49,45 +49,44 @@ const Services = () => {
             visitors to your page. Contact us now to enhance your business&#39;s
             online presence and increase revenue!
           </p>
-          
         </div>
         <Features />
         <div className={styles.featuresBottom}>
-            <div className={styles.left}>
-              {features.slice(0, 2).map((z) => (
-                <div key={z.id} className={styles.featuresCard}>
-                  <div className={styles.imgFeatureContainer}>
-                    <Image
-                      src={z.icon}
-                      alt={z.feature}
-                      title={z.feature}
-                      width={60}
-                      height={60}
-                    />
-                    <strong>{z.feature}</strong>
-                  </div>
-                  <p className={styles.description}>{z.description}</p>
+          <div className={styles.left}>
+            {features.slice(0, 2).map((z) => (
+              <div key={z.id} className={styles.featuresCard}>
+                <div className={styles.imgFeatureContainer}>
+                  <Image
+                    src={z.icon}
+                    alt={z.feature}
+                    title={z.feature}
+                    width={60}
+                    height={60}
+                  />
+                  <strong>{z.feature}</strong>
                 </div>
-              ))}
-            </div>
-            <div className={styles.left}>
-              {features.slice(2, 4).map((z) => (
-                <div key={z.id} className={styles.featuresCard}>
-                  <div className={styles.imgFeatureContainer}>
-                    <Image
-                      src={z.icon}
-                      alt={z.feature}
-                      title={z.feature}
-                      width={60}
-                      height={60}
-                    />
-                    <strong>{z.feature}</strong>
-                  </div>
-                  <p className={styles.description}>{z.description}</p>
-                </div>
-              ))}
-            </div>
+                <p className={styles.description}>{z.description}</p>
+              </div>
+            ))}
           </div>
+          <div className={styles.left}>
+            {features.slice(2, 4).map((z) => (
+              <div key={z.id} className={styles.featuresCard}>
+                <div className={styles.imgFeatureContainer}>
+                  <Image
+                    src={z.icon}
+                    alt={z.feature}
+                    title={z.feature}
+                    width={60}
+                    height={60}
+                  />
+                  <strong>{z.feature}</strong>
+                </div>
+                <p className={styles.description}>{z.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className={styles.btnContainer}>
           <Button href='/services' text='More services' btnType='primary' />
         </div>

@@ -1,7 +1,7 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Process.module.css";
 import Image from "next/image";
-import { process } from "@/lib/data";
+import { process } from "@/app/lib/data";
 import Button from "../Button/Button";
 import Calendar from "../../../../public/icons/calendar.png";
 
