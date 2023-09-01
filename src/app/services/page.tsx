@@ -7,21 +7,13 @@ import Pricing from "../components/Pricing/Pricing";
 import Process2 from "../components/Process2/Process2";
 import styles from "./Services.module.css";
 import img1 from "../../../public/images/collab1.png";
-import { Post } from "../lib/interface";
-import { client } from "../lib/sanity";
+import { getPosts } from "../../../sanity/sanity-utils";
 import PageIntro from "../components/PageIntro/PageIntro";
-
-async function getData() {
-  const query = `*[_type == 'post']`;
-  const data = await client.fetch(query);
-  return data;
-}
 
 export const revalidate = 60;
 
 export default async function ServicesPage() {
-  const data = (await getData()) as Post[];
-
+  const data = await getPosts();
   return (
     <section className={styles.container}>
       <PageIntro

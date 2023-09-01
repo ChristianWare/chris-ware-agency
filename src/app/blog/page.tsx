@@ -6,19 +6,14 @@ import img1 from "../../../public/images/blog1.png";
 import img2 from "../../../public/images/blog2.png";
 import img3 from "../../../public/images/blog3.png";
 import img4 from "../../../public/images/blog4.png";
-import { Post } from "../lib/interface";
-import { client } from "../lib/sanity";
+import { getPosts } from "../../../sanity/sanity-utils";
 
-async function getData() {
-  const query = `*[_type == 'post']`;
-  const data = await client.fetch(query);
-  return data;
-}
+
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function BlogPage() {
-  const data = (await getData()) as Post[];
+  const data = await getPosts();
   return (
     <section className={styles.container}>
       <div className={styles.pageIntroContainer}>

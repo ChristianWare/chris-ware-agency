@@ -7,20 +7,15 @@ import Reasons from "../components/Reasons/Reasons";
 import Team from "../components/Team/Team";
 import styles from "./About.module.css";
 import img1 from "../../../public/images/hero4.png";
-import { Post } from "../lib/interface";
-import { client } from "../lib/sanity";
 import PageIntro from "../components/PageIntro/PageIntro";
+import { getPosts } from "../../../sanity/sanity-utils";
 
-async function getData() {
-  const query = `*[_type == 'post']`;
-  const data = await client.fetch(query);
-  return data;
-}
+
 
 export const revalidate = 60;
 
 export default async function AboutPage() {
-  const data = (await getData()) as Post[];
+  const data = await getPosts();
   return (
     <section className={styles.container}>
       <PageIntro

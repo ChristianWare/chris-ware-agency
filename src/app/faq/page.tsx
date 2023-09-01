@@ -5,20 +5,13 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCta from "../components/FinalCta/FinalCta";
 import styles from "./Faq.module.css";
 import img1 from "../../../public/images/collab3.png";
-import { Post } from "../lib/interface";
-import { client } from "../lib/sanity";
 import PageIntro from "../components/PageIntro/PageIntro";
-
-async function getData() {
-  const query = `*[_type == 'post']`;
-  const data = await client.fetch(query);
-  return data;
-}
+import { getPosts } from "../../../sanity/sanity-utils";
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function FaqPage() {
-  const data = (await getData()) as Post[];
+  const data = await getPosts();
 
   return (
     <section className={styles.container}>
