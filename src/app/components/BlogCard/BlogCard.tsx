@@ -20,7 +20,7 @@ function formatDate(dateString: string): string {
 
 export const revalidate = 60;
 
-const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
+const BlogCard: FC<BlogCardProps> = ({ post }) => {
   return (
     <div className={styles.container}>
       <article className={styles.card}>
@@ -37,7 +37,7 @@ const BlogCard: FC<BlogCardProps> = ({ src, post }) => {
         <div className={styles.date}>{formatDate(post._createdAt)}</div>
         <h3 className={styles.title}>{post.title}</h3>
         <p className={styles.preview}>{post.overview}</p>
-        <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+        <Link href={`/blog/${post.slug}`} prefetch className={styles.readMore}>
           Read Article
         </Link>
       </article>

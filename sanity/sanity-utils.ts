@@ -1,5 +1,5 @@
 import {createClient, groq} from 'next-sanity'
-import { Posts } from '../src/app/lib/interface'
+import {Posts} from '../src/app/lib/interface'
 
 export async function getPosts(): Promise<Posts[]> {
   const client = createClient({

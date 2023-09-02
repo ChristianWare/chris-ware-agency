@@ -8,7 +8,7 @@ export interface Button {
   icon?: ReactNode;
 }
 
-export type Posts = {
+export interface Posts {
   _id: string;
   _createdAt: string;
   title: string;
@@ -16,4 +16,4 @@ export type Posts = {
   image: string;
   slug: string;
   content: PortableTextBlock[];
-};
+}
