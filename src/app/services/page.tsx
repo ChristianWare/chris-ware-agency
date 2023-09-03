@@ -1,3 +1,4 @@
+import styles from "./Services.module.css";
 import AllServices from "../components/AllServices/AllServices";
 import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
@@ -5,15 +6,10 @@ import Faq from "../components/Faq/Faq";
 import FinalCta from "../components/FinalCta/FinalCta";
 import Pricing from "../components/Pricing/Pricing";
 import Process2 from "../components/Process2/Process2";
-import styles from "./Services.module.css";
 import img1 from "../../../public/images/collab1.png";
-import { getPosts } from "../../../sanity/sanity-utils";
 import PageIntro from "../components/PageIntro/PageIntro";
 
-export const revalidate = 60;
-
 export default async function ServicesPage() {
-  const data = await getPosts();
   return (
     <section className={styles.container}>
       <PageIntro
@@ -35,7 +31,7 @@ export default async function ServicesPage() {
       <Process2 />
       <Pricing />
       <Faq />
-      <BlogSection posts={data} />
+      {/* <BlogSection posts={data} /> */}
       <FinalCta />
       <ContactSection />
     </section>

@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Posts } from "@/app/lib/interface";
 
 interface BlogCardProps {
-  src: StaticImageData;
   post: Posts;
 }
 

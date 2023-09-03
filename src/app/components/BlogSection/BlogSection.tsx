@@ -3,7 +3,6 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./BlogSection.module.css";
 import BlogCard from "../BlogCard/BlogCard";
-import Card from "../../../../public/images/success.png";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
@@ -32,7 +31,7 @@ const BlogSection: FC<BlogSectionProps> = ({ posts }) => {
         />
         <div className={styles.bottom}>
           {posts.map((post) => (
-            <BlogCard key={post._id} src={Card} post={post} />
+            <BlogCard key={post._id} post={post} />
           ))}
         </div>
         {pathname !== "/blog" && (

@@ -4,17 +4,15 @@ import { urlFor } from "@/app/lib/sanityImageUrl";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import styles from "./Slugpage.module.css";
+import SlugIntro from "@/app/components/SlugIntro/SlugIntro";
 
 async function getData(slug: string) {
   const query = `*[_type == 'post' && slug.current == "${slug}"][0]`;
-
   const data = await client.fetch(query);
-
   return data;
 }
 
 export const revalidate = 60;
-
 export default async function SlugPage({
   params,
 }: {
@@ -37,9 +35,9 @@ export default async function SlugPage({
       ),
     },
   };
-
   return (
     <div>
+      <SlugIntro posts={data} />
       <h1>{data.title}</h1>
       <PortableText value={data.content} components={PortableTextComponent} />
     </div>

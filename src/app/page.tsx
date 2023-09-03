@@ -8,7 +8,6 @@ import Pricing from "./components/Pricing/Pricing";
 import BlogSection from "./components/BlogSection/BlogSection";
 import Faq from "./components/Faq/Faq";
 import FinalCta from "./components/FinalCta/FinalCta";
-import { getPosts } from "../../sanity/sanity-utils";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -19,10 +18,8 @@ const jsonLd = {
     "Description Here Description Here Description Here Description Here",
 };
 
-export const revalidate = 60;
 
 export default async function Home() {
-  const data = await getPosts();
   return (
     <main>
       <script
@@ -40,7 +37,7 @@ export default async function Home() {
       <Process />
       <Pricing />
       <Faq />
-      <BlogSection posts={data} />
+      {/* <BlogSection posts={data} /> */}
       <FinalCta />
     </main>
   );

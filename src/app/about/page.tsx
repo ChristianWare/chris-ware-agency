@@ -8,14 +8,11 @@ import Team from "../components/Team/Team";
 import styles from "./About.module.css";
 import img1 from "../../../public/images/hero4.png";
 import PageIntro from "../components/PageIntro/PageIntro";
-import { getPosts } from "../../../sanity/sanity-utils";
 
 
 
-export const revalidate = 60;
 
 export default async function AboutPage() {
-  const data = await getPosts();
   return (
     <section className={styles.container}>
       <PageIntro
@@ -38,7 +35,7 @@ export default async function AboutPage() {
       <CompanyCulture />
       <Team />
       <Faq />
-      <BlogSection posts={data} />
+      {/* <BlogSection posts={data} /> */}
       <FinalCta />
       <ContactSection />
     </section>

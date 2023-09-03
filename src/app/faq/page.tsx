@@ -6,12 +6,9 @@ import FinalCta from "../components/FinalCta/FinalCta";
 import styles from "./Faq.module.css";
 import img1 from "../../../public/images/collab3.png";
 import PageIntro from "../components/PageIntro/PageIntro";
-import { getPosts } from "../../../sanity/sanity-utils";
 
-export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function FaqPage() {
-  const data = await getPosts();
 
   return (
     <section className={styles.container}>
@@ -30,7 +27,7 @@ export default async function FaqPage() {
       />
 
       <AllFaq />
-      <BlogSection posts={data} />
+      {/* <BlogSection posts={data} /> */}
       <FinalCta />
       <ContactSection />
     </section>
