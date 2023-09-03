@@ -9,13 +9,11 @@ const Services = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.top}>
           <SectionHeading
             labelText='Services'
             headingText='Our Range of web development services'
             copyText='The things we build and what they include'
           />
-        </div>
         <div className={styles.bottom}>
           {servicesSection.slice(0, 1).map((x) => (
             <div key={x.id}>

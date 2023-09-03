@@ -33,8 +33,8 @@ export default async function Home() {
         }}
       />
       <Hero />
-      <About />
       <Services />
+      <About />
       <Portfolio />
       <Testimonials />
       <Process />
