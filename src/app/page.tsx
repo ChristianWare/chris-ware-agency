@@ -1,3 +1,4 @@
+import styles from './page.module.css'
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
@@ -40,7 +41,7 @@ export default async function Home() {
   });
 
   return (
-    <main>
+    <main className={styles.container}>
       <script
         key='schema-jsonld'
         type='application/ld+json'

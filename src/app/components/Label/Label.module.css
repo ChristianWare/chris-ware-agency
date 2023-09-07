@@ -1,6 +1,6 @@
 .label {
   font-size: 1.2rem;
-  font-family: var(--roboto);
+  font-family: var(--roboto) !important;
   padding: 5px 15px;
   background-color: var(--accent1);
   color: var(--text);
