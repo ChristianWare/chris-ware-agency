@@ -1,5 +1,5 @@
 .container {
-  animation: fadeIn 0.4s;
+  animation: fadeIn 1s;
   position: relative;
   margin-bottom: 15rem;
 }
@@ -15,10 +15,6 @@
 .left {
   flex: 1.5;
   width: 100%;
-}
-
-.title {
-  font-family: var(--roboto);
 }
 
 .copy {
@@ -123,4 +119,5 @@
     object-fit: cover;
   }
 }
+
 
