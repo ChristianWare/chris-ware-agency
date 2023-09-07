@@ -48,6 +48,10 @@ h6,
 strong {
   font-family: var(--bebasneue);
   color: var(--primary);
+  src: url("/fonts/bebasneue.woff2") format("woff2");
+  src: url("/fonts/bebasneue.woff2") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {

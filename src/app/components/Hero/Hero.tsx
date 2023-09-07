@@ -11,7 +11,7 @@ const Hero = () => {
       <div className={styles.content}>
         <div className={styles.left}>
           <Label text='Welcome!' />
-          <h1 className={styles.title}>
+          <h1>
             We Elevate Brands through Innovative Web Design and Development
           </h1>
           <p className={styles.copy}>
