@@ -1,5 +1,5 @@
 .container {
-  /* animation: fadeIn 1s; */
+  animation: fadeIn 0.4s;
   position: relative;
   margin-bottom: 15rem;
 }
@@ -121,12 +121,22 @@
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  to {
+  50% {
     opacity: 1;
-    transform: translate(0px);
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
+

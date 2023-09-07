@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
@@ -11,11 +8,7 @@ import Label from "../Label/Label";
 const Hero = () => {
   return (
     <section className={styles.container}>
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        className={styles.content}
-      >
+      <div className={styles.content}>
         <div className={styles.left}>
           <Label text='Welcome!' />
           <h1>
@@ -58,7 +51,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
