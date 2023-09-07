@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import styles from "./Hero.module.css";
 import Image from "next/image";
@@ -8,16 +11,20 @@ import Label from "../Label/Label";
 const Hero = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className={styles.content}
+      >
         <div className={styles.left}>
           <Label text='Welcome!' />
           <h1>
             We Elevate Brands through Innovative Web Design and Development.
           </h1>
           <p className={styles.copy}>
-            At the Chris Ware Agency, we Merge Imagination and Innovation in Web Design and Development,
-            Crafting Websites that Captivate, Convert, and Catapult Businesses
-            to New Heights in the Digital Landscape.
+            At the Chris Ware Agency, we Merge Imagination and Innovation in Web
+            Design and Development, Crafting Websites that Captivate, Convert,
+            and Catapult Businesses to New Heights in the Digital Landscape.
           </p>
           <div className={styles.btnContainer}>
             <Button href='/' btnType='primary' text='Get in touch' />
@@ -51,7 +58,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

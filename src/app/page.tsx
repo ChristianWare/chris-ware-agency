@@ -48,7 +48,6 @@ export default async function Home() {
           __html: JSON.stringify(jsonLd, null, "\t"),
         }}
       />
-
       <Hero />
       {/* {blogs.map((x, index) => (
         <div key={index}>
@@ -66,6 +65,7 @@ export default async function Home() {
       <Faq />
       {/* <BlogSection posts={data} /> */}
       <FinalCta />
+      
     </main>
   );
 }
