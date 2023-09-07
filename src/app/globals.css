@@ -151,6 +151,6 @@ input:focus {
   h5,
   h6,
   strong {
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.1rem;
   }
 }
