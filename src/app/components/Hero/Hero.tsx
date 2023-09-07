@@ -11,14 +11,14 @@ const Hero = () => {
       <div className={styles.content}>
         <div className={styles.left}>
           <Label text='Welcome!' />
-          <h1>
+          <h1 className={styles.title}>
             We Elevate Brands through Innovative Web Design and Development
           </h1>
-          {/* <p className={styles.copy}>
+          <p className={styles.copy}>
             At the Chris Ware Agency, we Merge Imagination and Innovation in Web
             Design and Development, Crafting Websites that Captivate, Convert,
             and Catapult Businesses to New Heights in the Digital Landscape.
-          </p> */}
+          </p>
           <div className={styles.btnContainer}>
             <Button href='/' btnType='primary' text='Get in touch' />
             <Button
