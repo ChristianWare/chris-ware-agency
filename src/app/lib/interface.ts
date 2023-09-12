@@ -6,3 +6,26 @@ export interface Button {
   btnType: string;
   icon?: ReactNode;
 }
+
+export interface BlogData {
+  meta: {
+    category: string;
+    thumbnaillUrl: string;
+    date: string;
+    readingTime: number;
+    title: string;
+    description: string;
+    // Add other properties if needed
+  };
+  slug: string;
+}
+
+export interface BlogPreview {
+  mapData: BlogData;
+  key: number;
+}
+
+export interface BlogSection {
+  blogData: any;
+}
+

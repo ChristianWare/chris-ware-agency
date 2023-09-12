@@ -7,7 +7,6 @@ import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 
-
 const roboto = Roboto({
   weight: ["400", "500"],
   style: ["normal"],
@@ -42,9 +41,6 @@ export default function RootLayout({
           }}
         />
         <Nav />
-
-        
-
         {children}
         <Footer />
       </body>

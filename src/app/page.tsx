@@ -26,10 +26,8 @@ const jsonLd = {
 };
 
 export default async function Home() {
-  const blogDir = "blogs"; // what goes in quotation marks in the name of the file that you created in the root directory to hold all of the mdx files you created.
-
+  const blogDir = "blogs";
   const files = fs.readdirSync(path.join(blogDir));
-
   const blogs = files.map((filename) => {
     const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
 
@@ -64,7 +62,7 @@ export default async function Home() {
       <Process />
       <Pricing />
       <Faq />
-      {/* <BlogSection posts={data} /> */}
+      <BlogSection blogData={blogs} />
       <FinalCta />
       
     </main>

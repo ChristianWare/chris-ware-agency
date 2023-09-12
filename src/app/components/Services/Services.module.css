@@ -16,7 +16,6 @@
   margin-bottom: 1rem;
 }
 
-
 .serviceCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

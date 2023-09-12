@@ -1,22 +1,25 @@
-"use client";
+// "use client";
 
+import { BlogSection, BlogData } from "@/app/lib/interface";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./BlogSection.module.css";
 import BlogCard from "../BlogCard/BlogCard";
 import Button from "../Button/Button";
-import { usePathname } from "next/navigation";
 import { FC } from "react";
+import BlogPreview from "../BlogPreview/BlogPreview";
 
 
 export const revalidate = 60;
 
-const BlogSection = () => {
-  const pathname = usePathname();
-
+const BlogSection: FC<BlogSection> = ({ blogData }) => {
 
   return (
     <section className={styles.container}>
+      <h1>Blog Section</h1>
       <div className={styles.content}>
+        {blogData.map((x: BlogData, index: number) => (
+          <BlogPreview key={index} mapData={x} />
+        ))}
         {/* <SectionHeading
           labelText='Blog'
           headingText='News & Updates'
