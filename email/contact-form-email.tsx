@@ -7,7 +7,7 @@ type ContactFormEmailProps = {
 export default function ContactFormEmail({ message }: ContactFormEmailProps) {
   return (
     <div>
-      <h1>Contat Form Email</h1>
+      <h1>Contact Form Email</h1>
     </div>
   );
 }
