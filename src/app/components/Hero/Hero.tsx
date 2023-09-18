@@ -23,9 +23,9 @@ const Hero = () => {
               Landscape.
             </p>
             <div className={styles.btnContainer}>
-              <Button href='/' btnType='primary' text='Get in touch' />
+              <Button href='/contact' btnType='primary' text='Get in touch' />
               <Button
-                href='/'
+                href='/contact'
                 btnType='secondary'
                 text='Book a meeting'
                 icon={
