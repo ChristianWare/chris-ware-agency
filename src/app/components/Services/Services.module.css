@@ -3,9 +3,9 @@
   position: relative;
 }
 
-.content {
+/* .content {
   padding: 5rem;
-}
+} */
 
 .bottom {
   margin-top: 3rem;
@@ -196,9 +196,9 @@
     width: 100%;
   }
 
-  .content {
+  /* .content {
     padding: 1rem;
-  }
+  } */
 
   .serviceCardContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -223,9 +223,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  .content {
+  /* .content {
     padding: 0rem;
-  }
+  } */
 
   .container::after {
     width: 200px;
@@ -241,8 +241,11 @@
 
   .serviceCardContainer {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
     margin-bottom: 2rem;
   }
+  
 
   .featuresSection {
     margin-bottom: 5rem;
@@ -252,8 +255,13 @@
     left: 40%;
   }
 
+  .featuresBottom {
+    gap: 2rem;
+  }
+
   .left {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
   .imgFeatureContainer {
