@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from "../../../../public/icons/cwlogo.svg";
+import Logo from "../../../../public/icons/newcwalogo.svg";
 import Calendar from "../../../../public/icons/calendar.png";
 import Button from "../Button/Button";
 import Image from "next/image";

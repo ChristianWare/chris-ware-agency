@@ -59,7 +59,7 @@ strong {
   /* src: url("/fonts/bebasneue.woff2") format("truetype"); */
   /* font-weight: 700; */
   /* font-style: normal; */
-  /* letter-spacing: 0.1rem; */
+  letter-spacing: 0.1rem;
 }
 
 h2 {
