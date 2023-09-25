@@ -1,7 +1,7 @@
 .header {
   margin-top: 1rem;
-  font-family: var(--bebasneue);
-  color: var(--text);
+  font-family: var(--azeretMono);
+  color: var(--textGray);
 }
 
 .navbar {
@@ -11,7 +11,6 @@
 }
 
 .logo {
-  /* font-size: 2.5rem; */
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in;
 }
@@ -29,27 +28,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   list-style: none;
 }
 
 .navItem {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   position: relative;
   user-select: none;
 }
 
-.navItem::after {
+/* .navItem::after {
   position: absolute;
   content: "";
   left: 0;
   bottom: -5px;
-  width: 0%;
+  width: 5px;
   height: 5px;
   background-color: var(--secondary);
-  border-radius: 8px;
+  border-radius: 50%;
   transition: all 0.2s ease-in-out;
-}
+} */
 
 .activeLink {
   position: relative;
@@ -58,23 +57,28 @@
 .activeLink::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 50%;
   bottom: -8px;
-  width: 100%;
+  width: 5px;
   height: 5px;
   background-color: var(--secondary);
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 .navItem:hover.navItem::after {
   position: absolute;
   content: "";
-  left: 0;
-  bottom: -2px;
-  width: 100%;
+  left: 50%;
+  bottom: -8px;
+  width: 5px;
   height: 5px;
   background-color: var(--secondary);
-  border-radius: 8px;
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
 }
 
 .bottom {
@@ -129,6 +133,10 @@
   .officialLogoMobile {
     display: block;
     margin-top: 3rem;
+  }
+
+  .btnContainer {
+    display: none;
   }
 
   .bottom {

@@ -8,25 +8,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 5rem; */
-  /* padding-top: 3rem; */
+  gap: 5rem;
+  margin-top: 10rem;
 }
 
-.left {
-  flex: 1.5;
-  width: 100%;
+.heading {
+  width: 80%;
 }
+
 
 .copy {
   margin-top: 1rem;
-  opacity: 0.7;
+  font-family: var(--azeretMono);
+  font-size: 1.9rem;
+  color: var(--text);
+  width: 60%;
 }
 
 .btnContainer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -119,5 +122,3 @@
     object-fit: cover;
   }
 }
-
-

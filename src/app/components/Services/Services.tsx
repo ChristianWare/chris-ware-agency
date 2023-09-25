@@ -41,7 +41,7 @@ const Services = () => {
               </div>
             ))}
           </div>
-          <div className={styles.featuresSection}>
+          {/* <div className={styles.featuresSection}>
             <h3 className={styles.heading2}>
               All websites we build include the following features:
             </h3>
@@ -51,9 +51,9 @@ const Services = () => {
               visitors to your page. Contact us now to enhance your
               business&#39;s online presence and increase revenue!
             </p>
-          </div>
-          <Features />
-          <div className={styles.featuresBottom}>
+          </div> */}
+          {/* <Features /> */}
+          {/* <div className={styles.featuresBottom}>
             <div className={styles.left}>
               {features.slice(0, 2).map((z) => (
                 <div key={z.id} className={styles.featuresCard}>
@@ -88,7 +88,7 @@ const Services = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
           <div className={styles.btnContainer}>
             <Button href='/services' text='More services' btnType='primary' />
           </div>

@@ -48,22 +48,18 @@ export default async function Home() {
         }}
       />
       <Hero />
-      {/* {blogs.map((x, index) => (
-        <div key={index}>
-          <h4>{x.meta.title}</h4>
-          <h4>{x.meta.date}</h4>
-          <p>{x.meta.description}</p>
-        </div>
-      ))} */}
-      <Services />
-      <About />
-      <Portfolio />
-      <Testimonials />
-      <Process />
-      <Pricing />
-      <Faq />
-      <BlogSection blogData={blogs} />
-      <FinalCta />
+      {/* Challenge */}
+      {/* benefits */}
+      {/* <About /> */}
+      {/* <Process /> */}
+      {/* Acheivements + Services */}
+      {/* <Services /> */}
+      {/* <Portfolio /> */}
+      {/* <Testimonials /> */}
+      {/* <Pricing /> */}
+      {/* <Faq /> */}
+      {/* <BlogSection blogData={blogs} /> */}
+      {/* <FinalCta /> */}
       
     </main>
   );

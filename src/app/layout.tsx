@@ -1,22 +1,36 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Azeret_Mono, Outfit } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./layout.module.css";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 
-const roboto = Roboto({
+// const roboto = Roboto({
+//   weight: ["400", "500"],
+//   style: ["normal"],
+//   subsets: ["latin"],
+//   variable: "--roboto",
+// });
+
+// const bebasneue = localFont({
+//   src: "../../public/fonts/bebasneue.woff2",
+//   variable: "--bebasneue",
+// });
+
+const azeretMono = Azeret_Mono({
   weight: ["400", "500"],
   style: ["normal"],
   subsets: ["latin"],
-  variable: "--roboto",
+  variable: "--azeretMono",
 });
 
-const bebasneue = localFont({
-  src: "../../public/fonts/bebasneue.woff2",
-  variable: "--bebasneue",
+const outfit = Outfit({
+  weight: ["400", "500"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--outfit",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${roboto.variable} ${bebasneue.variable} ${styles.layout}`}
+        className={`${outfit.variable} ${azeretMono.variable} ${styles.layout}`}
       >
         <Toaster
           position='top-right'
