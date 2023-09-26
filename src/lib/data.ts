@@ -514,3 +514,48 @@ export const challenges = [
       "Your website is impossible to find on Google because it ranks way too low, and is somewhere on page 15.",
   },
 ] as const;
+
+export const solutions = [
+  {
+    id: 53,
+    src: SEO,
+    title: "More Inquireies",
+    description:
+      "Your website attracts new customers and they trust your products and services as a top solution.",
+  },
+  {
+    id: 54,
+    src: SEO,
+    title: "Inspiring Design",
+    description:
+      "The design of your website inspires and you stay in the minds of your customers.",
+  },
+  {
+    id: 55,
+    src: SEO,
+    title: "Professional identity",
+    description:
+      "You will be perceived by your visitors as trustworthy and professional.",
+  },
+  {
+    id: 56,
+    src: SEO,
+    title: "Authentic appearance",
+    description:
+      "You can identify with your website and are happy to share the link with potential customers.",
+  },
+  {
+    id: 57,
+    src: SEO,
+    title: "Stress-free management",
+    description:
+      "Change or expand your content effortlessly, without technical know-how.",
+  },
+  {
+    id: 58,
+    src: SEO,
+    title: "Ahead of the competition",
+    description:
+      "You appear attractive to potential customers and employees and thereby stand out from the competition.",
+  },
+] as const;
