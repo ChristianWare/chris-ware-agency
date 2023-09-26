@@ -475,3 +475,38 @@ export const faqs = [
       "Absolutely, we can guide you through the process of transferring your domain name to our hosting service. We'll ensure a smooth transition so that your website remains accessible with minimal downtime during the switch.",
   },
 ] as const;
+
+export const heroImages = [
+  {
+    id: 47,
+    src: Fonts,
+  },
+  {
+    id: 48,
+    src: Drone,
+  },
+  {
+    id: 49,
+    src: Taco,
+  },
+  {
+    id: 50,
+    src: Design,
+  },
+  {
+    id: 51,
+    src: Success,
+  },
+  {
+    id: 52,
+    src: Deploy,
+  },
+  {
+    id: 53,
+    src: Develop,
+  },
+  {
+    id: 55,
+    src: Design,
+  },
+] as const;

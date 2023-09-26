@@ -102,6 +102,13 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 968px) {
+  .menuItemsGroup,
+  .navMenu {
+    gap: 2rem;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .header {
     margin-top: 2rem;

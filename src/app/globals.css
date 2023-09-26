@@ -43,7 +43,7 @@ a {
 }
 
 h1 {
-  font-size: 7.1rem;
+  font-size: 6.5rem;
   line-height: 120%;
 }
 
@@ -149,6 +149,10 @@ input:focus {
 
 .toastFont {
   font-family: var(--roboto);
+}
+
+h1 {
+  font-size: 5rem;
 }
 
 /* Only use in production */

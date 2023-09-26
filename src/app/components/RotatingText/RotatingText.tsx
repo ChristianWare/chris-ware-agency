@@ -42,9 +42,9 @@ const RotatingText = () => {
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='15.3'>
+        <text font-size='15.6'>
           <textPath className={styles.svg} xlinkHref='#circle'>
-            Chris Ware chris Ware Chris
+            Scroll down Scroll down
           </textPath>
         </text>
       </svg>
