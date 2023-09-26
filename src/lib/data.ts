@@ -476,37 +476,41 @@ export const faqs = [
   },
 ] as const;
 
-export const heroImages = [
+export const challenges = [
   {
     id: 47,
-    src: Fonts,
+    title: "No Inquires",
+    description:
+      "None of your customers are calling about your website, and you're questioning the the point of even having one.",
   },
   {
     id: 48,
-    src: Drone,
+    title: "Design Chaos",
+    description:
+      "Your website seem confusing, outdated and the design works against your image instead of for it.",
   },
   {
     id: 49,
-    src: Taco,
+    title: "Inadequate",
+    description:
+      "The quality and added value of your products and services are not reflect in your website.",
   },
   {
     id: 50,
-    src: Design,
+    title: "Time Consuming",
+    description:
+      "Are you frustrated with the maintenance and management of your website due to its excessive time consumption?",
   },
   {
     id: 51,
-    src: Success,
+    title: "Cookie Cutter",
+    description:
+      "Your website looks like others and fail to make a lasting impression on your customers.",
   },
   {
     id: 52,
-    src: Deploy,
-  },
-  {
-    id: 53,
-    src: Develop,
-  },
-  {
-    id: 55,
-    src: Design,
+    title: "Internet Corps",
+    description:
+      "Your website is impossible to find on Google because it ranks way too low, and is somewhere on page 15.",
   },
 ] as const;

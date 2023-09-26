@@ -1,16 +1,16 @@
 .layout {
-    z-index: 1000;
-    max-width: 1500px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: var(--neutral);
+  z-index: 1000;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: var(--neutral);
 }
 
 @media screen and (max-width: 568px) {
-    .layout {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+  .layout {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
