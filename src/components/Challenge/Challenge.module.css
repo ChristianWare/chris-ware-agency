@@ -56,6 +56,15 @@
   gap: 2rem;
 }
 
+.title {
+  font-weight: 500;
+}
+
+.desc {
+  font-family: var(--azeretMono);
+  line-height: 130%;
+}
+
 .imgContainer {
   position: relative;
   width: 100%;
