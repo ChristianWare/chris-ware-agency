@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Pricing.module.css";
 import { pricing } from "@/lib/data";
-import Check from "../../../../public/icons/check.png";
+import Check from "../../../public/icons/check.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -51,7 +51,7 @@ const Pricing = () => {
         </div>
         {pathname !== "/pricing" && (
           <div className={styles.btnContainer}>
-            <Button href='/pricing' text='More detials' btnType='primary' />
+            <Button href='/pricing' btnType='primary'>More Details</Button>
           </div>
         )}
       </div>

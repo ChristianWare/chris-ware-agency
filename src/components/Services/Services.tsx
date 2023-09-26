@@ -89,9 +89,9 @@ const Services = () => {
               ))}
             </div>
           </div> */}
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button href='/services' text='More services' btnType='primary' />
-          </div>
+          </div> */}
         </ContentPadding>
       </div>
     </section>

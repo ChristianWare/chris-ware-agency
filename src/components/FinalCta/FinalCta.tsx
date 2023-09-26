@@ -17,7 +17,7 @@ const FinalCta = () => {
           New Heights in the Digital Landscape.
         </p>
         <div className={styles.btnContainer}>
-          <Button href='/contact' btnType='primary' text='Get in touch' />
+          {/* <Button href='/contact' btnType='primary' text='Get in touch' />
           <Button
             href='/'
             btnType='secondary'
@@ -32,7 +32,7 @@ const FinalCta = () => {
                 height={20}
               />
             }
-          />
+          /> */}
         </div>
       </div>
       <div className={styles.workCulture}>

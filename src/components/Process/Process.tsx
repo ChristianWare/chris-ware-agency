@@ -45,7 +45,7 @@ const Process = () => {
         <div className={styles.cta}>
           <strong>Ready to start a Project?</strong>
           <div className={styles.btnContainer}>
-            <Button
+            {/* <Button
               href='/contact'
               btnType='primary'
               text='I still have questions'
@@ -64,7 +64,7 @@ const Process = () => {
                   height={20}
                 />
               }
-            />
+            /> */}
           </div>
         </div>
       </div>

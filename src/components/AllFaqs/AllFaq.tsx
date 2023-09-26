@@ -5,7 +5,7 @@ import Section from "../Section/Section";
 import styles from "./AllFaq.module.css";
 import { faqs } from "@/lib/data";
 import { useState } from "react";
-import Plus from "../../../../public/icons/plus.svg";
+import Plus from '../../../public/icons/plus.svg'
 
 const AllFaq = () => {
   const [selected, setSelected] = useState<null | number>(null);

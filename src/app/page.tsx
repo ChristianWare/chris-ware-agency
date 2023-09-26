@@ -53,13 +53,11 @@ export default async function Home() {
       <Hero />
       <Challenge />
       <Solutions />
-      {/* Challenge */}
-      {/* benefits */}
+      <Portfolio />
       {/* <About /> */}
       {/* <Process /> */}
       {/* Acheivements + Services */}
       {/* <Services /> */}
-      {/* <Portfolio /> */}
       {/* <RotatingText /> */}
       {/* <Testimonials /> */}
       {/* <Pricing />
