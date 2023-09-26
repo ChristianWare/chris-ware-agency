@@ -27,7 +27,7 @@ const azeretMono = Azeret_Mono({
 });
 
 const outfit = Outfit({
-  weight: ["400", "500"],
+  weight: ["400", "500", "700", "800", "900"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--outfit",
