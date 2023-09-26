@@ -18,7 +18,7 @@
 .cardContainer2 {
   display: grid;
   grid-auto-flow: column;
-  animation: moveReverse 20s linear infinite;
+  /* animation: moveReverse 20s linear infinite; */
   width: 100%;
   grid-gap: 1rem;
   margin-bottom: 1rem;
@@ -29,7 +29,7 @@
 } */
 
 .cardContainer2 {
-  animation: move 20s linear infinite;
+  /* animation: move 20s linear infinite; */
 }
 
 .card {

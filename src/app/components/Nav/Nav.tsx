@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from "../../../../public/icons/newcwalogo.svg";
+import Logo from "../../../../public/icons/newcwalogo.png";
 import Calendar from "../../../../public/icons/calendar.png";
 import Button from "../Button/Button";
 import Image from "next/image";
@@ -18,7 +18,6 @@ const Nav = () => {
   useEffect(() => {
     const body = document.querySelector("body");
     if (body) {
-      // Check if body element exists
       if (window.innerWidth <= 820 && isOpen) {
         body.style.overflow = "hidden";
       } else {
@@ -32,7 +31,6 @@ const Nav = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
       if (body) {
-        // Clean up the style when unmounting
         body.style.overflow = "auto";
       }
     };
@@ -45,7 +43,12 @@ const Nav = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            <Logo className={styles.officialLogo} />
+            <Image
+              src={Logo}
+              alt='Chris Ware Agency Logo'
+              width={173}
+              height={20}
+            />
           </Link>
         </div>
         <div className={styles.menuItemsGroup}>
@@ -57,8 +60,13 @@ const Nav = () => {
             }
           >
             <li onClick={openMenu}>
-              <Link href='/' className={styles.logo}>
-                <Logo className={styles.officialLogoMobile} />
+              <Link href='/' className={styles.officialLogoMobile}>
+                <Image
+                  src={Logo}
+                  alt='Chris Ware Agency Logo'
+                  width={260}
+                  height={30}
+                />
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>

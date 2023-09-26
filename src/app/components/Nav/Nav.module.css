@@ -1,5 +1,6 @@
 .header {
   margin-top: 1rem;
+  padding-top: 1rem;
   font-family: var(--azeretMono);
   color: var(--textGray);
 }
@@ -58,11 +59,12 @@
   position: absolute;
   content: "";
   left: 50%;
-  bottom: -8px;
-  width: 5px;
-  height: 5px;
+  bottom: -10px;
+  width: 7px;
+  height: 7px;
   background-color: var(--secondary);
   border-radius: 50%;
+  border: 1px solid var(--navy);
 }
 
 .navItem:hover.navItem::after {
@@ -70,10 +72,11 @@
   content: "";
   left: 50%;
   bottom: -8px;
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   background-color: var(--secondary);
   border-radius: 50%;
+  border: 1px solid var(--navy);
 }
 
 .icon {
@@ -114,7 +117,7 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    text-align: left;
+
     transition: 0.3s all ease-in;
     z-index: 998;
     background-color: var(--neutral);

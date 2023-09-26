@@ -1,4 +1,4 @@
-import styles from './page.module.css'
+import styles from "./page.module.css";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
@@ -15,6 +15,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import RotatingText from "./components/RotatingText/RotatingText";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -55,12 +56,12 @@ export default async function Home() {
       {/* Acheivements + Services */}
       {/* <Services /> */}
       {/* <Portfolio /> */}
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
-      {/* <Faq /> */}
-      {/* <BlogSection blogData={blogs} /> */}
-      {/* <FinalCta /> */}
-      
+      <RotatingText />
+      <Testimonials />
+      {/* <Pricing />
+      <Faq />
+      <BlogSection blogData={blogs} />
+      <FinalCta /> */}
     </main>
   );
 }
