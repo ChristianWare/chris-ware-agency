@@ -16,6 +16,7 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import RotatingText from "../components/RotatingText/RotatingText";
+import Challenge from "@/components/Challenge/Challenge";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -49,6 +50,7 @@ export default async function Home() {
         }}
       />
       <Hero />
+      <Challenge />
       {/* Challenge */}
       {/* benefits */}
       {/* <About /> */}

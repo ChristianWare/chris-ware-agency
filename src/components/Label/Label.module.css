@@ -1,6 +1,7 @@
 .label {
   font-size: 1.3rem;
   font-family: var(--azeretMono) !important;
+  text-transform: capitalize;
   color: var(--primary);
   font-weight: 700;
   margin-bottom: 1rem;
