@@ -51,13 +51,13 @@ export default async function Home() {
       <Hero />
       {/* Challenge */}
       {/* benefits */}
-      <About />
-      <Process />
+      {/* <About /> */}
+      {/* <Process /> */}
       {/* Acheivements + Services */}
-      <Services />
-      <Portfolio />
+      {/* <Services /> */}
+      {/* <Portfolio /> */}
       {/* <RotatingText /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Pricing />
       <Faq />
       <BlogSection blogData={blogs} />

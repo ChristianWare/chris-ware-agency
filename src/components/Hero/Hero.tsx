@@ -8,6 +8,7 @@ import LinkedIn from "../../../public/icons/linkedin.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import Image from "next/image";
 import Hero6 from "../../../public/images/hero6.png";
+import Label from "../Label/Label";
 
 const Hero = () => {
   return (
@@ -16,6 +17,7 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
+              <Label text='// welcome' />
               <h1 className={styles.heading} lang='en'>
                 Want a better looking website than your competitors?
               </h1>
