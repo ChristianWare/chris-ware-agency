@@ -1,21 +1,21 @@
 import styles from "./page.module.css";
-import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
-import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Process from "./components/Process/Process";
-import Pricing from "./components/Pricing/Pricing";
-import BlogSection from "./components/BlogSection/BlogSection";
-import Faq from "./components/Faq/Faq";
-import FinalCta from "./components/FinalCta/FinalCta";
+import Hero from "../components/Hero/Hero";
+import Services from "../components/Services/Services";
+import About from "../components/About/About";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Process from "../components/Process/Process";
+import Pricing from "../components/Pricing/Pricing";
+import BlogSection from "../components/BlogSection/BlogSection";
+import Faq from "../components/Faq/Faq";
+import FinalCta from "../components/FinalCta/FinalCta";
 
 import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import RotatingText from "./components/RotatingText/RotatingText";
+import RotatingText from "../components/RotatingText/RotatingText";
 
 const jsonLd = {
   "@context": "https://schema.org",

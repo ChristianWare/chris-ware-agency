@@ -1,13 +1,13 @@
 import styles from "./Services.module.css";
-import AllServices from "../components/AllServices/AllServices";
-import BlogSection from "../components/BlogSection/BlogSection";
-import ContactSection from "../components/ContactSection/ContactSection";
-import Faq from "../components/Faq/Faq";
-import FinalCta from "../components/FinalCta/FinalCta";
-import Pricing from "../components/Pricing/Pricing";
-import Process2 from "../components/Process2/Process2";
+import AllServices from "../../components/AllServices/AllServices";
+import BlogSection from "../../components/BlogSection/BlogSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
+import Faq from "../../components/Faq/Faq";
+import FinalCta from "../../components/FinalCta/FinalCta";
+import Pricing from "../../components/Pricing/Pricing";
+import Process2 from "../../components/Process2/Process2";
 import img1 from "../../../public/images/collab1.png";
-import PageIntro from "../components/PageIntro/PageIntro";
+import PageIntro from "../../components/PageIntro/PageIntro";
 
 export default async function ServicesPage() {
   return (

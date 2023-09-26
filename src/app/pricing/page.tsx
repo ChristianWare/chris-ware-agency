@@ -1,11 +1,11 @@
 import styles from "./Pricing.module.css";
-import BlogSection from "../components/BlogSection/BlogSection";
-import ContactSection from "../components/ContactSection/ContactSection";
-import Faq from "../components/Faq/Faq";
-import FinalCta from "../components/FinalCta/FinalCta";
-import Pricing from "../components/Pricing/Pricing";
+import BlogSection from "../../components/BlogSection/BlogSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
+import Faq from "../../components/Faq/Faq";
+import FinalCta from "../../components/FinalCta/FinalCta";
+import Pricing from "../../components/Pricing/Pricing";
 import img1 from "../../../public/images/affordable.png";
-import PageIntro from "../components/PageIntro/PageIntro";
+import PageIntro from "../../components/PageIntro/PageIntro";
 
 export default async function PricingPage() {
   return (

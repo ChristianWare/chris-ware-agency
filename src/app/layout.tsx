@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Roboto, Azeret_Mono, Outfit } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./layout.module.css";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
+import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 
 // const roboto = Roboto({

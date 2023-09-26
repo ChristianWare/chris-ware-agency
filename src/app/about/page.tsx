@@ -1,16 +1,13 @@
-import BlogSection from "../components/BlogSection/BlogSection";
-import CompanyCulture from "../components/CompanyCulture/CompanyCulture";
-import ContactSection from "../components/ContactSection/ContactSection";
-import Faq from "../components/Faq/Faq";
-import FinalCta from "../components/FinalCta/FinalCta";
-import Reasons from "../components/Reasons/Reasons";
-import Team from "../components/Team/Team";
+import BlogSection from "../../components/BlogSection/BlogSection";
+import CompanyCulture from "../../components/CompanyCulture/CompanyCulture";
+import ContactSection from "../../components/ContactSection/ContactSection";
+import Faq from "../../components/Faq/Faq";
+import FinalCta from "../../components/FinalCta/FinalCta";
+import Reasons from "../../components/Reasons/Reasons";
+import Team from "../../components/Team/Team";
 import styles from "./About.module.css";
 import img1 from "../../../public/images/hero4.png";
-import PageIntro from "../components/PageIntro/PageIntro";
-
-
-
+import PageIntro from "../../components/PageIntro/PageIntro";
 
 export default async function AboutPage() {
   return (

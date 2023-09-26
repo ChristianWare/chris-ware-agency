@@ -1,13 +1,12 @@
 import styles from "./ContactPage.module.css";
-import BlogSection from "../components/BlogSection/BlogSection";
-import ContactSection from "../components/ContactSection/ContactSection";
-import FinalCta from "../components/FinalCta/FinalCta";
+import BlogSection from "../../components/BlogSection/BlogSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
+import FinalCta from "../../components/FinalCta/FinalCta";
 import img1 from "../../../public/images/contact1.png";
 import img2 from "../../../public/images/contact2.png";
 import img3 from "../../../public/images/contact3.png";
 import img4 from "../../../public/images/contact4.png";
-import PageIntro from "../components/PageIntro/PageIntro";
-
+import PageIntro from "../../components/PageIntro/PageIntro";
 
 export default async function ContactPage() {
   return (

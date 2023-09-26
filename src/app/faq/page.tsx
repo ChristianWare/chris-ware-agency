@@ -1,15 +1,13 @@
 import Image from "next/image";
-import AllFaq from "../components/AllFaqs/AllFaq";
-import BlogSection from "../components/BlogSection/BlogSection";
-import ContactSection from "../components/ContactSection/ContactSection";
-import FinalCta from "../components/FinalCta/FinalCta";
+import AllFaq from "../../components/AllFaqs/AllFaq";
+import BlogSection from "../../components/BlogSection/BlogSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
+import FinalCta from "../../components/FinalCta/FinalCta";
 import styles from "./Faq.module.css";
 import img1 from "../../../public/images/collab3.png";
-import PageIntro from "../components/PageIntro/PageIntro";
-
+import PageIntro from "../../components/PageIntro/PageIntro";
 
 export default async function FaqPage() {
-
   return (
     <section className={styles.container}>
       <PageIntro
