@@ -19,7 +19,7 @@ const Portfolio = () => {
               <div className={styles.left}>
                 <Label text={`// project ${index + 1}`} color='secondry' />
                 <h3 className={styles.heading}>{x.client}</h3>
-                <p className={styles.copy}>{x.clientDesc}</p>
+                <p className={styles.copy} lang='en'>{x.clientDesc}</p>
                 <div className={styles.detailsContainer}>
                   <div className={styles.card}>
                     <h4 className={styles.cardHeading}>Details</h4>

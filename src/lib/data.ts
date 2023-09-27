@@ -121,7 +121,7 @@ export const portfolio = [
     id: 6,
     client: "Nier Transportation",
     clientDesc:
-      "A balck car service company offering rides througout the Phonenix Metropolitan area since 2004.",
+      "A balck car service company offering rides througout the Phonenix Metro area since 2004.",
     projectDetails:
       "In this project I prioritized a user-friendly experience and a modern aesthetic.",
     results:

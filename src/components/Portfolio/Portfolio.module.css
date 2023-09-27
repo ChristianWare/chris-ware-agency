@@ -3,7 +3,7 @@
 }
 
 .top {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .content {
@@ -21,7 +21,6 @@
   padding: 5rem;
   border-radius: 10px;
 }
-
 
 .left,
 .right {
@@ -68,12 +67,12 @@
 .cardCopy {
   opacity: 0.7;
   font-family: var(--azeretMono);
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .cardCopy {
   font-family: var(--outfit);
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 
 .imgContainer {
@@ -98,6 +97,13 @@
 }
 
 @media screen and (max-width: 568px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .detailsContainer {
     grid-template-columns: repeat(1, 1fr);
   }
