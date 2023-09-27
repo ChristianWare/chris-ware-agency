@@ -54,12 +54,8 @@ h4,
 h5,
 h6,
 strong {
-  font-family: var(--outfit);
+  font-family: var(--chakraPetch);
   color: var(--navy);
-  /* src: url("/fonts/bebasneue.woff2") format("woff2"); */
-  /* src: url("/fonts/bebasneue.woff2") format("truetype"); */
-  /* font-weight: 700; */
-  /* font-style: normal; */
   letter-spacing: 0.1rem;
 }
 

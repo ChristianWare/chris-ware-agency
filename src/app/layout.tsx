@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto, Azeret_Mono, Outfit } from "next/font/google";
+import { Roboto, Azeret_Mono, Outfit, Chakra_Petch } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./layout.module.css";
 import Nav from "../components/Nav/Nav";
@@ -26,6 +26,13 @@ const azeretMono = Azeret_Mono({
   variable: "--azeretMono",
 });
 
+const chakraPetch = Chakra_Petch({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--chakraPetch",
+});
+
 const outfit = Outfit({
   weight: ["400", "500", "700", "800", "900"],
   style: ["normal"],
@@ -46,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${outfit.variable} ${azeretMono.variable} ${styles.layout}`}
+        className={`${outfit.variable} ${azeretMono.variable} ${chakraPetch.variable} ${styles.layout}`}
       >
         <Toaster
           position='top-right'
