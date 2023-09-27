@@ -1,39 +1,58 @@
-import SectionHeading from "../SectionHeading/SectionHeading";
+import Button from "../Button/Button";
+import ContentPadding from "../ContentPadding/ContentPadding";
+import Label from "../Label/Label";
 import styles from "./Portfolio.module.css";
-import { portfolio } from "@/lib/data";
+import Hero6 from "../../../public/images/hero6.png";
 import Image from "next/image";
 
 const Portfolio = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
+      <ContentPadding>
         <div className={styles.top}>
-          <SectionHeading
-            labelText='Our Work'
-            headingText='A Glimpse into Our Portfolio'
-            copyText='Our latest projects'
-          />
+          <h2>Websites that Inspire</h2>
         </div>
-        <div className={styles.bottom}>
-          {portfolio.map((x) => (
-            <div key={x.id} className={styles.cardContainer}>
-              <h3>{x.title}</h3>
-              <p className={styles.desc}>{x.description}</p>
-              <div className={styles.imgContainer}>
-                <div className={styles.gradient}></div>
-                <Image
-                  src={x.src}
-                  alt='hello'
-                  title='hello'
-                  fill
-                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                  className={styles.img}
-                />
+        <div className={styles.detailsCard}>
+          <div className={styles.left}>
+            <Label text='// Project 1' color='secondry' />
+            <h3 className={styles.heading}>Project Name</h3>
+            <p className={styles.copy}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              dignissimos perferendis. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Adipisci dignissimos perferendis.
+            </p>
+            <div className={styles.detailsContainer}>
+              <div className={styles.card}>
+                <h4 className={styles.cardHeading}>Research</h4>
+                <p className={styles.cardCopy}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h4 className={styles.cardHeading}>Development</h4>
+                <p className={styles.cardCopy}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci
+                </p>
               </div>
             </div>
-          ))}
+            <div className={styles.btnContainer}>
+              <Button href='/' btnType='secondary'>
+                Get Started
+              </Button>
+              <Button href='/' btnType='tertiary'>
+                Learn More
+              </Button>
+            </div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.imgContainer}>
+              <Image src={Hero6} alt='image' fill className={styles.img} />
+            </div>
+          </div>
         </div>
-      </div>
+      </ContentPadding>
     </section>
   );
 };

@@ -50,9 +50,9 @@
 }
 
 .tertiary {
-  color: var(--text);
-  background-color: var(--neutral);
-  border: 2px solid var(--primary);
+  color: var(--white);
+  background-color: transparent;
+  border: 2px solid var(--border3);
 }
 
 @media screen and (max-width: 820px) {

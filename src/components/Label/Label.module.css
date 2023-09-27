@@ -4,6 +4,10 @@
   text-transform: capitalize;
   color: var(--primary);
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   display: inline-block;
+}
+
+.secondry {
+  color: var(--secondary);
 }

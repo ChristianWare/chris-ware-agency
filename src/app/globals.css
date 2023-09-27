@@ -7,10 +7,13 @@
   --text: #2d1069;
   --border: rgba(89, 31, 206, 0.2);
   --border2: rgba(184, 164, 225, 0.1);
+  --border3: #4f545e;
   /*  */
   --navy: #1a2733;
   --white: #fdfcfc;
   --gray: #eaf3f9;
+  --gray2: #272a2e;
+  --gray3: #3f434d;
   --textGray: #737373;
   --secondary: #2bffea;
   --orange: #f5581e;
@@ -69,7 +72,7 @@ h3 {
 }
 
 h4 {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
 }
 
 h5 {
