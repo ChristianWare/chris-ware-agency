@@ -11,6 +11,7 @@ import Blog from "../../public/icons/blog.png";
 import Taco from "../../public/images/livemas.png";
 import Fonts from "../../public/images/48laws.png";
 import Drone from "../../public/images/drone.png";
+import Nier from "../../public/images/nier.png";
 import Person from "../../public/icons/person.png";
 import Access from "../../public/icons/access.png";
 import Responsive from "../../public/icons/responsive.png";
@@ -117,25 +118,40 @@ export const servicesSection = [
 
 export const portfolio = [
   {
+    id: 6,
+    client: "Nier Transportation",
+    clientDesc:
+      "A balck car service company offering rides througout the Phonenix Metropolitan area since 2004.",
+    projectDetails:
+      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
+    results:
+      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
+    src: Nier,
+    href: "https://laws48.com/",
+  },
+  {
     id: 4,
-    title: "Taco Bell",
-    description:
-      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
+    client: "Taco Bell",
+    clientDesc:
+      "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes.",
+    projectDetails:
+      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
+    results:
+      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
     src: Taco,
+    href: "https://livemas.io/",
   },
   {
     id: 5,
-    title: "Dronopoly",
-    description:
-      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
+    client: "Dronopoly",
+    clientDesc:
+      "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes.",
+    projectDetails:
+      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
+    results:
+      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
     src: Drone,
-  },
-  {
-    id: 6,
-    title: "48 Laws",
-    description:
-      "This is a description of a website that I built. I came out very well, and the owners were very satisfied with the final result.",
-    src: Fonts,
+    href: "https://dronopoly.com/",
   },
 ] as const;
 

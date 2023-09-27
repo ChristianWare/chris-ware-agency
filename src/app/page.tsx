@@ -50,9 +50,9 @@ export default async function Home() {
           __html: JSON.stringify(jsonLd, null, "\t"),
         }}
       />
-      {/* <Hero />
+      <Hero />
       <Challenge />
-      <Solutions /> */}
+      <Solutions />
       <Portfolio />
       {/* <About /> */}
       {/* <Process /> */}

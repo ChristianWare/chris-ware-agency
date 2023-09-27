@@ -2,10 +2,10 @@ import { ReactNode } from "react";
 
 export interface Button {
   href: string;
-  // text: string;
   btnType: string;
   icon?: ReactNode;
   children: any;
+  target?: string;
 }
 
 export interface BlogData {
@@ -16,7 +16,6 @@ export interface BlogData {
     readingTime: number;
     title: string;
     description: string;
-    // Add other properties if needed
   };
   slug: string;
 }
