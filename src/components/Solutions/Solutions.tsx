@@ -10,7 +10,9 @@ const Solutions = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>
-            <Label text='// Future Proof' />
+            <div className={styles.lableContainer}>
+              <Label text='// Future Proof' />
+            </div>
             <h2 className={styles.heading}>
               This is what your{" "}
               <span className={styles.highlight}> website</span>

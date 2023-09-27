@@ -18,7 +18,9 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <Label text='// welcome' />
+              <div className={styles.lableContainer}>
+                <Label text='// Challenge' />
+              </div>{" "}
               <h1 className={styles.heading} lang='en'>
                 Want a better looking website than your competitors?
               </h1>
@@ -49,9 +51,9 @@ const Hero = () => {
               </div>
             </div>
             <div className={styles.right}>
-                <div className={styles.rtContainer}>
-                  <RotatingText />
-                </div>
+              <div className={styles.rtContainer}>
+                <RotatingText />
+              </div>
               <div className={styles.imgContainer}>
                 <Image
                   src={Hero6}

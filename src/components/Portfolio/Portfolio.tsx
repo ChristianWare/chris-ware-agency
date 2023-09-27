@@ -12,6 +12,10 @@ const Portfolio = () => {
         <div className={styles.top}>
           <Label text='// Our Work' />
           <h2>Projects </h2>
+          <p className={styles.topText}>
+            Here are some examples of our past work. Feel free to reach out with
+            any questions you have.
+          </p>
         </div>
         <div className={styles.content}>
           {portfolio.map((x, index) => (
@@ -19,7 +23,9 @@ const Portfolio = () => {
               <div className={styles.left}>
                 <Label text={`// project ${index + 1}`} color='secondry' />
                 <h3 className={styles.heading}>{x.client}</h3>
-                <p className={styles.copy} lang='en'>{x.clientDesc}</p>
+                <p className={styles.copy} lang='en'>
+                  {x.clientDesc}
+                </p>
                 <div className={styles.detailsContainer}>
                   <div className={styles.card}>
                     <h4 className={styles.cardHeading}>Details</h4>
@@ -39,11 +45,7 @@ const Portfolio = () => {
                   </Button>
                 </div>
               </div>
-              <div className={styles.right}>
-                <div className={styles.imgContainer}>
-                  <Image src={x.src} alt='image' fill className={styles.img} />
-                </div>
-              </div>
+            
             </div>
           ))}
         </div>

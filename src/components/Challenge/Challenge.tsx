@@ -1,4 +1,3 @@
-
 import { challenges } from "@/lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
@@ -13,7 +12,9 @@ const Challenge = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>
-            <Label text='// Challenge' />
+            <div className={styles.lableContainer}>
+              <Label text='// Challenge' />
+            </div>
             <h2 className={styles.heading}>
               Are you unhappy with your current website
               <span className={styles.highlight}>?</span>

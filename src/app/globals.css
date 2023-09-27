@@ -97,7 +97,7 @@ p,
 input,
 textarea {
   font-weight: 400;
-  font-family: var(--spaceGrotesk);
+  font-family: var(--chakraPetch);
   hyphens: auto;
   font-size: 1.6rem;
   color: var(--text);

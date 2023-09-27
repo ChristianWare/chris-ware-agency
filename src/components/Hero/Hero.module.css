@@ -11,6 +11,10 @@
   margin-top: 3rem;
 }
 
+.lableContainer {
+  margin-bottom: 1rem;
+}
+
 .heading {
   hyphens: auto;
 }

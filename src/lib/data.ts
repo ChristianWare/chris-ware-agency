@@ -126,7 +126,6 @@ export const portfolio = [
       "In this project I prioritized a user-friendly experience and a modern aesthetic.",
     results:
       "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
-    src: Nier,
     href: "https://laws48.com/",
   },
   {
@@ -138,7 +137,6 @@ export const portfolio = [
       "In this project I prioritized a user-friendly experience and a modern aesthetic.",
     results:
       "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
-    src: Taco,
     href: "https://livemas.io/",
   },
   {
@@ -150,7 +148,6 @@ export const portfolio = [
       "In this project I prioritized a user-friendly experience and a modern aesthetic.",
     results:
       "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
-    src: Drone,
     href: "https://dronopoly.com/",
   },
 ] as const;
@@ -497,19 +494,19 @@ export const challenges = [
     id: 47,
     title: "No Inquires",
     description:
-      "None of your customers are calling about your website, and you're questioning the the point of even having one.",
+      "Are very few people calling about your website, making you question the point of even having one?",
   },
   {
     id: 48,
-    title: "Design Chaos",
+    title: "Outdated Design",
     description:
-      "Your website seem confusing, outdated and the design works against your image instead of for it.",
+      "Is your website confusing and outdated? And does the design works against your image instead of for it?",
   },
   {
     id: 49,
     title: "Inadequate",
     description:
-      "The quality and added value of your products and services are not reflect in your website.",
+      "Is the quality and added value of your products and services not reflected in your website?",
   },
   {
     id: 50,
@@ -521,13 +518,13 @@ export const challenges = [
     id: 51,
     title: "Cookie Cutter",
     description:
-      "Your website looks like others and fail to make a lasting impression on your customers.",
+      "Does your website look like others and fail to make a lasting impression on your customers?",
   },
   {
     id: 52,
-    title: "Internet Corps",
+    title: "Low Ranking",
     description:
-      "Your website is impossible to find on Google because it ranks way too low, and is somewhere on page 15.",
+      "Is your website impossible to find on Google because it ranks way too low, and is somewhere on page 15?",
   },
 ] as const;
 
