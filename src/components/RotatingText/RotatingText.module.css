@@ -2,11 +2,13 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
+  border: 5px solid var(--white);
   background-color: var(--primary);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: .5rem;
 }
 
 .svg {

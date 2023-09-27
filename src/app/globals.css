@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary: #591fce;
   --secondary: #2bffea;
   --accent1: #84faa1;
@@ -67,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.1rem;
+  font-size: 3.2rem;
   color: var(--text);
 }
 
@@ -97,7 +97,7 @@ p,
 input,
 textarea {
   font-weight: 400;
-  font-family: var(--outfit);
+  font-family: var(--spaceGrotesk);
   hyphens: auto;
   font-size: 1.6rem;
   color: var(--text);

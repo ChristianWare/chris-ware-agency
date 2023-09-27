@@ -10,7 +10,7 @@ const RotatingText = () => {
     const scrollListener = () => {
       const scrollY = window.scrollY;
       // Adjust the rotation speed as needed by multiplying scrollY by an appropriate factor
-      const newRotationAngle = scrollY * 0.1; // You can change the factor
+      const newRotationAngle = scrollY * 0.5; // You can change the factor
       setRotationAngle(newRotationAngle);
     };
 
@@ -44,7 +44,7 @@ const RotatingText = () => {
         </defs>
         <text font-size='15.6'>
           <textPath className={styles.svg} xlinkHref='#circle'>
-            Scroll down Scroll down
+            Scroll down 
           </textPath>
         </text>
       </svg>

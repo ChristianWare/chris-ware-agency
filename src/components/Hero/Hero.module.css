@@ -8,6 +8,7 @@
   justify-content: space-between;
   gap: 5rem;
   position: relative;
+  margin-top: 3rem;
 }
 
 .heading {
@@ -62,6 +63,11 @@
   cursor: pointer;
 }
 
+.right {
+  position: relative;
+  
+}
+
 .right::after {
   content: "";
   top: 30%;
@@ -99,11 +105,14 @@
 .img {
   object-fit: cover;
   border-radius: 10px;
-  /* transform: scaleX(-1); */
 }
 
 .rtContainer {
   margin-top: 0rem;
+  position: absolute;
+  z-index: 2;
+  left: -50px;
+  bottom: -50px;
 }
 
 @media screen and (max-width: 968px) {
@@ -111,6 +120,10 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+  }
+
+  .rtContainer {
+    left: 40%;
   }
 
   .btnContainer {

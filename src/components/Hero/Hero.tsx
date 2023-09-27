@@ -9,6 +9,7 @@ import Twitter from "../../../public/icons/twitter.svg";
 import Image from "next/image";
 import Hero6 from "../../../public/images/hero6.png";
 import Label from "../Label/Label";
+import RotatingText from "../RotatingText/RotatingText";
 
 const Hero = () => {
   return (
@@ -48,6 +49,9 @@ const Hero = () => {
               </div>
             </div>
             <div className={styles.right}>
+                <div className={styles.rtContainer}>
+                  <RotatingText />
+                </div>
               <div className={styles.imgContainer}>
                 <Image
                   src={Hero6}

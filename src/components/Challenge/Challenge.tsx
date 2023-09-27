@@ -1,9 +1,11 @@
+
 import { challenges } from "@/lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import styles from "./Challenge.module.css";
 import Image from "next/image";
 import Woman from "../../../public/images/woman.png";
+import RotatingText from "../RotatingText/RotatingText";
 
 const Challenge = () => {
   return (
@@ -32,6 +34,9 @@ const Challenge = () => {
               </div>
             </div>
             <div className={styles.right}>
+              <div className={styles.rtContainer}>
+                <RotatingText />
+              </div>
               <div className={styles.imgContainer}>
                 <Image
                   src={Woman}
