@@ -3,7 +3,7 @@ import { FC } from "react";
 
 interface LabelProps {
   text: string;
-  color?: string;
+  color?: any;
 }
 
 const Label: FC<LabelProps> = ({ text, color }) => {
