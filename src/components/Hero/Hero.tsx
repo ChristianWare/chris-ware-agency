@@ -22,8 +22,8 @@ const Hero = () => {
                 Want a better looking website than your competitors?
               </h1>
               <p className={styles.copy}>
-                We can make that happen with our stylish web designs that&#39;ll
-                delight your target audience and keep them coming back for more.
+                Our stylish web designs will delight your target audience and
+                keep them coming back for more.
               </p>
               <div className={styles.btnContainer}>
                 <Button href='/contact' btnType='secondary'>
