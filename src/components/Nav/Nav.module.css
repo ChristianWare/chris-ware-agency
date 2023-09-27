@@ -58,8 +58,8 @@
 .activeLink::after {
   position: absolute;
   content: "";
-  left: 50%;
-  bottom: -10px;
+  left: 40%;
+  bottom: -15px;
   width: 7px;
   height: 7px;
   background-color: var(--secondary);
@@ -70,8 +70,8 @@
 .navItem:hover.navItem::after {
   position: absolute;
   content: "";
-  left: 50%;
-  bottom: -8px;
+  left: 40%;
+  bottom: -12px;
   width: 7px;
   height: 7px;
   background-color: var(--secondary);
