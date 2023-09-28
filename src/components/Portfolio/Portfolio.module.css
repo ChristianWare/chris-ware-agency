@@ -15,6 +15,10 @@
   margin-top: 1rem;
 }
 
+.lableContainer {
+  margin-bottom: 1rem;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -2,7 +2,6 @@ import Button from "../Button/Button";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import styles from "./Portfolio.module.css";
-import Image from "next/image";
 import { portfolio } from "@/lib/data";
 
 const Portfolio = () => {
@@ -10,7 +9,9 @@ const Portfolio = () => {
     <section className={styles.container}>
       <ContentPadding>
         <div className={styles.top}>
-          <Label text='// Our Work' />
+          <div className={styles.lableContainer}>
+            <Label text='// Our Work' />
+          </div>
           <h2>Projects </h2>
           <p className={styles.topText}>
             Here are some examples of our past work. Feel free to reach out with
@@ -45,7 +46,6 @@ const Portfolio = () => {
                   </Button>
                 </div>
               </div>
-            
             </div>
           ))}
         </div>
