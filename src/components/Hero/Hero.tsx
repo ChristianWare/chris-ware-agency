@@ -23,7 +23,7 @@ const Hero = () => {
               </div>
               <h1 className={styles.heading}>
                 Want a better looking website than your{" "}
-                <span className={styles.highlight}>competitors?</span> 😎
+                <span className={styles.highlight}>competitors?</span>
               </h1>
               <p className={styles.copy}>
                 Our stylish web designs will delight your target audience and{" "}

@@ -4,9 +4,8 @@ import { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Faq.module.css";
 import { faqs } from "@/lib/data";
-import Button from "../Button/Button";
-// import Plus from "../../../public/icons/plus.svg";
 import Plus from "../../../public/icons/plus.svg";
+import Label from "../Label/Label";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -22,13 +21,19 @@ const Faq = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <SectionHeading
-          labelText='// FAQ&#39;s //'
-          headingText='Frequently Asked Questions'
-          copyText='Common questions and answers'
-        />
+        <div className={styles.top}>
+          <div className={styles.lableContainer}>
+            <Label text='// Questions Often Asked //' />
+          </div>
+          <h2>
+            You may have <span className={styles.highlight}>wondered</span> 🧐
+          </h2>
+          <p className={styles.topText}>
+            Here are some commonly asked questions and their answers below. If you don&#39;t see your questions here, call us any time. 
+          </p>
+        </div>
         <div className={styles.bottom}>
-          {faqs.map((x, i) => (
+          {faqs.slice(0, 5).map((x, i) => (
             <div
               key={x.id}
               className={styles.qaContainer}
@@ -58,9 +63,7 @@ const Faq = () => {
             </div>
           ))}
         </div>
-        <div className={styles.btnContainer}>
-          
-        </div>
+        <div className={styles.btnContainer}></div>
       </div>
     </section>
   );

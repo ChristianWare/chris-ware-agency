@@ -3,6 +3,36 @@
   position: relative;
 }
 
+.top {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topText {
+  font-family: var(--azeretMono);
+  font-size: 1.9rem;
+  text-align: center;
+  opacity: 0.7;
+  font-weight: 400;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.lableContainer {
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  background-color: var(--navy);
+  color: var(--secondary);
+  padding: 0.05rem 1rem;
+  border-radius: 10px;
+  user-select: none;
+}
+
 .container::after {
   content: "";
   top: -13%;
@@ -72,20 +102,20 @@
 }
 
 .icon {
-  color: var(--text);
+  color: var(--navy);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .iconFlip {
   transform: rotate(135deg);
-  color: var(--text);
+  color: var(--navy);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .question {
-  font-family: var(--roboto);
+  color: var(--navy);
   font-size: 2rem;
   text-decoration: none;
   line-height: 120%;
@@ -93,7 +123,8 @@
 }
 
 .answer {
-  color: var(--text);
+  color: var(--navy);
+  font-family: var(--outfit);
   opacity: 0.7;
   margin-top: 1.5rem;
   hyphens: auto;
