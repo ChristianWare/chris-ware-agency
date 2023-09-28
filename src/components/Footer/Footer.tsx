@@ -7,7 +7,6 @@ import Pinterest from "../../../public/icons/pinterest.svg";
 import Logo from "../../../public/icons/newcwalogo.png";
 import Image from "next/image";
 
-
 const Footer = () => {
   return (
     <footer>
@@ -30,9 +29,6 @@ const Footer = () => {
             </Link>
             <Link href='/' className={styles.iconContainer}>
               <LinkedIn className={styles.icon} width={20} height={20} />
-            </Link>
-            <Link href='/' className={styles.iconContainer}>
-              <Pinterest className={styles.icon} width={20} height={20} />
             </Link>
           </div>
         </div>

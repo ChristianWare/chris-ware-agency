@@ -341,7 +341,7 @@ export const pricing = [
     plan: "Custom Plan",
     description:
       "A website tailored to your specific wants & needs to suit your business",
-    price: "Custom",
+    price: "Price",
     includes: [
       {
         id: 28.1,
