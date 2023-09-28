@@ -52,7 +52,7 @@
 
 .detailsContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
 }
 
@@ -62,6 +62,7 @@
   border-radius: 10px;
   border: 1px solid var(--border3);
   width: 100%;
+  
 }
 
 .copy {

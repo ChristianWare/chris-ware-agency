@@ -5,6 +5,9 @@ import styles from "./Challenge.module.css";
 import Image from "next/image";
 import Woman from "../../../public/images/woman.png";
 import RotatingText from "../RotatingText/RotatingText";
+import Button from "../Button/Button";
+import PhoneCall from "../../../public/icons/phone.svg";
+import Calendar from "../../../public/icons/calendar-mark-svgrepo-com.svg";
 
 const Challenge = () => {
   return (
@@ -46,6 +49,20 @@ const Challenge = () => {
                   className={styles.img}
                 />
               </div>
+            </div>
+          </div>
+          <div className={styles.addText}>
+            Your company deserves a proper online presence ! Contact us to lean
+            how we can do that for you.
+            <div className={styles.btnContainer}>
+              <Button href='/contact' btnType='secondary'>
+                <Calendar width={20} height={20} />
+                Book a meeting
+              </Button>
+              <Button href='/contact' btnType='primary'>
+                <PhoneCall width={20} height={20} />
+                Contact us
+              </Button>
             </div>
           </div>
         </div>

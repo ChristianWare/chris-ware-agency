@@ -31,8 +31,7 @@ const Portfolio = () => {
                   <div className={styles.card}>
                     <h4 className={styles.cardHeading}>Details</h4>
                     <p className={styles.cardCopy}>{x.projectDetails}</p>
-                  </div>
-                  <div className={styles.card}>
+                    <br />
                     <h4 className={styles.cardHeading}>Results</h4>
                     <p className={styles.cardCopy}>{x.results}</p>
                   </div>
