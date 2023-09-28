@@ -12,6 +12,12 @@
   user-select: none;
 }
 
+.arrow, .happy {
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+}
+
 .svg {
   font-family: var(--outfit);
   font-weight: 500;

@@ -50,7 +50,7 @@ const ContactSection = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.rtContainer}>
-                <RotatingText text='You made it !' />
+                <RotatingText text='You made it !' showEmoji={true} />
               </div>
               <div className={styles.imgContainer}>
                 <Image src={Img} alt='image' fill className={styles.img} />

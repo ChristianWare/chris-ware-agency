@@ -22,7 +22,7 @@ const Process = () => {
               the least amount of time.
             </p>
             <div className={styles.rtContainer}>
-              <RotatingText text='So Close!' />
+              <RotatingText text='So Close!' showArrow={true} />
             </div>
           </div>
           <div className={styles.right}>

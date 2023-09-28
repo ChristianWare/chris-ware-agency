@@ -14,7 +14,7 @@ const AboutSection = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.rtContainer}>
-                <RotatingText text='Almost There' />
+                <RotatingText text='Almost There' showArrow={true} />
               </div>
               <div className={styles.imgContainer}>
                 <Image
