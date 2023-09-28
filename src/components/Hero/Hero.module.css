@@ -103,7 +103,7 @@
 }
 
 .imgContainer {
-  height: 600px;
+  height: 560px;
   position: relative;
   border-radius: 10px;
   border: 4px solid var(--border);

@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import Label from "../Label/Label";
 import Image from "next/image";
-import Img from "../../../public/images/discovery.png";
+import Img from "../../../public/images/discoveryii.png";
 import RotatingText from "../RotatingText/RotatingText";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
@@ -18,7 +18,7 @@ const ContactSection = () => {
     lastName: "",
     senderEmail: "",
     companyName: "",
-    currentWebsiteUrl: "",
+    currentWebsiteUrl: "" ,
     message: "",
   });
 

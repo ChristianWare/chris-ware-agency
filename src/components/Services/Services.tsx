@@ -27,24 +27,17 @@ const Services = () => {
           </div>
           <div className={styles.bottom}>
             {servicesSection.map((x) => (
-              <div key={x.id} className={styles.area}>
-                <h3 className={styles.sectionTitle}>{x.sectionTitle}</h3>
-                <div className={styles.group}>
-                  {x.services.map((y) => (
-                    <div key={y.id} className={styles.card}>
-                      <Image
-                        src={y.icon}
-                        alt={y.service}
-                        width={30}
-                        height={30}
-                        className={styles.img}
-                      />
-                      <h4 className={styles.service}>{y.service}</h4>
-                      <p className={styles.description}>{y.description}</p>
-                    </div>
-                  ))}
+                <div key={x.id} className={styles.card}>
+                  <Image
+                    src={x.icon}
+                    alt={x.service}
+                    width={30}
+                    height={30}
+                    className={styles.img}
+                  />
+                  <h4 className={styles.service}>{x.service}</h4>
+                  <p className={styles.description}>{x.description}</p>
                 </div>
-              </div>
             ))}
           </div>
           <div className={styles.btnContainer}>
