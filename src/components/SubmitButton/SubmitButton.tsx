@@ -11,7 +11,7 @@ const SubmitButton = () => {
         className={pending ? styles.btn + " " + styles.disabled : styles.btn}
         disabled={pending}
       >
-        {pending ? "Sending..." : "Fire Away!"}
+        {pending ? "Sending..." : "Submit"}
       </button>
     </div>
   );

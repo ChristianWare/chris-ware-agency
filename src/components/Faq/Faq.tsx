@@ -59,9 +59,7 @@ const Faq = () => {
           ))}
         </div>
         <div className={styles.btnContainer}>
-          <Button href='/faq' btnType='primary'>
-            More Faqs
-          </Button>
+          
         </div>
       </div>
     </section>

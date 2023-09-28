@@ -5,32 +5,26 @@
   z-index: 1;
 }
 
-.btnContainer::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: -7px;
-  top: 9px;
-  width: 98%;
-  height: 93%;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
-}
-
 .btn {
+  font-family: var(--azeretMono);
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
   white-space: nowrap;
-  border-radius: 5px;
+  border-radius: 30px;
   user-select: none;
   transition: all 0.1s ease-in;
-  padding: 10px 35px;
-  font-weight: 700;
-  color: var(--neutral);
-  background-color: var(--primary);
-  border: 2.7px solid var(--primary);
-  display: grid;
-  width: fit-content;
+  display: inline-block;
+  padding: 8px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
   cursor: pointer;
 }
 

@@ -16,6 +16,7 @@ import matter from "gray-matter";
 
 import Challenge from "@/components/Challenge/Challenge";
 import Solutions from "@/components/Solutions/Solutions";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -56,10 +57,11 @@ export default async function Home() {
       <Process />
       <Services />
       <Pricing />
+      <ContactSection />
+      {/* <BlogSection blogData={blogs} /> */}
+      {/* <Faq /> */}
       {/* <Testimonials /> */}
-      {/* <Pricing />
-      <Faq />
-      <BlogSection blogData={blogs} />
+      {/* 
       <FinalCta /> */}
     </main>
   );
