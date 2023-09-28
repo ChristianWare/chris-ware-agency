@@ -48,15 +48,13 @@ export default async function Home() {
           __html: JSON.stringify(jsonLd, null, "\t"),
         }}
       />
-      {/* <Hero />
+      <Hero />
       <Challenge />
       <Solutions />
       <Portfolio />
       <About />
-      <Process /> */}
-      {/* Acheivements + Services */}
+      <Process />
       <Services />
-      {/* <RotatingText /> */}
       {/* <Testimonials /> */}
       {/* <Pricing />
       <Faq />

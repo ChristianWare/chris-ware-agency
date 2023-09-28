@@ -2,6 +2,7 @@ import { process2 } from "@/lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import styles from "./Process.module.css";
+import RotatingText from "../RotatingText/RotatingText";
 
 const Process = () => {
   return (
@@ -20,6 +21,9 @@ const Process = () => {
               My process is structured so that you get the most added value for
               the least amount of time.
             </p>
+            <div className={styles.rtContainer}>
+              <RotatingText text='So Close!' />
+            </div>
           </div>
           <div className={styles.right}>
             {process2.map((x, index) => (

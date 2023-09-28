@@ -44,6 +44,14 @@
   margin-top: 1rem;
 }
 
+.rtContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -95,6 +103,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .rtContainer {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    position: relative;
+    top: 75px;
   }
 }
 
