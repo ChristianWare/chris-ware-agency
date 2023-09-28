@@ -17,7 +17,7 @@
 
 .heading {
   line-height: 120%;
-  width: 50%;
+  width: 60%;
   text-align: right;
 }
 
@@ -26,6 +26,7 @@
   color: var(--secondary);
   padding: 0.05rem 1rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   border-radius: 10px;
 }
 

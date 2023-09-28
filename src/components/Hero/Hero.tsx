@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
             <div className={styles.right}>
               <div className={styles.rtContainer}>
-                <RotatingText />
+                <RotatingText text='scroll down' />
               </div>
               <div className={styles.imgContainer}>
                 <Image

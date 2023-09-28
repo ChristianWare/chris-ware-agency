@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 import styles from "./RotatingText.module.css";
+import { FC } from "react";
 
-const RotatingText = () => {
+interface RotatingTextProps {
+  text: string;
+}
+
+const RotatingText: FC<RotatingTextProps> = ({ text }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
   useEffect(() => {
@@ -44,7 +49,7 @@ const RotatingText = () => {
         </defs>
         <text font-size='15.6'>
           <textPath className={styles.svg} xlinkHref='#circle'>
-            Scroll down 
+            {text}
           </textPath>
         </text>
       </svg>

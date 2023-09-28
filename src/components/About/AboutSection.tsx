@@ -14,7 +14,7 @@ const AboutSection = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.rtContainer}>
-                <RotatingText />
+                <RotatingText text='Almost There' />
               </div>
               <div className={styles.imgContainer}>
                 <Image
@@ -40,7 +40,7 @@ const AboutSection = () => {
                 I&rsquo;ve honed my skills and transformed that passion into a
                 thriving career.
               </p>
-             
+
               <br />
               <h2 className={styles.heading3}>How I can help</h2>
               <p className={styles.chrisCopy}>

@@ -16,8 +16,8 @@ const Challenge = () => {
               <Label text='// Challenge //' />
             </div>
             <h2 className={styles.heading}>
-              Are you unhappy with your current website
-              <span className={styles.highlight}>?</span>
+              Are you <span className={styles.highlight}>unhappy</span> with
+              your current website ?
             </h2>
             <p className={styles.copy}>
               If so, then these problems probably sound familiar to you:
@@ -36,7 +36,7 @@ const Challenge = () => {
             </div>
             <div className={styles.right}>
               <div className={styles.rtContainer}>
-                <RotatingText />
+                <RotatingText text='Keep Scrolling' />
               </div>
               <div className={styles.imgContainer}>
                 <Image

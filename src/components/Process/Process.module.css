@@ -22,6 +22,10 @@
   top: 20px;
 }
 
+.lableContainer {
+  margin-bottom: 1rem;
+}
+
 .highlight {
   background-color: var(--navy);
   color: var(--secondary);
@@ -78,10 +82,10 @@
     flex-direction: column;
   }
 
-.topText {
-  width: 100%;
-  text-align: center;
-}
+  .topText {
+    width: 100%;
+    text-align: center;
+  }
 
   .left {
     position: relative;
