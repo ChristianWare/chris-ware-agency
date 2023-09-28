@@ -25,8 +25,10 @@ const Process = () => {
             {process2.map((x, index) => (
               <div key={x.id} className={styles.card}>
                 <span className={styles.number}>0{`${index + 1}`}</span>
-                <h3>{x.processName}</h3>
-                <p>{x.processDescription}</p>
+                <h3 className={styles.processName}>{x.processName}</h3>
+                <p className={styles.processDescription}>
+                  {x.processDescription}
+                </p>
               </div>
             ))}
           </div>
