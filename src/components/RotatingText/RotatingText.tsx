@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./RotatingText.module.css";
 import { FC } from "react";
+import DownArrow from '../../../public/icons/downarrow.svg'
 
 interface RotatingTextProps {
   text: string;
@@ -50,6 +51,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text }) => {
         <text font-size='15.6'>
           <textPath className={styles.svg} xlinkHref='#circle'>
             {text}
+            <DownArrow />
           </textPath>
         </text>
       </svg>
