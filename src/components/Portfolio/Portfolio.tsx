@@ -22,7 +22,7 @@ const Portfolio = () => {
           {portfolio.map((x, index) => (
             <div key={x.id} className={styles.detailsCard}>
               <div className={styles.left}>
-                <Label text={`// project ${index + 1}`} color='secondry' />
+                <Label text={`// project ${index + 1} //`} color='secondry' />
                 <h3 className={styles.heading}>{x.client}</h3>
                 <p className={styles.copy} lang='en'>
                   {x.clientDesc}

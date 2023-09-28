@@ -20,7 +20,7 @@ const Challenge = () => {
               <span className={styles.highlight}>?</span>
             </h2>
             <p className={styles.copy}>
-              Then these problems probably sound familiar to you:
+              If so, then these problems probably sound familiar to you:
             </p>
           </div>
           <div className={styles.bottom}>

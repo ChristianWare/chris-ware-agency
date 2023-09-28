@@ -48,6 +48,16 @@ const AboutSection = () => {
                 I&rsquo;ve honed my skills and transformed that passion into a
                 thriving career.
               </p>
+              <br />
+              <h2 className={styles.heading3}>How I can help</h2>
+              <p className={styles.chrisCopy}>
+                I&rsquo;m Chris Ware, the owner and creative force behind The
+                Chris Ware Agency. My journey in the world of web development
+                began during my college years, where I discovered my passion for
+                crafting digital experiences. Over the past decade and a half,
+                I&rsquo;ve honed my skills and transformed that passion into a
+                thriving career.
+              </p>
 
               <div className={styles.btnContainer}>
                 <Button href='/' btnType='secondary'>
