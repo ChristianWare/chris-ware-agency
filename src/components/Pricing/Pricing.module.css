@@ -3,6 +3,31 @@
   position: relative;
 }
 
+.top {
+  margin-bottom: 3rem;
+}
+
+.topText {
+  font-family: var(--azeretMono);
+  font-size: 1.9rem;
+  opacity: 0.7;
+  font-weight: 400;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+.lableContainer {
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background-color: var(--navy);
+  color: var(--secondary);
+  padding: 0.05rem 1rem;
+  border-radius: 10px;
+  user-select: none;
+}
+
 .container::after {
   content: "";
   top: -3%;
@@ -31,33 +56,30 @@
   z-index: -1;
 }
 
-.content {
-  padding: 5rem;
-}
-
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .card {
   background-color: var(--border2);
   border-radius: 8px;
-  border: 1px solid var(--primary);
+  border: 3px solid var(--border);
   padding: 3rem;
 }
 
 .planName {
   font-size: 3rem;
   text-decoration: none;
+  color: var(--navy);
 }
 
 .description {
   opacity: 0.7;
   margin: 2rem 0;
   margin-top: 1rem;
-  font-size: 1.6rem;
+  font-family: var(--outfit);
 }
 
 .hr {
@@ -68,6 +90,7 @@
 .price {
   font-size: 5rem;
   display: block;
+  color: var(--navy);
 }
 
 .span {
@@ -87,7 +110,7 @@
 }
 
 .icon {
-  border: 1px solid var(--primary);
+  border: 3px solid var(--border);
   border-radius: 50%;
 }
 
@@ -100,15 +123,16 @@
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--border);
   width: 100%;
-  font-family: var(--roboto);
-  font-weight: 700;
-  color: var(--text);
+  font-family: var(--outfit);
+  font-weight: 500;
+  color: var(--navy);
 }
 
 .btnContainer {
-  display: grid;
-  width: fit-content;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -119,8 +143,9 @@
 }
 
 @media screen and (max-width: 968px) {
-  .content {
-    padding: 2rem 10rem;
+  .topText {
+    width: 100%;
+    text-align: center;
   }
 
   .bottom {
@@ -135,24 +160,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    padding: 2rem 10rem;
-  }
-}
-
-@media screen and (max-width: 668px) {
-  .content {
-    padding: 2rem 8rem;
-  }
-}
-
 @media screen and (max-width: 568px) {
-  .content {
-    padding: 2rem;
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

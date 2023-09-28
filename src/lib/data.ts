@@ -308,7 +308,7 @@ export const pricing = [
     plan: "Marketing",
     description:
       "Attract potential customers to generate leads and drive sales",
-    price: 150,
+    price: 175,
     includes: [
       {
         id: 26.1,
@@ -333,7 +333,7 @@ export const pricing = [
     id: 27,
     plan: "E-Commerce",
     description: "Your own customized online store to sell products & services",
-    price: 250,
+    price: 275,
     includes: [
       {
         id: 26.1,

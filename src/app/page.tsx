@@ -55,6 +55,7 @@ export default async function Home() {
       <About />
       <Process />
       <Services />
+      <Pricing />
       {/* <Testimonials /> */}
       {/* <Pricing />
       <Faq />
