@@ -50,12 +50,18 @@
   position: relative;
 }
 
-.rtContainer {
+.rtContainer1 {
   margin-top: 0rem;
+  margin-bottom: 3rem;
   position: absolute;
   z-index: 2;
   left: -50px;
   bottom: -50px;
+}
+
+.rtContainer2 {
+  margin-bottom: 3rem;
+  display: none;
 }
 
 .grid {
@@ -136,12 +142,16 @@
     gap: 2rem;
   }
 
-  .rtContainer {
-    left: 35%;
+  .rtContainer1 {
+    display: none;
+  }
+
+  .rtContainer2 {
+    display: block;
   }
 
   .addText {
-    margin-top: 8rem;
+    margin-top: -6rem;
   }
 }
 

@@ -38,7 +38,7 @@ const Challenge = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.rtContainer}>
+              <div className={styles.rtContainer1}>
                 <RotatingText text='Keep Scrolling' showArrow={true} />
               </div>
               <div className={styles.imgContainer}>
@@ -52,6 +52,9 @@ const Challenge = () => {
             </div>
           </div>
           <div className={styles.addText}>
+            <div className={styles.rtContainer2}>
+              <RotatingText text='Keep Scrolling' showArrow={true} />
+            </div>
             Your company deserves a proper online presence ! Contact us to lean
             how we can do that for you.
             <div className={styles.btnContainer}>
