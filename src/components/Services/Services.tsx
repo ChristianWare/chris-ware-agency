@@ -2,6 +2,10 @@ import styles from "./Services.module.css";
 import { servicesSection, features } from "../../lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
+import Button from "../Button/Button";
+import Calendar from "../../../public/icons/calendar-mark-svgrepo-com.svg";
+import PhoneCall from "../../../public/icons/phone.svg";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -24,17 +28,36 @@ const Services = () => {
           <div className={styles.bottom}>
             {servicesSection.map((x) => (
               <div key={x.id} className={styles.area}>
-                <h3>{x.sectionTitle}</h3>
+                <h3 className={styles.sectionTitle}>{x.sectionTitle}</h3>
                 <div className={styles.group}>
                   {x.services.map((y) => (
                     <div key={y.id} className={styles.card}>
-                      <h4>{y.service}</h4>
-                      <p>{y.description}</p>
+                      <Image
+                        src={y.icon}
+                        alt={y.service}
+                        width={30}
+                        height={30}
+                        className={styles.img}
+                      />
+                      <h4 className={styles.service}>{y.service}</h4>
+                      <p className={styles.description}>{y.description}</p>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
+          </div>
+          <div className={styles.btnContainer}>
+            <div className={styles.btnContainer}>
+              <Button href='/contact' btnType='secondary'>
+                <Calendar width={20} height={20} />
+                Book a meeting
+              </Button>
+              <Button href='/contact' btnType='primary'>
+                <PhoneCall width={20} height={20} />
+                Contact us
+              </Button>
+            </div>
           </div>
         </div>
       </ContentPadding>

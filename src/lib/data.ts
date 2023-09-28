@@ -45,13 +45,6 @@ export const servicesSection = [
           "Empower your online business with our expertly crafted E-Commerce websites designed for seamless shopping experiences and maximum conversion.",
       },
       {
-        id: 1.3,
-        icon: Landing,
-        service: "Landing Pages",
-        description:
-          "Elevate your campaign's impact with our precision-engineered landing page sites optimized for conversion and engagement.",
-      },
-      {
         id: 1.4,
         icon: Blog,
         service: "Blogs",
