@@ -20,7 +20,7 @@ const Challenge = () => {
             </div>
             <h2 className={styles.heading}>
               Are you<span className={styles.highlight}>unhappy</span> with your
-              current website ? 😥
+              current website? 😥
             </h2>
             <p className={styles.copy}>
               If so, then these problems probably sound familiar to you:
