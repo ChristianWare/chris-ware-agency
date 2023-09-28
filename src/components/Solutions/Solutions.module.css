@@ -22,8 +22,8 @@
 }
 
 .highlight {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--navy);
+  color: var(--secondary);
   padding: 0.05rem 1rem;
   margin-right: 1rem;
   border-radius: 10px;
@@ -40,13 +40,14 @@
   background-color: var(--gray);
   padding: 2rem;
   border-radius: 10px;
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .title {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .desc {
@@ -54,7 +55,6 @@
   line-height: 130%;
   opacity: 0.7;
   font-family: var(--outfit);
-  /* font-size: 1.4rem; */
 }
 
 @media screen and (max-width: 968px) {

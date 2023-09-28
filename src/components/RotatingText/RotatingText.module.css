@@ -3,18 +3,18 @@
   height: 110px;
   border-radius: 50%;
   border: 5px solid var(--white);
-  background-color: var(--primary);
+  background-color: var(--navy);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .svg {
   font-family: var(--outfit);
   font-weight: 500;
   text-transform: uppercase;
-  fill: var(--white);
+  fill: var(--secondary);
   animation: rotation 15s linear infinite;
 }

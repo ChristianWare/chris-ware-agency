@@ -2,7 +2,6 @@ import styles from "./AboutSection.module.css";
 import Image from "next/image";
 import Chris from "../../../public/images/chrisware.jpg";
 import Button from "../Button/Button";
-import { about } from "@/lib/data";
 import Label from "../Label/Label";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import RotatingText from "../RotatingText/RotatingText";
@@ -33,6 +32,14 @@ const AboutSection = () => {
                 <Label text='// About Us' />
               </div>
               <h2 className={styles.heading3}>Hi, I&#39;m Chris</h2>
+              <p className={styles.chrisCopy}>
+                I&rsquo;m Chris Ware, the owner and creative force behind The
+                Chris Ware Agency. My journey in the world of web development
+                began during my college years, where I discovered my passion for
+                crafting digital experiences. Over the past decade and a half,
+                I&rsquo;ve honed my skills and transformed that passion into a
+                thriving career.
+              </p>
               <p className={styles.chrisCopy}>
                 I&rsquo;m Chris Ware, the owner and creative force behind The
                 Chris Ware Agency. My journey in the world of web development

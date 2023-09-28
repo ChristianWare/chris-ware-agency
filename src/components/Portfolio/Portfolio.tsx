@@ -10,7 +10,7 @@ const Portfolio = () => {
       <ContentPadding>
         <div className={styles.top}>
           <div className={styles.lableContainer}>
-            <Label text='// Our Work' />
+            <Label text='// Our Work //' />
           </div>
           <h2>Projects </h2>
           <p className={styles.topText}>

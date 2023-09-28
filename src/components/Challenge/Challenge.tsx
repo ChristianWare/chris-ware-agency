@@ -13,7 +13,7 @@ const Challenge = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.lableContainer}>
-              <Label text='// Challenge' />
+              <Label text='// Challenge //' />
             </div>
             <h2 className={styles.heading}>
               Are you unhappy with your current website

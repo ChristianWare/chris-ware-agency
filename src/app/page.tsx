@@ -55,7 +55,7 @@ export default async function Home() {
       <Solutions />
       <Portfolio />
       <About />
-      {/* <Process /> */}
+      <Process />
       {/* Acheivements + Services */}
       {/* <Services /> */}
       {/* <RotatingText /> */}

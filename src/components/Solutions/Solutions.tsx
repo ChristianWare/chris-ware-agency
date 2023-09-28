@@ -11,7 +11,7 @@ const Solutions = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.lableContainer}>
-              <Label text='// Future Proof' />
+              <Label text='// Our solutions //' />
             </div>
             <h2 className={styles.heading}>
               This is what your{" "}

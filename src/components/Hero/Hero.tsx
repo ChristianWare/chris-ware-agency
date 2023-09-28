@@ -19,8 +19,8 @@ const Hero = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <div className={styles.lableContainer}>
-                <Label text='// Challenge' />
-              </div>{" "}
+                <Label text='// Welcome //' />
+              </div>
               <h1 className={styles.heading} lang='en'>
                 Want a better looking website than your competitors?
               </h1>
