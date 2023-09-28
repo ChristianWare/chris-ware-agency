@@ -4,7 +4,9 @@ import { Roboto, Azeret_Mono, Outfit, Chakra_Petch } from "next/font/google";
 import localFont from "next/font/local";
 import styles from "./layout.module.css";
 import Nav from "../components/Nav/Nav";
-import Footer from "../components/Footer/Footer";
+
+import Footer from "@/components/Footer/Footer";
+
 import { Toaster } from "react-hot-toast";
 
 // const roboto = Roboto({
@@ -63,7 +65,7 @@ export default function RootLayout({
         />
         <Nav />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

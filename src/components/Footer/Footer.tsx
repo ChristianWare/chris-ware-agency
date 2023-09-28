@@ -1,9 +1,12 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
-import Instagram from "../../../../public/icons/instagram.svg";
-import Twitter from "../../../../public/icons/twitter.svg";
-import LinkedIn from "../../../../public/icons/linkedin.svg";
-import Pinterest from "../../../../public/icons/pinterest.svg";
+import Instagram from "../../../public/icons/instagram.svg";
+import Twitter from "../../../public/icons/twitter.svg";
+import LinkedIn from "../../../public/icons/linkedin.svg";
+import Pinterest from "../../../public/icons/pinterest.svg";
+import Logo from "../../../public/icons/newcwalogo.png";
+import Image from "next/image";
+
 
 const Footer = () => {
   return (
@@ -11,7 +14,12 @@ const Footer = () => {
       <div className={styles.content}>
         <div className={styles.top}>
           <Link href='/' className={styles.logo}>
-            Chris ware Agency
+            <Image
+              src={Logo}
+              alt='Chris Ware Agency Logo'
+              width={173}
+              height={20}
+            />
           </Link>
           <div className={styles.socials}>
             <Link href='/' className={styles.iconContainer}>

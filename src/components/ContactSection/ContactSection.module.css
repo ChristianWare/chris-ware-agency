@@ -39,13 +39,17 @@
   justify-content: center;
 }
 
+.top h2 {
+  text-align: center;
+}
+
 .topText {
   font-family: var(--azeretMono);
   font-size: 1.9rem;
   text-align: center;
   opacity: 0.7;
   font-weight: 400;
-  width: 50%;
+  width: 70%;
   margin-top: 1rem;
 }
 

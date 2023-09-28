@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import Label from "../Label/Label";
 import Image from "next/image";
-import Img from '../../../public/images/discovery.png'
+import Img from "../../../public/images/discovery.png";
 import RotatingText from "../RotatingText/RotatingText";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
@@ -40,7 +40,7 @@ const ContactSection = () => {
               <Label text='// Contact Us //' />
             </div>
             <h2>
-              Best ways to <span className={styles.highlight}>Contact</span> us:
+              <span className={styles.highlight}>Contact</span> us today
             </h2>
             <p className={styles.topText}>
               Feel free to contact us any time. We will glady answer any
@@ -50,7 +50,7 @@ const ContactSection = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.rtContainer}>
-                <RotatingText text='Home stretch ...' />
+                <RotatingText text='You made it !' />
               </div>
               <div className={styles.imgContainer}>
                 <Image src={Img} alt='image' fill className={styles.img} />

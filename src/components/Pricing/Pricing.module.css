@@ -22,7 +22,7 @@
 }
 
 .lableContainer {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .highlight {
@@ -136,7 +136,7 @@
 .btnContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 2rem;
   margin-top: 3rem;
 }
