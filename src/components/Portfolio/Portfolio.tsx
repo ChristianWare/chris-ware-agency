@@ -12,7 +12,7 @@ const Portfolio = () => {
           <div className={styles.lableContainer}>
             <Label text='// Recent Projects //' />
           </div>
-          <h2>
+          <h2 className={styles.mainHeading}>
             <span className={styles.highlight}>Portfolio</span> of recent work
             💼
           </h2>
@@ -42,9 +42,6 @@ const Portfolio = () => {
                 <div className={styles.btnContainer}>
                   <Button href={x.href} btnType='secondary' target='_blank'>
                     Live Site
-                  </Button>
-                  <Button href='/' btnType='tertiary'>
-                    Learn More
                   </Button>
                 </div>
               </div>

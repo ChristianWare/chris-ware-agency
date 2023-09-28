@@ -13,7 +13,7 @@ const Process = () => {
             <div className={styles.lableContainer}>
               <Label text='// Project Flow //' />
             </div>
-            <h2 className={styles.heading3}>
+            <h2 className={styles.heading}>
               Your website <br /> in{" "}
               <span className={styles.highlight}>4 steps</span>
               {" "}(✌️ + ✌️)

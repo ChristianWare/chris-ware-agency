@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    margin-top: 0rem;
+  }
+
   .highlight {
     margin-left: 0rem;
   }

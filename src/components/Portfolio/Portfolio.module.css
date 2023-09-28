@@ -19,6 +19,10 @@
   margin-bottom: 2rem;
 }
 
+.heading {
+  color: var(--navy);
+}
+
 .highlight {
   background-color: var(--navy);
   color: var(--secondary);
@@ -70,7 +74,6 @@
   border-radius: 10px;
   border: 1px solid var(--border3);
   width: 100%;
-  
 }
 
 .copy {
@@ -100,18 +103,17 @@
   font-family: var(--outfit);
 }
 
-
 @media screen and (max-width: 1068px) {
   .detailsCard {
     padding: 3rem;
   }
-  .content, .detailsContainer {
+  .content,
+  .detailsContainer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (max-width: 820px) {
-
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,14 +122,20 @@
 }
 
 @media screen and (max-width: 568px) {
-  .top {
+  .top, .lableContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
-  .topText {
+  .left {
+    align-items: center;
+  }
+
+  .topText,
+  .mainHeading, .heading {
     width: 100%;
     text-align: center;
   }
