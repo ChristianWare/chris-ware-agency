@@ -130,6 +130,13 @@
 }
 
 @media screen and (max-width: 568px) {
+  .lableContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
   .imgContainer {
     height: 450px;
   }
