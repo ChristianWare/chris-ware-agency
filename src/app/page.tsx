@@ -10,12 +10,10 @@ import BlogSection from "../components/BlogSection/BlogSection";
 import Faq from "../components/Faq/Faq";
 import FinalCta from "../components/FinalCta/FinalCta";
 
-import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
-import RotatingText from "../components/RotatingText/RotatingText";
+
 import Challenge from "@/components/Challenge/Challenge";
 import Solutions from "@/components/Solutions/Solutions";
 
@@ -57,7 +55,7 @@ export default async function Home() {
       <About />
       <Process />
       {/* Acheivements + Services */}
-      {/* <Services /> */}
+      <Services />
       {/* <RotatingText /> */}
       {/* <Testimonials /> */}
       {/* <Pricing />

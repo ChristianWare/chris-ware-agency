@@ -16,7 +16,7 @@ const Challenge = () => {
               <Label text='// Challenge //' />
             </div>
             <h2 className={styles.heading}>
-              Are you <span className={styles.highlight}>unhappy</span> with
+              Are you<span className={styles.highlight}>unhappy</span> with
               your current website ?
             </h2>
             <p className={styles.copy}>

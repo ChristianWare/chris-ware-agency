@@ -21,8 +21,8 @@ const Hero = () => {
               <div className={styles.lableContainer}>
                 <Label text='// Welcome //' />
               </div>
-              <h1 className={styles.heading} lang='en'>
-                Want a better looking website than your competitors?
+              <h1 className={styles.heading}>
+                Want a better looking website than your{" "}<span className={styles.highlight}>competitors?</span>
               </h1>
               <p className={styles.copy}>
                 Our stylish web designs will delight your target audience and

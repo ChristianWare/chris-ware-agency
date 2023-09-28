@@ -15,7 +15,7 @@ const Solutions = () => {
             </div>
             <h2 className={styles.heading}>
               This is what your{" "}
-              <span className={styles.highlight}> website</span>
+              <span className={styles.highlight}>website</span>
               can do after we work together
             </h2>
           </div>
