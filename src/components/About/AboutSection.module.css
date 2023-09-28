@@ -3,7 +3,15 @@
 }
 
 .lableContainer {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  background-color: var(--navy);
+  color: var(--secondary);
+  padding: 0.05rem 1rem;
+  border-radius: 10px;
+  user-select: none;
 }
 
 .heading3 {
@@ -110,7 +118,7 @@
   }
 
   .rtContainer {
-    left: 40%;
+    left: 35%;
   }
 
   .left {

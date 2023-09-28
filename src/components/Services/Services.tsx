@@ -18,7 +18,7 @@ const Services = () => {
             </div>
             <h2 className={styles.heading}>
               What we can do for
-              <span className={styles.highlight}>you</span>
+              <span className={styles.highlight}>you</span> 🫵
             </h2>
             <p className={styles.topText}>
               With me you don&#39;t pay for expensive agency equipment, just the
@@ -27,17 +27,17 @@ const Services = () => {
           </div>
           <div className={styles.bottom}>
             {servicesSection.map((x) => (
-                <div key={x.id} className={styles.card}>
-                  <Image
-                    src={x.icon}
-                    alt={x.service}
-                    width={30}
-                    height={30}
-                    className={styles.img}
-                  />
-                  <h4 className={styles.service}>{x.service}</h4>
-                  <p className={styles.description}>{x.description}</p>
-                </div>
+              <div key={x.id} className={styles.card}>
+                <Image
+                  src={x.icon}
+                  alt={x.service}
+                  width={30}
+                  height={30}
+                  className={styles.img}
+                />
+                <h4 className={styles.service}>{x.service}</h4>
+                <p className={styles.description}>{x.description}</p>
+              </div>
             ))}
           </div>
           <div className={styles.btnContainer}>

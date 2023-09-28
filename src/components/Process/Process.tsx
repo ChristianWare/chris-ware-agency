@@ -16,6 +16,7 @@ const Process = () => {
             <h2 className={styles.heading3}>
               Your website <br /> in{" "}
               <span className={styles.highlight}>4 steps</span>
+              {" "}(✌️ + ✌️)
             </h2>
             <p className={styles.topText}>
               My process is structured so that you get the most added value for

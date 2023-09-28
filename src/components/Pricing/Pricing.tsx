@@ -24,6 +24,7 @@ const Pricing = () => {
             </div>
             <h2>
               Monthly <span className={styles.highlight}>Subscriptions</span>
+              {" "} 📅
             </h2>
             <p className={styles.topText}>
               These are the prices we charge on a monthly basis. We understand

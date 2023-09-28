@@ -31,7 +31,7 @@ const AboutSection = () => {
               <div className={styles.lableContainer}>
                 <Label text='// About Us //' />
               </div>
-              <h2 className={styles.heading3}>Hi, I&#39;m Chris</h2>
+              <h2 className={styles.heading3}>Hi, I&#39;m <span className={styles.highlight}>Chris</span> 👋</h2>
               <p className={styles.chrisCopy}>
                 I&rsquo;m Chris Ware, the owner and creative force behind The
                 Chris Ware Agency. My journey in the world of web development

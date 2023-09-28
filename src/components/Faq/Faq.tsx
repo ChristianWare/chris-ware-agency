@@ -23,12 +23,12 @@ const Faq = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <SectionHeading
-          labelText='FAQ&#39;s'
+          labelText='// FAQ&#39;s //'
           headingText='Frequently Asked Questions'
           copyText='Common questions and answers'
         />
         <div className={styles.bottom}>
-          {faqs.slice(0, 4).map((x, i) => (
+          {faqs.map((x, i) => (
             <div
               key={x.id}
               className={styles.qaContainer}

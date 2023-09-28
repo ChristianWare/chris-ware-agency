@@ -16,7 +16,7 @@ const Solutions = () => {
             <h2 className={styles.heading}>
               This is what your{" "}
               <span className={styles.highlight}>website</span>
-              can do after we work together
+              can do after we work together 🥰
             </h2>
           </div>
           <div className={styles.bottom}>

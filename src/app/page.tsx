@@ -68,9 +68,9 @@ const blogs = files.map((filename: any) => {
       <Process />
       <Services />
       <Pricing />
+      <Faq />
       <ContactSection />
       {/* <BlogSection blogData={blogs} /> */}
-      {/* <Faq /> */}
       {/* <Testimonials /> */}
       {/* 
       <FinalCta /> */}

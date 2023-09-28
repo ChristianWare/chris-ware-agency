@@ -40,7 +40,7 @@ const ContactSection = () => {
               <Label text='// Contact Us //' />
             </div>
             <h2>
-              <span className={styles.highlight}>Contact</span> us today
+              <span className={styles.highlight}>Contact</span> us today ☎️
             </h2>
             <p className={styles.topText}>
               Feel free to contact us any time. We will glady answer any

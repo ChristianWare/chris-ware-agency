@@ -10,9 +10,12 @@ const Portfolio = () => {
       <ContentPadding>
         <div className={styles.top}>
           <div className={styles.lableContainer}>
-            <Label text='// Our Work //' />
+            <Label text='// Recent Projects //' />
           </div>
-          <h2>Projects </h2>
+          <h2>
+            <span className={styles.highlight}>Portfolio</span> of recent work
+            💼
+          </h2>
           <p className={styles.topText}>
             Here are some examples of our past work. Feel free to reach out with
             any questions you have.
