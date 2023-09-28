@@ -28,17 +28,28 @@ const jsonLd = {
 };
 
 export default async function Home() {
-  const blogDir = "blogs";
-  const files = fs.readdirSync(path.join(blogDir));
-  const blogs = files.map((filename) => {
-    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
+const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
 
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
-  });
+// Determine the correct path to the 'blogs' directory
+const blogsDirectory = path.join(process.cwd(), "blogs");
+
+// Use readdirSync to list files in the 'blogs' directory
+const files = fs.readdirSync(blogsDirectory);
+
+const blogs = files.map((filename: any) => {
+  const fileContent = fs.readFileSync(
+    path.join(blogsDirectory, filename),
+    "utf-8"
+  );
+
+  const { data: frontMatter } = matter(fileContent);
+  return {
+    meta: frontMatter,
+    slug: filename.replace(".mdx", ""),
+  };
+});
 
   return (
     <main className={styles.container}>
