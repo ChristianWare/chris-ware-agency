@@ -19,6 +19,20 @@
   margin-bottom: 2rem;
 }
 
+.imgContainer {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--border3);
+}
+
+.img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .heading {
   color: var(--navy);
 }
@@ -93,6 +107,16 @@
   color: var(--white);
 }
 
+.cardHeading2 {
+  font-family: var(--chakraPetch);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
 .copy,
 .cardCopy {
   opacity: 0.7;
@@ -122,7 +146,8 @@
 }
 
 @media screen and (max-width: 568px) {
-  .top, .lableContainer {
+  .top,
+  .lableContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +160,8 @@
   }
 
   .topText,
-  .mainHeading, .heading {
+  .mainHeading,
+  .heading {
     width: 100%;
     text-align: center;
   }

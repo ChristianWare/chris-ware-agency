@@ -1,12 +1,14 @@
+import Link from "next/link";
 import Button from "../Button/Button";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import styles from "./Portfolio.module.css";
 import { portfolio } from "@/lib/data";
+import Image from "next/image";
 
 const Portfolio = () => {
   return (
-    <section className={styles.container} id="portfolio">
+    <section className={styles.container} id='portfolio'>
       <ContentPadding>
         <div className={styles.top}>
           <div className={styles.lableContainer}>
@@ -26,6 +28,15 @@ const Portfolio = () => {
             <div key={x.id} className={styles.detailsCard}>
               <div className={styles.left}>
                 <Label text={`// project ${index + 1} //`} color='secondry' />
+                <div className={styles.imgContainer}>
+                  <Image
+                    src={x.src}
+                    alt='website preiview'
+                    title={x.client}
+                    fill
+                    className={styles.img}
+                  />
+                </div>
                 <h3 className={styles.heading}>{x.client}</h3>
                 <p className={styles.copy} lang='en'>
                   {x.clientDesc}
@@ -37,13 +48,17 @@ const Portfolio = () => {
                     <br />
                     <h4 className={styles.cardHeading}>Results</h4>
                     <p className={styles.cardCopy}>{x.results}</p>
+                    <br />
+                    <Link href={x.href} target="_blank" className={styles.cardHeading2}>
+                      Live Site
+                    </Link>
                   </div>
                 </div>
-                <div className={styles.btnContainer}>
+                {/* <div className={styles.btnContainer}>
                   <Button href={x.href} btnType='secondary' target='_blank'>
                     Live Site
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

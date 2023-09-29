@@ -101,7 +101,8 @@ export const portfolio = [
       "In this project I prioritized a user-friendly experience and a modern aesthetic.",
     results:
       "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
-    href: "https://laws48.com/",
+    href: "https://nier-transport-redesign.vercel.app/",
+    src: Nier,
   },
   {
     id: 4,
@@ -113,18 +114,20 @@ export const portfolio = [
     results:
       "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
     href: "https://livemas.io/",
+    src: Taco,
   },
-  {
-    id: 5,
-    client: "Dronopoly",
-    clientDesc:
-      "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes.",
-    projectDetails:
-      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
-    results:
-      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
-    href: "https://dronopoly.com/",
-  },
+  // {
+  //   id: 5,
+  //   client: "Dronopoly",
+  //   clientDesc:
+  //     "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes.",
+  //   projectDetails:
+  //     "In this project I prioritized a user-friendly experience and a modern aesthetic.",
+  //   results:
+  //     "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
+  //   href: "https://dronopoly.com/",
+  //   src: Nier,
+  // },
 ] as const;
 
 export const reviews = [
