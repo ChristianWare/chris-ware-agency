@@ -138,8 +138,15 @@
     gap: 3rem;
   }
 
-  .rtContainer {
-    left: 40%;
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
   }
 
   .btnContainer {
