@@ -1,8 +1,4 @@
 .header {
-  position: fixed; /* Add this line */
-  top: 0; /* Position it at the top of the viewport */
-  left: 0; /* Position it at the left of the viewport */
-  width: 100%;
   padding: 1rem 3rem;
   font-family: var(--azeretMono);
   color: var(--textGray);
@@ -12,6 +8,9 @@
 }
 
 .navbar {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,6 +42,8 @@
   font-size: 1.3rem;
   position: relative;
   user-select: none;
+  transition: all 0.3s ease-in;
+  scroll-behavior: smooth;
 }
 
 /* .navItem::after {
@@ -107,7 +108,7 @@
   border-radius: 10px;
   border: 1px solid var(--navy);
   padding: 0.5rem 0.8rem;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
   user-select: none;
 }

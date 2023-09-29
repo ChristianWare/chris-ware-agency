@@ -29,7 +29,7 @@
   line-height: 150%;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  scroll-margin-top: 40px;
+  scroll-margin-top: 20px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -40,6 +40,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: var(--neutral);
 }
 
 a {

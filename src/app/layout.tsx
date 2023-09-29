@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${outfit.variable} ${azeretMono.variable} ${chakraPetch.variable} ${styles.layout}`}
+        className={`${outfit.variable} ${azeretMono.variable} ${chakraPetch.variable}`}
       >
         <Toaster
           position='top-right'
@@ -64,8 +64,10 @@ export default function RootLayout({
           }}
         />
         <Nav />
-        {children}
-        <Footer />
+        <div className={styles.layout}>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
