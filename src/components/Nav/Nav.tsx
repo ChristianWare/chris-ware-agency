@@ -78,40 +78,16 @@ const Nav = () => {
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link
-                href='/about'
-                className={pathname.includes("/about") ? styles.activeLink : ""}
-              >
-                About
-              </Link>
+              <Link href='/about'>About</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link
-                href='/services'
-                className={
-                  pathname.includes("/services") ? styles.activeLink : ""
-                }
-              >
-                Services
-              </Link>
+              <Link href='/'>Services</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link
-                href='/blog'
-                className={pathname.includes("/blog") ? styles.activeLink : ""}
-              >
-                Blog
-              </Link>
+              <Link href='/'>Blog</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link
-                href='/contact'
-                className={
-                  pathname.includes("/contact") ? styles.activeLink : ""
-                }
-              >
-                Contact
-              </Link>
+              <Link href='/'>Contact</Link>
             </li>
 
             <div className={styles.bottom}>
