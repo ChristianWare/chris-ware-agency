@@ -23,13 +23,25 @@ const Footer = () => {
               />
             </Link>
             <div className={styles.socials}>
-              <Link href='/' className={styles.iconContainer}>
+              <Link
+                href='https://www.instagram.com/'
+                target='_blank'
+                className={styles.iconContainer}
+              >
                 <Instagram className={styles.icon} width={20} height={20} />
               </Link>
-              <Link href='/' className={styles.iconContainer}>
+              <Link
+                href='https://www.linkedin.com/'
+                target='_blank'
+                className={styles.iconContainer}
+              >
                 <Twitter className={styles.icon} width={20} height={20} />
               </Link>
-              <Link href='/' className={styles.iconContainer}>
+              <Link
+                href='/https://twitter.com/'
+                target='_blank'
+                className={styles.iconContainer}
+              >
                 <LinkedIn className={styles.icon} width={20} height={20} />
               </Link>
             </div>
