@@ -8,7 +8,7 @@ import RotatingText from "../RotatingText/RotatingText";
 
 const AboutSection = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>

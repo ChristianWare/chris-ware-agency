@@ -6,7 +6,7 @@ import { portfolio } from "@/lib/data";
 
 const Portfolio = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="portfolio">
       <ContentPadding>
         <div className={styles.top}>
           <div className={styles.lableContainer}>

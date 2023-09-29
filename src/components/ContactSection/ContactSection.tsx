@@ -18,7 +18,7 @@ const ContactSection = () => {
     lastName: "",
     senderEmail: "",
     companyName: "",
-    currentWebsiteUrl: "" ,
+    currentWebsiteUrl: "",
     message: "",
   });
 
@@ -32,7 +32,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='contact'>
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>

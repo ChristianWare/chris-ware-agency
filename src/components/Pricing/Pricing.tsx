@@ -15,7 +15,7 @@ const Pricing = () => {
   const pathname = usePathname();
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='pricing'>
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>
@@ -23,8 +23,7 @@ const Pricing = () => {
               <Label text='// Our Prices //' />
             </div>
             <h2 className={styles.heading}>
-              Monthly <span className={styles.highlight}>Subscriptions</span>
-              {" "} 📅
+              Monthly <span className={styles.highlight}>Subscriptions</span> 📅
             </h2>
             <p className={styles.topText}>
               These are the prices we charge on a monthly basis. We understand

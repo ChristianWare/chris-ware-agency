@@ -71,25 +71,27 @@ const Nav = () => {
             </li>
             <li className={styles.navItem} onClick={openMenu}>
               <Link
-                href='/'
+                href='#home'
                 className={pathname === "/" ? styles.activeLink : ""}
               >
                 Home
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='/about'>About</Link>
+              <Link href='#about'>About</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='/'>Services</Link>
+              <Link href='#portfolio'>Portfolio</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='/'>Blog</Link>
+              <Link href='#services'>Services</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='/'>Contact</Link>
+              <Link href='#pricing'>Pricing</Link>
             </li>
-
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link href='#contact'>Contact</Link>
+            </li>
             <div className={styles.bottom}>
               <p className={styles.copy}>
                 Copyright &copy; 2023 Chris Ware Agency || All Rights Reserved

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='services'>
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.top}>

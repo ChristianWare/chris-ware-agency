@@ -14,7 +14,7 @@ import RotatingText from "../RotatingText/RotatingText";
 const Hero = () => {
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="home">
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
@@ -60,6 +60,8 @@ const Hero = () => {
                   src={Hero6}
                   alt='man looking at a website and smiling'
                   fill
+                  quality={100}
+                  priority={true}
                   className={styles.img}
                 />
               </div>
