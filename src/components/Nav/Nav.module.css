@@ -123,6 +123,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.btnContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 1168px) {
   .menuItemsGroup,
   .navMenu {

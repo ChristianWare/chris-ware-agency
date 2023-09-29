@@ -8,6 +8,7 @@
   justify-content: space-between;
   gap: 5rem;
   position: relative;
+  margin-top: 5rem;
 }
 
 .lableContainer {
