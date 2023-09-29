@@ -93,7 +93,7 @@
 }
 
 .openClose {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-family: var(--azeretMono) !important;
   text-transform: uppercase;
   color: var(--navy);
@@ -243,5 +243,9 @@
 @media screen and (max-width: 320px) {
   .navMenu {
     padding: 1rem;
+  }
+
+  .openClose {
+    font-size: 1.5rem;
   }
 }
