@@ -173,6 +173,10 @@
     justify-content: center;
   }
 
+  .heading {
+    text-align: center;
+  }
+
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

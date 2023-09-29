@@ -22,7 +22,7 @@ const Pricing = () => {
             <div className={styles.lableContainer}>
               <Label text='// Our Prices //' />
             </div>
-            <h2>
+            <h2 className={styles.heading}>
               Monthly <span className={styles.highlight}>Subscriptions</span>
               {" "} 📅
             </h2>

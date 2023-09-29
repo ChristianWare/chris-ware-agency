@@ -108,7 +108,7 @@ const Nav = () => {
             <span className={styles.whiteBar}></span>
             <span className={styles.whiteBar}></span> */}
             <div className={styles.openClose}>
-              {isOpen === false ? "// Menu //" : "// Close //"}
+              {isOpen === false ? "//  Menu  //" : "//  Close  //"}
             </div>
           </span>
         </div>
