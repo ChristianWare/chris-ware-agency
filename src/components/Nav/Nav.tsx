@@ -106,12 +106,12 @@ const Nav = () => {
             }
             onClick={openMenu}
           >
-            {/* <span className={styles.whiteBar}></span>
             <span className={styles.whiteBar}></span>
-            <span className={styles.whiteBar}></span> */}
-            <div className={styles.openClose}>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            {/* <div className={styles.openClose}>
               {isOpen === false ? "//  Menu  //" : "//  Close  //"}
-            </div>
+            </div> */}
           </span>
         </div>
         <div className={styles.btnContainer}>
