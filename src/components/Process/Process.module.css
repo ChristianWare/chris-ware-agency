@@ -1,5 +1,5 @@
 .container {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .content {
@@ -90,7 +90,8 @@
     flex-direction: column;
   }
 
-  .topText, .heading {
+  .topText,
+  .heading {
     width: 100%;
     text-align: center;
   }

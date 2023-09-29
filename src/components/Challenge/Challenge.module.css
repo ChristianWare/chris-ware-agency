@@ -1,5 +1,5 @@
 .container {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .top {
@@ -162,7 +162,7 @@
   }
 
   .addText {
-   width: 100%;
+    width: 100%;
   }
 }
 
@@ -181,7 +181,7 @@
   }
 
   .imgContainer {
-    height:400px;
+    height: 400px;
     width: 400px;
   }
 
@@ -202,14 +202,14 @@
 
 @media screen and (max-width: 480px) {
   .imgContainer {
-    height:300px;
+    height: 300px;
     width: 300px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .imgContainer {
-    height:275px;
+    height: 275px;
     width: 275px;
   }
 }

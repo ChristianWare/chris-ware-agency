@@ -83,9 +83,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-            <div className={styles.rtContainer}>
-              <RotatingText text='scroll down' showArrow={true} />
-            </div>
+          <div className={styles.rtContainer}>
+            <RotatingText text='scroll down' showArrow={true} />
+          </div>
         </ContentPadding>
       </section>
     </>

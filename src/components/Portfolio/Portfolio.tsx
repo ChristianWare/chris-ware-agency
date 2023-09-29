@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Button from "../Button/Button";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import styles from "./Portfolio.module.css";
@@ -49,16 +48,15 @@ const Portfolio = () => {
                     <h4 className={styles.cardHeading}>Results</h4>
                     <p className={styles.cardCopy}>{x.results}</p>
                     <br />
-                    <Link href={x.href} target="_blank" className={styles.cardHeading2}>
+                    <Link
+                      href={x.href}
+                      target='_blank'
+                      className={styles.cardHeading2}
+                    >
                       Live Site
                     </Link>
                   </div>
                 </div>
-                {/* <div className={styles.btnContainer}>
-                  <Button href={x.href} btnType='secondary' target='_blank'>
-                    Live Site
-                  </Button>
-                </div> */}
               </div>
             </div>
           ))}

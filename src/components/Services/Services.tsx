@@ -1,5 +1,5 @@
 import styles from "./Services.module.css";
-import { servicesSection, features } from "../../lib/data";
+import { servicesSection } from "../../lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Label from "../Label/Label";
 import Button from "../Button/Button";

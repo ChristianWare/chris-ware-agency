@@ -1,5 +1,5 @@
 .container {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .top {
@@ -83,7 +83,8 @@
   }
 
   .heading,
-  .copy, .title {
+  .copy,
+  .title {
     width: 100%;
     text-align: center;
   }

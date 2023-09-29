@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Faq.module.css";
 import { faqs } from "@/lib/data";
 import Plus from "../../../public/icons/plus.svg";
