@@ -64,8 +64,8 @@ const Nav = () => {
                 <Image
                   src={Logo}
                   alt='Chris Ware Agency Logo'
-                  width={260}
-                  height={30}
+                  width={173}
+                  height={20}
                 />
               </Link>
             </li>
@@ -128,9 +128,12 @@ const Nav = () => {
             }
             onClick={openMenu}
           >
+            {/* <span className={styles.whiteBar}></span>
             <span className={styles.whiteBar}></span>
-            <span className={styles.whiteBar}></span>
-            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span> */}
+            <div className={styles.openClose}>
+              {isOpen === false ? "// Menu //" : "// Close //"}
+            </div>
           </span>
         </div>
         <div className={styles.btnContainer}>

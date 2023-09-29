@@ -25,7 +25,7 @@ const Hero = () => {
                 Want a better looking website than your{" "}
                 <span className={styles.highlight}>competitors?</span>
               </h1>
-              <p className={styles.copy}>
+              <p className={styles.copy} lang='en'>
                 Our stylish web designs will delight your target audience and{" "}
                 <strong>keep them coming back for more.</strong>
               </p>
