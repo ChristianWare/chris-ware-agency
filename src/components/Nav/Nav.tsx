@@ -71,7 +71,7 @@ const Nav = () => {
             </li>
             <li className={styles.navItem} onClick={openMenu}>
               <Link
-                href='#home'
+                href='/'
                 className={pathname === "/" ? styles.activeLink : ""}
               >
                 Home

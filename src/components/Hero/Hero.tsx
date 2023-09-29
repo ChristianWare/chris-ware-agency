@@ -15,7 +15,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section className={styles.container} id='home'>
+      <section className={styles.container}>
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
