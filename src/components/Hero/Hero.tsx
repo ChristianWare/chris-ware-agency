@@ -10,11 +10,12 @@ import Image from "next/image";
 import Hero6 from "../../../public/images/hero6.png";
 import Label from "../Label/Label";
 import RotatingText from "../RotatingText/RotatingText";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <>
-      <section className={styles.container} id="home">
+      <section className={styles.container} id='home'>
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
@@ -30,24 +31,42 @@ const Hero = () => {
                 <strong>keep them coming back for more.</strong>
               </p>
               <div className={styles.btnContainer}>
-                <Button href='/contact' btnType='secondary'>
+                <Button href='/#contact' btnType='secondary'>
                   <Calendar width={20} height={20} />
                   Book a meeting
                 </Button>
-                <Button href='/contact' btnType='primary'>
+                <Button href='/#contact' btnType='primary'>
                   <PhoneCall width={20} height={20} />
                   Contact us
                 </Button>
               </div>
               <div className={styles.socialsContainer}>
                 <div className={styles.socialIconContainer}>
-                  <Instagram width={15} height={15} />
+                  <Link
+                    href='https://www.instagram.com/'
+                    target='_blank'
+                    className={styles.socailIcon}
+                  >
+                    <Instagram width={15} height={15} />
+                  </Link>
                 </div>
                 <div className={styles.socialIconContainer}>
-                  <LinkedIn width={15} height={15} />
+                  <Link
+                    href='https://www.linkedin.com/'
+                    target='_blank'
+                    className={styles.socailIcon}
+                  >
+                    <LinkedIn width={15} height={15} />
+                  </Link>
                 </div>
                 <div className={styles.socialIconContainer}>
-                  <Twitter width={15} height={15} />
+                  <Link
+                    href='/https://twitter.com/'
+                    target='_blank'
+                    className={styles.socailIcon}
+                  >
+                    <Twitter width={15} height={15} />
+                  </Link>
                 </div>
               </div>
             </div>

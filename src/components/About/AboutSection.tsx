@@ -51,7 +51,7 @@ const AboutSection = () => {
               </p>
 
               <div className={styles.btnContainer}>
-                <Button href='/' btnType='secondary'>
+                <Button href='#contact' btnType='secondary'>
                   Contact us
                 </Button>
               </div>

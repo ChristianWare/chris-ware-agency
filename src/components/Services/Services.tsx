@@ -42,11 +42,11 @@ const Services = () => {
           </div>
           <div className={styles.btnContainer}>
             <div className={styles.btnContainer}>
-              <Button href='/contact' btnType='secondary'>
+              <Button href='/#contact' btnType='secondary'>
                 <Calendar width={20} height={20} />
                 Book a meeting
               </Button>
-              <Button href='/contact' btnType='primary'>
+              <Button href='/#contact' btnType='primary'>
                 <PhoneCall width={20} height={20} />
                 Contact us
               </Button>

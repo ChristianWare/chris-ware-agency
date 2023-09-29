@@ -71,6 +71,11 @@
   cursor: pointer;
 }
 
+.socailIcon {
+  position: relative;
+  top: 2px;
+}
+
 .right {
   position: relative;
 }
