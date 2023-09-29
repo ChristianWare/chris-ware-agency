@@ -11,6 +11,14 @@ const AboutSection = () => {
     <section className={styles.container}>
       <ContentPadding>
         <div className={styles.content}>
+          <div className={styles.top}>
+            <div className={styles.lableContainer}>
+              <Label text='// About Us //' />
+            </div>
+            <h2 className={styles.heading3}>
+              Hi, I&#39;m <span className={styles.highlight}>Chris</span> 👋
+            </h2>
+          </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.rtContainer}>
@@ -28,10 +36,6 @@ const AboutSection = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.lableContainer}>
-                <Label text='// About Us //' />
-              </div>
-              <h2 className={styles.heading3}>Hi, I&#39;m <span className={styles.highlight}>Chris</span> 👋</h2>
               <p className={styles.chrisCopy}>
                 I&rsquo;m Chris Ware, the owner and creative force behind The
                 Chris Ware Agency. My journey in the world of web development
@@ -40,9 +44,7 @@ const AboutSection = () => {
                 I&rsquo;ve honed my skills and transformed that passion into a
                 thriving career.
               </p>
-
               <br />
-              <h2 className={styles.heading3}>How I can help</h2>
               <p className={styles.chrisCopy}>
                 I am your sole contact person throughout the entire project,
                 which means we can work together quickly and safely.
