@@ -21,9 +21,6 @@ const AboutSection = () => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.rtContainer}>
-                <RotatingText text='Almost There' showArrow={true} />
-              </div>
               <div className={styles.imgContainer}>
                 <Image
                   src={Chris}
@@ -49,7 +46,6 @@ const AboutSection = () => {
                 I am your sole contact person throughout the entire project,
                 which means we can work together quickly and safely.
               </p>
-
               <div className={styles.btnContainer}>
                 <Button href='#contact' btnType='secondary'>
                   Contact us
@@ -57,6 +53,9 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.rtContainer}>
+          <RotatingText text='Almost There' showArrow={true} />
         </div>
       </ContentPadding>
     </section>

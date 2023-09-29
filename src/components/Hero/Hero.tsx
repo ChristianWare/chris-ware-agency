@@ -71,9 +71,6 @@ const Hero = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.rtContainer}>
-                <RotatingText text='scroll down' showArrow={true} />
-              </div>
               <div className={styles.imgContainer}>
                 <Image
                   src={Hero6}
@@ -86,6 +83,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
+            <div className={styles.rtContainer}>
+              <RotatingText text='scroll down' showArrow={true} />
+            </div>
         </ContentPadding>
       </section>
     </>

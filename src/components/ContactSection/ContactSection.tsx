@@ -49,9 +49,6 @@ const ContactSection = () => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.rtContainer}>
-                <RotatingText text='You made it !' showEmoji={true} />
-              </div>
               <div className={styles.imgContainer}>
                 <Image src={Img} alt='image' fill className={styles.img} />
               </div>
@@ -163,6 +160,9 @@ const ContactSection = () => {
               </form>
             </div>
           </div>
+        </div>
+        <div className={styles.rtContainer}>
+          <RotatingText text='You made it !' showEmoji={true} />
         </div>
       </ContentPadding>
     </section>
