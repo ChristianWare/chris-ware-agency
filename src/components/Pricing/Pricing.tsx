@@ -23,7 +23,7 @@ const Pricing = () => {
               <Label text='// Our Prices //' />
             </div>
             <h2 className={styles.heading}>
-              Monthly <span className={styles.highlight}>Subscriptions</span> 📅
+              Monthly <span className={styles.highlight}>Subscriptions</span> 🤑
             </h2>
             <p className={styles.topText}>
               These are the prices we charge on a monthly basis. We understand
