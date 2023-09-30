@@ -162,6 +162,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    margin-top: 2rem;
+  }
+  
   .left {
     align-items: flex-start;
     justify-content: flex-start;
