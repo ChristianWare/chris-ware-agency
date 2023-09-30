@@ -7,7 +7,8 @@
   font-family: var(--azeretMono);
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
+  text-transform: uppercase;
   white-space: nowrap;
   border-radius: 30px;
   user-select: none;
@@ -27,12 +28,12 @@
 }
 
 .primary {
-  color: var(--text);
+  color: var(--border3);
   border: 2px solid var(--border);
 }
 
 .secondary {
-  color: var(--text);
+  color: var(--border3);
   background-color: var(--secondary);
   border: 2px solid var(--border);
 }

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Logo from "../../../public/icons/newcwalogo.png";
-import Calendar from "../../../public/icons/calendar-mark-svgrepo-com.svg";
+import Phone from "../../../public/icons/phone.svg";
 import Button from "../Button/Button";
 import Image from "next/image";
 
@@ -78,16 +78,16 @@ const Nav = () => {
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='#about'>About</Link>
+              <Link href='#services'>Services</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
               <Link href='#portfolio'>Portfolio</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='#services'>Services</Link>
+              <Link href='#pricing'>Pricing</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <Link href='#pricing'>Pricing</Link>
+              <Link href='#about'>About</Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
               <Link href='#contact'>Contact</Link>
@@ -116,8 +116,8 @@ const Nav = () => {
         </div>
         <div className={styles.btnContainer}>
           <Button href='/contact' btnType='secondary'>
-            <Calendar width={20} height={20} />
-            Book a meeting
+            <Phone width={20} height={20} />
+            (623) 632-6780
           </Button>
         </div>
       </nav>

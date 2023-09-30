@@ -146,7 +146,8 @@
     justify-content: center;
   }
 
-  .heading {
+  .heading,
+  .copy {
     text-align: center;
   }
 
@@ -161,6 +162,16 @@
 }
 
 @media screen and (max-width: 568px) {
+  .left {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading,
+  .copy {
+    text-align: left;
+  }
+
   .highlight {
     margin-left: 0rem;
   }
