@@ -108,9 +108,9 @@
 
   .rtContainer {
     margin-top: 3rem;
-    margin-bottom: 0rem;
-    position: relative;
-    top: 75px;
+    margin-bottom: -8rem;
+    /* position: relative; */
+    /* top: 75px; */
   }
 }
 
