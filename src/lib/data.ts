@@ -96,11 +96,7 @@ export const portfolio = [
     id: 6,
     client: "Nier Transportation",
     clientDesc:
-      "A balck car service company offering rides througout the Phonenix Metro area since 2004.",
-    projectDetails:
-      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
-    results:
-      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
+      "A balck car service company offering rides througout the Phonenix Metro area since 2004. In this project I prioritized a user-friendly experience and a modern aesthetic.",
     href: "https://nier-transport-redesign.vercel.app/",
     src: Nier,
   },
@@ -108,11 +104,7 @@ export const portfolio = [
     id: 4,
     client: "Taco Bell",
     clientDesc:
-      "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes.",
-    projectDetails:
-      "In this project I prioritized a user-friendly experience and a modern aesthetic.",
-    results:
-      "A visually appealing and highly functional website that reflects Taco Bell's brand identity.",
+      "A fast-food chain known for its  tacos, burritos, quesadillas, and various other Mexican-inspired dishes. In this project I prioritized a user-friendly experience and a modern aesthetic.",
     href: "https://livemas.io/",
     src: Taco,
   },

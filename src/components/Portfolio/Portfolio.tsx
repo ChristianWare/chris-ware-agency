@@ -36,17 +36,13 @@ const Portfolio = () => {
                     className={styles.img}
                   />
                 </div>
-                <h3 className={styles.heading}>{x.client}</h3>
-                <p className={styles.copy} lang='en'>
-                  {x.clientDesc}
-                </p>
                 <div className={styles.detailsContainer}>
                   <div className={styles.card}>
-                    <h4 className={styles.cardHeading}>Details</h4>
-                    <p className={styles.cardCopy}>{x.projectDetails}</p>
+                    <h3 className={styles.heading}>{x.client}</h3>
                     <br />
-                    <h4 className={styles.cardHeading}>Results</h4>
-                    <p className={styles.cardCopy}>{x.results}</p>
+                    <p className={styles.copy} lang='en'>
+                      {x.clientDesc}
+                    </p>
                     <br />
                     <Link
                       href={x.href}
