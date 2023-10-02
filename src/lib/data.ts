@@ -420,12 +420,7 @@ export const faqs = [
     answer:
       "Yes, all websites we develop are mobile-friendly and responsive. We prioritize delivering an optimal user experience on various devices and screen sizes.",
   },
-  {
-    id: 41,
-    question: "Can I update the website content myself after it's built?",
-    answer:
-      "Certainly! We often use content management systems (CMS) like WordPress, allowing you to easily update and manage your website's content without needing technical expertise.",
-  },
+
   {
     id: 42,
     question: "Do you offer website maintenance and support?",

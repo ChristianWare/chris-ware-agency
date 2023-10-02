@@ -6,6 +6,7 @@
   padding-right: 30px;
   padding-left: 30px;
   background-color: var(--neutral);
+  /* border: 3px solid var(--border); */
 }
 
 @media screen and (max-width: 568px) {
