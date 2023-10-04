@@ -97,7 +97,7 @@ export const portfolio = [
     client: "Nier Transportation",
     clientDesc:
       "A balck car service company offering rides througout the Phonenix Metro area since 2004. In this project I prioritized a user-friendly experience and a modern aesthetic.",
-    href: "https://nier-transport-redesign.vercel.app/",
+    href: "https://www.niertransportation.com/",
     src: Nier,
   },
   {

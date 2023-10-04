@@ -23,10 +23,10 @@ const Portfolio = () => {
           </p>
         </div>
         <div className={styles.content}>
-          {portfolio.map((x, index) => (
+          {portfolio.map((x) => (
             <div key={x.id} className={styles.detailsCard}>
               <div className={styles.left}>
-                <Label text={`// project ${index + 1} //`} color='secondry' />
+                {/* <Label text={`// project ${index + 1} //`} color='secondry' /> */}
                 <div className={styles.imgContainer}>
                   <Image
                     src={x.src}
