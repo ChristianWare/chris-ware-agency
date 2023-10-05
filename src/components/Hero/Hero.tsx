@@ -85,11 +85,11 @@ const Hero = () => {
         <div className={styles.rtContainer}>
           <RotatingText text='scroll down' showArrow={true} />
         </div>
-        <h2 className={styles.strong}>Core Statistics:</h2>
+        {/* <h2 className={styles.strong}>Core Statistics:</h2>
         <div className={styles.statsContainer}>
           <div className={styles.stat}>
-            <div className={styles.statHeading}>125+</div>
-            <p className={styles.statDetail}>Developments completed</p>
+            <div className={styles.statHeading}>50+</div>
+            <p className={styles.statDetail}>Websites Built</p>
           </div>
           <div className={styles.stat}>
             <div className={styles.statHeading}>2,200+</div>
@@ -103,7 +103,7 @@ const Hero = () => {
             <div className={styles.statHeading}>5</div>
             <p className={styles.statDetail}>Regional offices</p>
           </div>
-        </div>
+        </div> */}
       </ContentPadding>
     </section>
   );
