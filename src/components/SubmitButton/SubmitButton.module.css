@@ -13,7 +13,7 @@
   white-space: nowrap;
   border-radius: 30px;
   user-select: none;
-  transition: all 0.1s ease-in;
+  /* transition: all 0.1s ease-1in; */
   display: inline-block;
   padding: 8px 25px;
   display: flex;

@@ -1,6 +1,6 @@
 .container {
   margin-bottom: 10rem;
-  transition: all 0.3s ease-in;
+  /* transition: all 0.3s ease-in; */
   scroll-behavior: smooth;
 }
 

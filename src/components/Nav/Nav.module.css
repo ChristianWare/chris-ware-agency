@@ -18,7 +18,7 @@
 
 .logo {
   letter-spacing: 0.5px;
-  transition: all 0.2s ease-in;
+  /* transition: all 0.2s ease-in; */
 }
 
 .officialLogoMobile {
@@ -124,8 +124,14 @@
 }
 
 .btnContainer {
-  margin-top: 1rem;
+  margin-top: .5rem;
   margin-bottom: 1rem;
+}
+
+.phone {
+  position: relative;
+  top: 5px;
+  right: 5px;
 }
 
 @media screen and (max-width: 1168px) {

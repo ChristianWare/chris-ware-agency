@@ -115,10 +115,10 @@ const Nav = () => {
           </span>
         </div>
         <div className={styles.btnContainer}>
-          <Button href='/contact' btnType='secondary'>
-            <Phone width={20} height={20} />
-            (623) 632-6780
-          </Button>
+          <a href='tel:6236326780' className={styles.navItem}>
+            <Phone width={20} height={20} className={styles.phone} />
+            623-632-6780
+          </a>
         </div>
       </nav>
     </header>
